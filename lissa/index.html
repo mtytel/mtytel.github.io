@@ -1,106 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-<head>
-   <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" id="theme" />
-   <link rel="stylesheet" href="/static/css/theme.css" type="text/css" id="theme" />
-<title>tytel -
+<html>
+  <head>
+    <title>
+      Lissa Juice
+    </title>
+    <script type="text/javascript">
 
-  lissa juice
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38450508-1']);
+      _gaq.push(['_trackPageview']);
 
-</title>
-<script type="text/javascript">
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38450508-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
-</head>
-<body>
-
-<div id="wrap">
-  <div id="left-sidebar">
-    <div id="left-top">
-      MATT TYTEL
-    </div>
-    <div id="left-nav">
-      <ul>
-        
-          <li>
-        
-          <a href="/"><p>home</p></a></li>
-        </li>
-        
-          <li>
-        
-          <a href="/listen"><p>listen</p></a></li>
-        </li>
-        
-          <li>
-        
-          <a href="/look"><p>look</p></a></li>
-        </li>
-        
-          <li class="">
-        
-          <a href="/info"><p>info</p></a>
-        </li>
-        <li class="last">
-        <a href="http://mtytel.tumblr.com">
-          <p>
-            blog
-            <span class="pull-right">
-              <i class="icon-share"></i>
-            </span>
-          </p>
-        </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div id="main">
-    <div id="top-bar">
-      <div id="top-desc">
-        
-plotting stereo sound on a plane
-
+    </script>
+    <script src="/static/js/jquery-1.9.1.min.js"></script>
+    <script src="/static/js/jquery.knob.js"></script>
+    <script src="/static/js/jquery.minicolors.js"></script>
+    <script src="/static/js/underscore.min.js"></script>
+    <script src="/static/js/lissa.js"></script>
+    <script src="/static/js/controls.js"></script>
+    <script src="/static/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.minicolors.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <div class="buttons">
+          <button class="simple-button randomize">
+            Randomize
+          </button>
+          <button class="simple-button play">
+            Play Song!
+          </button>
+          <button class="simple-button controls-toggle">
+            Controls
+          </button>
+        </div>
+        <div class="knobs">
+          <div id="left-oscillator">
+          </div>
+          <div id="right-oscillator">
+          </div>
+          <div class="other-controls">
+            <div id="base_freq">
+            </div>
+          </div>
+          <div>
+            <input class="minicolors no-textfield" type="text" value="#ffff00">
+          </div>
+        </div>
+      </div>
+      <canvas id="lissajous"></canvas>
+      <p class="info">
+        Lissa Juice v0.0.1
+      </p>
+      <a href="https://github.com/mtytel/lissa" target="_top">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="/static/img/forkme.png" alt="Fork me on GitHub">
+      </a>
       </div>
     </div>
-    
-<div id="main-text">
-  <a href="/lissa"><p>
-    <img src="/static/images/lissajuice.png" alt="Lissa Juice" />
-  </p></a>
-  <a href="/lissa">Lissa Juice</a> is an audio visualization made by
-  <a href="http://nourahowell.com">Noura Howell</a>
-  and myself inspired by
-  <a href="http://en.wikipedia.org/wiki/Lissajous_curve">Lissajous Curves</a>.
-  It is a stereo audio plot of two harmonizing oscillators on a 2 dimensional plane. Every dot drawn on the plane is a recent sample taken from the oscillators, the x dimension is a sample taken from the left oscillator the y component is a sample taken from the right oscillator. If the oscillators are harmonious, Lissa Juice creates a repeating pattern. When there is a detuned harmony between the oscillators and the sample rate the dots seem to travel around the screen.
-  <p>
-  <a href="/lissa">Lissa Juice</a>
-  uses the
-  <a href="https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html">Web Audio Api</a>
-  to play sound, so you will need to run it inside
-  <a href="https://www.google.com/intl/en/chrome/">Chrome</a>, or
-  <a href="http://www.chromium.org/Home">Chromium</a>.
-  </p>
-  <p>
-  <a href="https://github.com/mtytel/lissa">Source Code</a>
-  </p>
-</div>
 
-  </div>
-</div>
+    <script type="underscore/template" id="knob">
+      <input
+        class="knob"
+        id="<%=id%>"
+        data-angleOffset=225
+        data-angleArc=270
+        data-bgColor="#222222"
+        data-fgColor="#888888"
+        data-width="72"
+        data-height="72"
+        data-min=<%=min_val%>
+        data-max=<%=max_val%>
+        value="<%=default_val%>">
+      <p><%=label%></p>
+    </script>
 
-
-</body>
+    <script type="underscore/template" id="oscillator">
+      <div class="oscillator">
+        <div class="oscillator-title">
+          <%=title%>
+        </div>
+        <div class="knob-column col-1">
+        </div>
+        <div class="knob-column col-2">
+        </div>
+        <div class="knob-column col-3">
+        </div>
+      </div>
+    </script>
+  </body>
 </html>

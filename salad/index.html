@@ -1,103 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-<head>
-   <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" id="theme" />
-   <link rel="stylesheet" href="/static/css/theme.css" type="text/css" id="theme" />
-<title>tytel -
+<html>
+  <head>
+    <title>
+      salad
+    </title>
+    <script src="/static/js/jquery-1.9.1.min.js"></script>
+    <script src="/static/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/static/js/sliders.js"></script>
+    <script src="/static/js/chladni.js"></script>
 
-  salad
-
-</title>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38450508-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
-</head>
-<body>
-
-<div id="wrap">
-  <div id="left-sidebar">
-    <div id="left-top">
-      MATT TYTEL
-    </div>
-    <div id="left-nav">
-      <ul>
-        
-          <li>
-        
-          <a href="/"><p>home</p></a></li>
-        </li>
-        
-          <li>
-        
-          <a href="/listen"><p>listen</p></a></li>
-        </li>
-        
-          <li>
-        
-          <a href="/look"><p>look</p></a></li>
-        </li>
-        
-          <li class="">
-        
-          <a href="/info"><p>info</p></a>
-        </li>
-        <li class="last">
-        <a href="http://mtytel.tumblr.com">
-          <p>
-            blog
-            <span class="pull-right">
-              <i class="icon-share"></i>
-            </span>
-          </p>
-        </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div id="main">
-    <div id="top-bar">
-      <div id="top-desc">
-        
-  physics models and chladni figures
-
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/sliders.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/chladni.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls column">
+        <div>
+          <button id="reset" class="normal simple-button">
+            Restart Waves
+          </button>
+        </div>
+        <div>
+          <div class="slider-container">
+            Amplitude
+            <div id="amplitude" class="colorful-slider gray">
+              <div class="slider-handle"></div>
+            </div>
+          </div>
+          <div class="slider-container">
+            Frequency
+            <div id="frequency" class="colorful-slider gray">
+              <div class="slider-handle"></div>
+            </div>
+          </div>
+          <div class="slider-container">
+            Damping
+            <div id="damping" class="colorful-slider gray">
+              <div class="slider-handle"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="position" class="toggle simple-button">
+            Position Coloring
+          </button>
+          <button id="stillness" class="toggle simple-button">
+            Stillness Coloring
+          </button>
+        </div>
+      </div>
+      <div class="canvas column">
+        <canvas id="chladni" width="500px" height="500px"></canvas>
       </div>
     </div>
-    
-<div id="main-text">
-  <a href="/salad"><p>
-    <img src="/static/images/salad.png" alt="Salad" />
-  </p></a>
-  <a href="/salad">Salad</a>
-  is a javascript physics engine and resonance visualization made by
-  <a href="http://nourahowell.com">Noura Howell</a>, Lucas Culler and myself, inspired by
-  <a href="http://en.wikipedia.org/wiki/Ernst_Chladni#Chladni_figures">Chladni Figures</a>.
-  <p>
-  We perform the discrete wave equation on a grid of pixels to propogate waves from a source. Every pixel on the canvas has a current position (how far into/out of the screen it is) and a current velocity. At every time 'tick', we update every pixel's velocity using the surrounding 4 pixels on each side. If the average positions of the surrounding pixels are higher than a given pixel, we add a little bit to that pixel's velocity. If the average of the surrounding pixel positions are lower we subtract from the velocity instead. We also apply a small amount of velocity damping.
-  </p>
-  <p>
-  The project is still in the beginning stages but you can check out the
-  <a href="/salad">full project</a>
-  or view the
-  <a href="https://github.com/mtytel/salad">source code</a>.
-  </p>
-</div>
-
-  </div>
-</div>
-
-
-</body>
+  </body>
 </html>

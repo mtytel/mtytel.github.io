@@ -8,19 +8,40 @@
  */
 
 var chladni = function() {
-  // Damping consistently puts friction on all waving points.
-  var DAMPING = 1.0;
   // Speed constant somehow defines speed of waves. Not sure on relationship.
   var SPEED_CONSTANT = 1.0;
+  // The polynomial scale of the frequency slide.
+  var FREQUENCY_SCALE = 3;
+  // The polynomial scale of the damping slide.
+  var DAMPING_SCALE = 6;
 
+  // Damping consistently puts friction on all waving points.
+  var damping_ = 1.0;
+  // Amplitude on the sine wave input equation
+  var amplitude_ = 5.0;
+  // Frequency on the sine wave equation, in 1/ticks
+  var frequency_ = 1 / 300;
+  // Phase is where in the sine wave we sample from. Incrementing phase is how
+  // we move forward in time.
+  var phase_ = 0;
   // Store the width and height so we don't have to access the DOM later.
-  var canvas_width = 0, canvas_height = 0;
-  var context = null;
-  var image = null;
-  var pos_matrix = null;
-  var vel_matrix = null;
-  var temp_matrix = null;
-  var time = 0;
+  var canvas_width_ = 0, canvas_height_ = 0;
+  var chladni_coloring_ = false;
+  var context_ = null;
+  var image_ = null;
+  var pos_matrix_ = null;
+  var vel_matrix_ = null;
+  var temp_matrix_ = null;
+
+  function setDamping(damping) {
+    damping_ = damping;
+  }
+  function setAmplitude(amplitude) {
+    amplitude_ = amplitude;
+  }
+  function setFrequency(frequency) {
+    frequency_ = frequency;
+  }
 
   // Index by row first, then column.
   function createTwoDimArray(width, height) {
@@ -37,76 +58,128 @@ var chladni = function() {
 
   function tick() {
     // Update the input equation.
-    var val = 5.0 * Math.sin(time / 8.0);
-    for (var i = 0; i < canvas_width; i++) {
-      pos_matrix[0][i] = val;
-      pos_matrix[canvas_height - 1][i] = val;
+    var val = amplitude_ * Math.sin(phase_);
+    for (var i = 0; i < canvas_width_; i++) {
+      pos_matrix_[0][i] = val;
+      pos_matrix_[canvas_height_ - 1][i] = val;
     }
-    for (var i = 0; i < canvas_height; i++) {
-      pos_matrix[i][0] = val;
-      pos_matrix[i][canvas_width - 1] = val;
+    for (var i = 0; i < canvas_height_; i++) {
+      pos_matrix_[i][0] = val;
+      pos_matrix_[i][canvas_width_ - 1] = val;
     }
-    time++;
+
+    phase_ += 2 * Math.PI * frequency_;
+    phase_ %= 2 * Math.PI;
 
     // Wave equation! Give an acceleration based on neighboring points.
-    for (var r = 1; r < canvas_height - 1; r++) {
-      for (var c = 1; c < canvas_width - 1; c++) {
-        var neighbor_sum = pos_matrix[r - 1][c] + pos_matrix[r + 1][c] +
-                           pos_matrix[r][c - 1] + pos_matrix[r][c + 1];
-        var difference = pos_matrix[r][c] - neighbor_sum / 4.0;
-        temp_matrix[r][c] = vel_matrix[r][c] - SPEED_CONSTANT * difference;
+    for (var r = 1; r < canvas_height_ - 1; r++) {
+      for (var c = 1; c < canvas_width_ - 1; c++) {
+        var neighbor_sum = pos_matrix_[r - 1][c] + pos_matrix_[r + 1][c] +
+                           pos_matrix_[r][c - 1] + pos_matrix_[r][c + 1];
+        var difference = pos_matrix_[r][c] - neighbor_sum / 4.0;
+        temp_matrix_[r][c] = vel_matrix_[r][c] - SPEED_CONSTANT * difference;
       }
     }
 
     // Swap the velocity matrices.
-    var temp = vel_matrix;
-    vel_matrix = temp_matrix;
-    temp_matrix = vel_matrix;
+    var temp = vel_matrix_;
+    vel_matrix_ = temp_matrix_;
+    temp_matrix_ = vel_matrix_;
 
-    for (var r = 1; r < canvas_height - 1; r++) {
-      for (var c = 1; c < canvas_width - 1; c++) {
+    for (var r = 1; r < canvas_height_ - 1; r++) {
+      for (var c = 1; c < canvas_width_ - 1; c++) {
         // Damp the velocity for each point.
-        vel_matrix[r][c] *= DAMPING;
+        vel_matrix_[r][c] *= damping_;
 
         // Update the position for each point.
-        pos_matrix[r][c] += vel_matrix[r][c];
+        pos_matrix_[r][c] += vel_matrix_[r][c];
 
-        // Update the image so it's ready to draw if we need.
-        var bright = Math.floor(pos_matrix[r][c] * 20);
-        var index = 4 * (r * canvas_width + c);
-        image.data[index] = bright;
-        image.data[index + 1] = bright;
-        image.data[index + 2] = bright;
-        image.data[index + 3] = 255;
+        // Update the image_ so it's ready to draw if we need.
+        var brightness = 0;
+        if (chladni_coloring_) {
+          var scaled_velocity = vel_matrix_[r][c] / (2 * Math.PI * Math.max(frequency_, .0001));
+          brightness = 255 - (pos_matrix_[r][c] * pos_matrix_[r][c] + scaled_velocity * scaled_velocity);
+        }
+        else
+          brightness = Math.floor(pos_matrix_[r][c] * 20);
+        var index = 4 * (r * canvas_width_ + c);
+        image_.data[index] = brightness;
+        image_.data[index + 1] = brightness;
+        image_.data[index + 2] = brightness;
+        image_.data[index + 3] = 255;
       }
     }
   }
 
   function draw() {
-    context.putImageData(image, 0, 0);
+    context_.putImageData(image_, 0, 0);
     window.requestAnimationFrame(draw);
   }
 
-  function init() {
-    var canvas = document.getElementById('chladni');
-    context = canvas.getContext('2d');
-    canvas_width = canvas.width;
-    canvas_height = canvas.height;
-    image = context.createImageData(canvas_width, canvas_height);
-    pos_matrix = createTwoDimArray(canvas_width, canvas_height);
-    vel_matrix = createTwoDimArray(canvas_width, canvas_height);
-    temp_matrix = createTwoDimArray(canvas_width, canvas_height);
-    time = 0;
+  var tick_interval_id = null;
 
-    setInterval(tick, 20);
+  function initCanvas() {
+    if (tick_interval_id) {
+      clearInterval(tick_interval_id);
+    }
+
+    var canvas = document.getElementById('chladni');
+    context_ = canvas.getContext('2d');
+    canvas_width_ = canvas.width;
+    canvas_height_ = canvas.height;
+
+    // reset the canvas
+    image_ = context_.createImageData(canvas_width_, canvas_height_);
+    pos_matrix_ = createTwoDimArray(canvas_width_, canvas_height_);
+    vel_matrix_ = createTwoDimArray(canvas_width_, canvas_height_);
+    temp_matrix_ = createTwoDimArray(canvas_width_, canvas_height_);
+    phase_ = 0;
+
+    tick_interval_id = setInterval(tick, 20);
     draw();
   }
 
+  function initPage() {
+    $('#reset').on('click', initCanvas);
+    $('#position').on('click', function() {
+      chladni_coloring_ = false;
+      $('#position').addClass('pressed');
+      $('#stillness').removeClass('pressed');
+    });
+    $('#stillness').on('click', function() {
+      chladni_coloring_ = true;
+      $('#stillness').addClass('pressed');
+      $('#position').removeClass('pressed');
+    });
+    if (chladni_coloring_)
+      $('#stillness').addClass('pressed');
+    else
+      $('#position').addClass('pressed');
+
+    $('#amplitude')
+      .slider({min: 0, max: 10, start: amplitude_})
+      .on('change', function(ev, val) {
+        setAmplitude(val);
+      });
+    $('#frequency')
+      .slider({min: .1, max: 0.5, start: Math.pow(frequency_, 1 / FREQUENCY_SCALE)})
+      .on('change', function(ev, val) {
+        setFrequency(Math.pow(val, FREQUENCY_SCALE));
+      });
+    $('#damping')
+      .slider({min: 0, max: 1, start: Math.pow(1 - damping_, 1 / DAMPING_SCALE)})
+      .on('change', function(ev, val) {
+        setDamping(1 - Math.pow(val, DAMPING_SCALE));
+      });
+    initCanvas();
+  }
+
   return {
-    init: init,
+    initCanvas: initCanvas,
+    initPage: initPage,
     draw: draw,
     tick: tick,
   };
 }();
 
-window.onload = chladni.init;
+window.onload = chladni.initPage;

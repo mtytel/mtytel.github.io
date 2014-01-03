@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'myriad-pro-light';
+  src: url(../fnt/MyriadPro-Light.otf);
+}
+
+body,
+button {
+  background-color: #111;
+  color: #aaa;
+  font-family: 'myriad-pro-light', helvetica, sans;
+  font-size: 100%;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.column {
+  display: inline-block;
+  margin: 0 20px;
+  float: left;
+}
+
+.controls.column {
+  padding: 10px;
+  background-color: rgb(25, 25, 25);
+  border-color: rgb(60, 60, 60);
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+.slider-container {
+  width: 100px;
+  display: inline-block;
+  float: left;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-right: 1px solid rgb(50, 50, 50);
+}
+.slider-container:last-child {
+  border-right: none;
+}
+
+.simple-button {
+  padding: 5px 0;
+  background-color: rgb(150, 50, 50);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 0;
+  margin: 0;
+  color: #ddd;
+  display: block;
+  font-size: 100%;
+  height: 27px;
+}
+
+.simple-button:hover {
+  background-color: rgb(160, 60, 60);
+}
+
+.simple-button:active {
+  background-color: rgb(140, 40, 40);
+}
+
+.normal {
+  width: 100%;
+}
+
+.toggle {
+  width: 49%;
+  margin-right:2%;
+  display:inline;
+  float:left;
+}
+
+.toggle.pressed {
+  background-color: rgb(80, 30, 30);
+  color: #aaa;
+}
+
+.toggle:last-child {
+  margin-right:0;
+}
