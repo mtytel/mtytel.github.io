@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+  <title>Leftover Bits EP</title>
+  <image>/static/music/albumcover.jpg</image>
+  <trackList>
+    <track>
+      <title>Horse Fang</title>
+      <location>/static/music/01 Horse Fang.mp3</location>
+      <image>/static/music/albumcover.jpg</image>
+    </track>
+    <track>
+      <title>Septic</title>
+      <location>/static/music/03 Septic.mp3</location>
+      <image>/static/music/albumcover.jpg</image>
+    </track>
+    <track>
+      <title>Medusa on the Spliff</title>
+      <location>/static/music/05 Medusa on the Spliff.mp3</location>
+      <image>/static/music/albumcover.jpg</image>
+    </track>
+    <track>
+      <title>Ostinot</title>
+      <location>/static/music/06 Ostinot.mp3</location>
+      <image>/static/music/albumcover.jpg</image>
+    </track>
+    <track>
+      <title>Boops</title>
+      <location>/static/music/07 Boops.mp3</location>
+      <image>/static/music/albumcover.jpg</image>
+    </track>
+  </trackList>
+</playlist>

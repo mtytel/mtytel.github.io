@@ -1,0 +1,189 @@
+
+body {
+  padding:0;
+  margin:0 auto;
+  background-color:#111;
+  color:white;
+  font-family:helvetica, arial, sans-serif;
+  font-size:12px;
+  font-style:bold;
+}
+
+#echollage {
+  background-image:url(/static/images/echollage/backdrop.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color:black;
+  height:800px;
+  width:1200px;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+#grid ul {
+  list-style:none;
+  display:-webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack:justify;
+  padding:0px;
+  margin:0px;
+}
+
+#grid li {
+  -webkit-box-flex:1;
+  width:200px;
+  height:200px;
+  margin:0;
+  padding:0;
+  position:relative;
+  display:block;
+  float:left;
+}
+
+#grid img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:200px;
+  height:200px;
+  padding:0;
+  margin:auto;
+}
+
+#grid div.overlay {
+  z-index:2;
+  visibility:hidden;
+  position:absolute;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+#grid li:hover div.overlay {
+  visibility:visible;
+}
+
+#grid div.play {
+  z-index:3;
+  filter:alpha(opacity=30);
+  -moz-opacity:0.3;
+  -khtml-opacity: 0.3;
+  opacity: 0.3;
+}
+
+#grid div.play:hover {
+  filter:alpha(opacity=60);
+  -moz-opacity:0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+}
+
+#grid div.play {
+  background-repeat:no-repeat;
+  background-position:center;
+  background-image:url(/static/images/echollage/play.png);
+  left:20px;
+  bottom:10px;
+  height:50px;
+  width:160px;
+}
+
+#grid div.play.playing {
+  background-image:url(/static/images/echollage/pause.png);
+}
+
+#grid div.border {
+  z-index:1;
+  display:none;
+  position:absolute;
+  background-repeat:no-repeat;
+  background-image:url(/static/images/echollage/black_border.png);
+  left:-50px;
+  top:-50px;
+  width:300px;
+  height:300px;
+  filter:alpha(opacity=90);
+  -moz-opacity:0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+}
+
+#artist_entry {
+  position:absolute;
+  z-index:4;
+  margin-left:400px;
+  margin-top:100px;
+  font-size:20px;
+  color: #A1A5BA;
+}
+
+#artist_entry p.status {
+  z-index:7;
+  position:absolute;
+  bottom:5px;
+  right:40px;
+  color:#888;
+  font-size:12px;
+}
+
+#artist_spinner {
+  z-index:7;
+  position:absolute;
+  display:none;
+  top:7px;
+  right:5px;
+  width:30px;
+  height:30px;
+  background-position:center;
+  background-image:url(/static/images/echollage/spinner.gif);
+}
+
+#echollage input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color:#111;
+  border-color:white;
+  color:white;
+  height:35px;
+  width:530px;
+  padding-left:5px;
+  font-size:20px;
+}
+
+#artist_name {
+  z-index:6;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+#echollage input.empty {
+  opacity:0.7;
+}
+
+#artist_default {
+  border-color: #7CF !important;
+  z-index:5;
+}
+
+#echollage input:focus {
+  outline: none;
+  border-color: #7CF;
+}
+
+#grid div.track-info {
+  background-color:black;
+  width:200px;
+  height:200px;
+  left:0%;
+  top:0%;
+}
+
+#echollage p {
+  margin:0;
+  padding-left:5px;
+  padding-top:5px;
+  padding-bottom:0px;
+}
