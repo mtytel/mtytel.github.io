@@ -26,7 +26,7 @@ var chladni = function() {
   var phase_ = 0;
   // Store the width and height so we don't have to access the DOM later.
   var canvas_width_ = 0, canvas_height_ = 0;
-  var chladni_coloring_ = false;
+  var chladni_coloring_ = true;
   var context_ = null;
   var image_ = null;
   var pos_matrix_ = null;
