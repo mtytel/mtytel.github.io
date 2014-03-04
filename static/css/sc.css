@@ -22,18 +22,22 @@ ul {
   padding-left:15px;
 }
 
-a:link, a:visited {
-  color:#000;
+a:link {
+  color:#4af;
   text-decoration:none;
-  font-family:monospace;
   font-family:myriad-pro-light, Helvetica, Arial, sans-serif;
+  font-weight:100;
+}
+
+a:visited {
+  color:#999;
 }
 
 a:hover, a:active {
-  color:#000;
+  color:#4af;
   text-decoration:underline;
-  font-family:monospace;
   font-family:myriad-pro-light, Helvetica, Arial, sans-serif;
+  font-weight:100;
 }
 
 #wrap {
@@ -142,7 +146,3 @@ a:hover, a:active {
   border-bottom:1px solid #eee; height:29px;
 }
 
-#left-nav li a:hover {
-  background-color: #FFF;
-  color:#444; display:block; margin:0px; border-bottom:1px solid #eee;
-}
