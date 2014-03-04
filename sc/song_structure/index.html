@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+   <link rel="stylesheet" href="/static/css/sc.css" type="text/css" id="theme" />
+<title>tytel -
+
+song structure
+
+</title>
+</head>
+<body>
+
+<div id="wrap">
+  <div id="left-sidebar">
+    <div id="left-top">
+      MATT TYTEL
+    </div>
+    <div id="left-nav">
+      <ul>
+        
+          <li>
+        
+          <a href="/sc/introduction"><p>introduction</p></a></li>
+        </li>
+        
+          <li>
+        
+          <a href="/sc/sounds_good"><p>what notes sound good?</p></a>
+        </li>
+        
+          <li>
+        
+          <a href="/sc/scale"><p>scale of small ratios</p></a>
+        </li>
+        
+          <li>
+        
+          <a href="/sc/single_voice"><p>a single voice</p></a>
+        </li>
+        
+          <li>
+        
+          <a href="/sc/give_order"><p>give order to your voice</p></a>
+        </li>
+        
+          <li>
+        
+          <a href="/sc/wall"><p>wall of algorithms</p></a>
+        </li>
+        
+          <li>
+        
+          <a href="/sc/song_structure"><p>song structure</p></a>
+        </li>
+        
+          <li class="last">
+        
+          <a href="/sc/experimentation"><p>experimentation</p></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div id="top-bar">
+      <div id="top-desc">
+        
+        
+      </div>
+    </div>
+    
+<p id="title">
+Adding Song Structure
+</p>
+<p>
+Now that we can generate some interesting sounding measures or motifs, we can combine these to generate a song. We will add in a couple more parameters: a changing measure length, a repeat count for a measure and a changing key similar to what a current chord in a song would be. These will all add to a changing song structure.
+</p>
+<p>
+Currently the pattern library can't handle changing durations within a given pattern very well so for each voice we are going to create a list of patterns, each having their own duration instead of having one voice with changing measure duration. We will also initialize the  key, measure length, and repeat measure count outside of the Pattern libraries we are using.
+</p>
+<p>
+</p>
+<pre id="code">
+(
+  var basefreq = 400, complexity = 6, voices = [], basefreqs, songseed, seeds;
+  basefreqs = [75, 75, 300, 300, 300, 600, 600, 600, 1200, 1200];
+  songseed = 1000000.rand;
+  thisThread.randSeed = songseed;
+  seeds = [];
+  100.do({ seeds = seeds.add(1000000.rand); });
+  i = 0;
+
+  voices = [];
+  basefreqs.do({|freq|
+    var voicemeasures = [];
+    seeds.do({|seed|
+      var measurelength, key, repeats, measure;
+      thisThread.randSeed = seed;
+      k = complexity.rand + 1;
+      key = k / max(1, k + 3.rand - 1);
+      measurelength = 3.rand + 1;
+      repeats = 4.rand + 1;
+
+      measure = Pfindur(measurelength,
+        Pseed(seed + i,
+          Pbind(
+            \numerator, Pwhite(1, complexity),
+            \denominator, Pwhite(1, complexity),
+            \amp, Pwhite(0.05, 0.2),
+            \dur, 1 / (2 ** Pwhite(-1, 3)),
+            \legato, Pwhite(0.01, 0.3),
+            \instrument, \krgn_gen_fmdevil,
+            \index, Pwhite(0, 3),
+            \freq, Pkey(\numerator) / Pkey(\denominator) * freq * key,
+          )
+        )
+      );
+      repeats.do({ voicemeasures = voicemeasures.add(measure);});
+    });
+    voices = voices.add(Pseq(voicemeasures));
+    i = i + 1;
+  });
+
+  songseed.postln;
+  ~players = [];
+  voices.do({|voice|
+    ~players = ~players.add(voice.play);
+  });
+)
+
+(
+  ~players.do({|player|
+    player.stop;
+  });
+  ~players = [];
+)
+
+</pre>
+
+  </div>
+</div>
+
+
+</body>
+</html>

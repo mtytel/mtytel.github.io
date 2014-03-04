@@ -1,8 +1,20 @@
+@font-face {
+    font-family: 'myriad-pro-light';
+    src: url(../fnt/MyriadPro-Light.otf);
+}
+@font-face {
+    font-family: 'myriad-pro-regular';
+    src: url(../fnt/MyriadPro-Regular.otf);
+}
+@font-face {
+    font-family: 'myriad-pro-bold';
+    src: url(../fnt/MyriadPro-Bold.otf);
+}
 
 body {
   text-align:left;
   background-color: #FBFBFB;
-  font-family:'Lucida Grande',Geneva,Helvetica,Arial,sans-serif; */
+  font-family:myriad-pro-light, Helvetica, Arial, sans-serif;
 }
 
 ul {
@@ -14,12 +26,14 @@ a:link, a:visited {
   color:#000;
   text-decoration:none;
   font-family:monospace;
+  font-family:myriad-pro-light, Helvetica, Arial, sans-serif;
 }
 
 a:hover, a:active {
   color:#000;
   text-decoration:underline;
   font-family:monospace;
+  font-family:myriad-pro-light, Helvetica, Arial, sans-serif;
 }
 
 #wrap {
@@ -78,7 +92,7 @@ a:hover, a:active {
 
 #top-desc {
   height:20px;
-  font-size:10px;
+  font-size:14px;
   padding-top:15px;
   color: #AAA;
 }
@@ -86,7 +100,7 @@ a:hover, a:active {
 #left-top {
   margin-top:70px;
   height:40px;
-  font-size:11px;
+  font-size:14px;
   font-weight:900;
 }
 
@@ -97,7 +111,7 @@ a:hover, a:active {
 }
 
 #left-nav ul {
-  font-size:12px;
+  font-size:14px;
   list-style: none;
   margin:0px;
   padding-left:10px;
@@ -105,14 +119,14 @@ a:hover, a:active {
 
 #left-nav li {
   margin:0px;
+  font-size:14px;
   height:29px;
   text-decoration:none;
-  font-family:monospace;
-  font-weight:300;
+  font-family:myriad-pro-light, Helvetica, Arial, sans-serif;
 }
 
 #left-nav li a {
-  color:#888; display:block; /*font-family: "ff-basic-gothic-sc-web-pro-1","ff-basic-gothic-sc-web-pro-2",sans-serif;*/ margin:0px; height:28px; text-decoration: none; font-weight:300; font-size:12px; border-top:1px solid #eee;
+  color:#888; display:block; /*font-family: "ff-basic-gothic-sc-web-pro-1","ff-basic-gothic-sc-web-pro-2",sans-serif;*/ margin:0px; height:28px; text-decoration: none; font-weight:300; font-size:14px; border-top:1px solid #eee;
 }
 
 #left-nav li a p {
