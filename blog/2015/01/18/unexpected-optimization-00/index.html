@@ -84,9 +84,9 @@ two-multiply interpolation:</p>
 <span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds</span>
 <span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="c1">// 2 multiplies and 2 adds</span></code></pre></div>
 
-<p>To uglier solutions like embedding assembly instructions in C++. I’m not a C++
-optimization expert yet, so some of these things may be more obvious than
-others.</p>
+<p>Or could be uglier solutions like embedding assembly instructions in C++.
+I’m not a C++ optimization expert yet, so some of these things may be more
+obvious than others.</p>
 
 <p>This first unexpected optimization concerns accessing values from std::vector.
 Consider these two methods of element access:</p>
@@ -99,8 +99,8 @@ Consider these two methods of element access:</p>
 while operator[] does not. Now why would I use at() instead of operator[] in
 the first place? The way mopo sets up polyphony is that all the module
 instances in each voice share a list of input pointers. So every Filter
-instance has a pointer to a std::vector. Using -&gt;at() on a pointer to
-std::vector is much easier to read than using -&gt;operator[] or dereferencing
+instance has a pointer to a std::vector. Using at() on a pointer to
+std::vector is much easier to read than using operator[] or dereferencing
 first.</p>
 
 <div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">pvect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">();</span>
