@@ -76,6 +76,56 @@
     
       
         <li>
+          <span class="post-meta">Jan 18, 2015</span>
+
+          <h2>
+            <a class="post-link" href="/blog/2015/01/18/unexpected-optimization-00/">Unexpected Optimization #0</a>
+          </h2>
+          <p>Writing a soft synth requires a lot of optimization. As I develop
+<a href="https://github.com/mtytel/twytch">twytch</a> and the synth engine it’s built on, <a href="https://github.com/mtytel/mopo">mopo</a>, I’ll be
+posting many of the optimizations I make, especially nonobvious ones. These
+could range from simple things like using one-multiply instead of
+two-multiply interpolation:</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.</span>
+<span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds</span>
+<span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="c1">// 2 multiplies and 2 adds</span></code></pre></div>
+
+<p>To uglier solutions like embedding assembly instructions in C++. I’m not a C++
+optimization expert yet, so some of these things may be more obvious than
+others.</p>
+
+<p>This first unexpected optimization concerns accessing values from std::vector.
+Consider these two methods of element access:</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">vect</span> <span class="o">=</span> <span class="p">...;</span>
+<span class="kt">double</span> <span class="n">one</span> <span class="o">=</span> <span class="n">vect</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kt">double</span> <span class="n">two</span> <span class="o">=</span> <span class="n">vect</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span></code></pre></div>
+
+<p>There is a significant different between the two: at() does boundary checking
+while operator[] does not. Now why would I use at() instead of operator[] in
+the first place? The way mopo sets up polyphony is that all the module
+instances in each voice share a list of input pointers. So every Filter
+instance has a pointer to a std::vector. Using -&gt;at() on a pointer to
+std::vector is much easier to read than using -&gt;operator[] or dereferencing
+first.</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">pvect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">pvect</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+
+<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.</span>
+<span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1</span>
+<span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="c1">// fast ugly access 2</span></code></pre></div>
+
+<p>Fortunately this is an easy thing to fix, and I got a significant 25% speed
+boost because of it.</p>
+
+
+        </li>
+      
+    
+      
+        <li>
           <span class="post-meta">Jan 17, 2015</span>
 
           <h2>
