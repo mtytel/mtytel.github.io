@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Rose, the Captive's Fate</title>
-  <meta name="description" content="Rose, the captive’s fate.His parent’s iron hand did doom more than a day’s work.To investigate this science,one sees that they see, there, that stain upon a ...">
+  <title>Starting Development on Twytch, an open source synthesizer</title>
+  <meta name="description" content="On the 1st day of 2015, I started development on an open source software synth, Twytch. I’ve decided to keep a devblog after seeing some of the devblog succe...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/poetry/rose/">
+  <link rel="canonical" href="http://tytel.org/blog/2015/01/17/twytch-intro/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
 </head>
 
@@ -69,27 +69,24 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <span class="post-meta">Jan 1, 2013</span>
+        <span class="post-meta">Jan 17, 2015</span>
 
 <h2>
-  Rose, the Captive's Fate
+  Starting Development on Twytch, an open source synthesizer
 </h2>
-<p>Rose, the captive’s fate.<br />
-His parent’s iron hand did doom more than a day’s work.<br />
-To investigate this science,<br />
-one sees that they see, there, that stain upon a brow of pride.  </p>
+<p>On the 1st day of 2015, I started development on an open source software synth, <a href="https://github.com/mtytel/twytch">Twytch</a>. I’ve decided to keep a devblog after seeing some of the devblog successes in the indie game development world such as <a href="http://willychyr.com/blog/">Willy Chyr’s Relativity</a> and <a href="http://fractgame.com/news">Phosfiend Systems’ Fract OSC</a>.</p>
 
-<p>I mocked the things that tease and pull the old cant down,<br />
-they licensed all to speak with mild, yet mournful,<br />
-to consider himself, for this, he shall live.<br />
-While summers and mine unfeigned smart and forceth me such faults to find.<br />
-Thy prophets, i greet the body strait!<br />
-but if that’s not good reason for your viceroy in me, I should defend.  </p>
+<p>The goal of Twytch is a mix of granular and subtractive synthesis that focuses on glitching live and sampled audio input. It currently runs as a VST and Audio Unit and hopefully will run as a stand-alone synthesizer in the future. Some of the technologies I’m using are:</p>
 
-<p>His captived philosophy once dealt to him,<br />
-and not think life provides.<br />
-go down the grasses, nodding just request.<br />
-And by his fatal fire, send me a song of welcome.  </p>
+<ul>
+  <li><a href="http://www.juce.com/">JUCE</a>: for cross platform UI development and VST/AU input and output handling</li>
+  <li><a href="https://github.com/mtytel/mopo">mopo</a>: a modular and polyphonic synthesizer engine I’m working on</li>
+</ul>
+
+<p>I started with the code from a past synthesizer I made called <a href="http://www.gnu.org/software/cursynth/">cursynth</a>. It’s this goofy stand-alone ascii synth that runs inside of a terminal with ascii sliders and graphics. From the past weeks of work I have a functioning Audio Unit synthesizer and the beginnings of many of the UI elements. There’s also very cumbersome patch saving and loading, but it works. I’m now at that point in development where you just throw all the controls on the screen and make an ugly UI soup. Have a look:</p>
+
+<p><img src="/static/images/blog/2015-01-18-screenshot.png" alt="Twytch Screenshot" /></p>
+
 
 
       </div>
