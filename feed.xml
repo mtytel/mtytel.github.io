@@ -6,12 +6,12 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jan 2015 01:54:22 -0500</pubDate>
-    <lastBuildDate>Mon, 19 Jan 2015 01:54:22 -0500</lastBuildDate>
+    <pubDate>Mon, 19 Jan 2015 02:13:57 -0500</pubDate>
+    <lastBuildDate>Mon, 19 Jan 2015 02:13:57 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Unexpected Optimization #0</title>
+        <title>Unexpected Optimization #0: at() vs operator[]</title>
         <description>&lt;p&gt;Writing a soft synth requires a lot of optimization. As I develop
 &lt;a href=&quot;https://github.com/mtytel/twytch&quot;&gt;twytch&lt;/a&gt; and the synth engine it’s built on, &lt;a href=&quot;https://github.com/mtytel/mopo&quot;&gt;mopo&lt;/a&gt;, I’ll be
 posting many of the optimizations I make, especially nonobvious ones. These
