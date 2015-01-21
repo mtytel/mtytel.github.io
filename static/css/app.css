@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+}
+@font-face {
+    font-family: 'myriad-pro-light';
+    src: url(../fnt/MyriadPro-Light.otf);
+}
+body {
+    margin: 0;
+    font-family: 'myriad-pro-light', trebuchet ms, helvetica, sans;
+    background: rgb(235, 230, 225);
+}
+#my-container {
+    background: rgb(235, 230, 225);
+    height: 100%;
+    width: 1100px;
+}
+#sidepanel,
+#bigpanel {
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+#sidepanel {
+    background: rgb(60, 60, 50);
+    width: 220px;
+}
+#bigpanel-inner {
+    padding-left: 2em;
+}
+#content {
+    padding-top: 15px;
+}
+#logo {
+    margin-top:20px;
+}
+#octopus {
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: inherit;
+}
+.tabs a.tab {
+    display: inline-block;
+    float: left;
+    padding: .5em 0;
+    background: rgb(255, 255, 252);
+    margin-right: 10px;
+    width: 182px;
+    text-align: center;
+    text-decoration: none;
+}
+.tabs a.tab.active {
+    padding-top: 1.2em;
+}
+.tabs a.tab:hover {
+    background: rgb(255, 255, 255);
+}
+
+.clear {
+    clear: both;
+}

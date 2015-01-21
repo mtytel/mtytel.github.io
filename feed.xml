@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matt Tytel</title>
+    <description>Matt Tytel - personal website
+</description>
+    <link>http://tytel.org/</link>
+    <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 21 Jan 2015 12:31:11 -0500</pubDate>
+    <lastBuildDate>Wed, 21 Jan 2015 12:31:11 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Unexpected Optimization #0: at() vs operator[]</title>
+        <description>&lt;p&gt;Writing a soft synth requires a lot of optimization. As I develop
+&lt;a href=&quot;https://github.com/mtytel/twytch&quot;&gt;twytch&lt;/a&gt; and the synth engine it’s built on, &lt;a href=&quot;https://github.com/mtytel/mopo&quot;&gt;mopo&lt;/a&gt;, I’ll be
+posting many of the optimizations I make, especially nonobvious ones. These
+could range from simple things like using one-multiply instead of
+two-multiply interpolation:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// These lines compute the same value.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one_multiply&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 1 multiply and 2 adds&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;two_multiply&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 2 multiplies and 2 adds&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Or could be uglier solutions like embedding assembly instructions in C++.
+I’m not a C++ optimization expert yet, so some of these things may be more
+obvious than others.&lt;/p&gt;
+
+&lt;p&gt;This first unexpected optimization concerns accessing values from std::vector.
+Consider these two methods of element access:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;two&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;There is a significant difference between the two: at() does boundary checking
+while operator[] does not. You don’t normally notice this performance
+difference, but I was running it once per audio sample for every single
+component which totaled in the millions per second.&lt;/p&gt;
+
+&lt;p&gt;Now why would I use at() instead of operator[] in
+the first place? The way mopo sets up polyphony is that all the module
+instances in each voice share a list of input pointers. For example, every
+Filter instance in each poice has a pointer to the same std::vector. Using at()
+on a pointer to std::vector is much easier to read than using operator[] or
+dereferencing first so I first chose the slower but prettier method.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pvect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pvect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pvect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;// easy to read but slow.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pvect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[](&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// fast ugly access 1&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fast2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pvect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;// fast ugly access 2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Fortunately switching from at() to operator[] an easy thing to fix, and I got a
+significant 25% speed boost because of it.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 19 Jan 2015 07:30:00 -0500</pubDate>
+        <link>http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>devblog</category>
+        
+        <category>twytch</category>
+        
+        <category>optimization</category>
+        
+      </item>
+    
+      <item>
+        <title>Starting Development on Twytch, an open source synthesizer</title>
+        <description>&lt;p&gt;On the 1st day of 2015, I started development on an open source software synth, &lt;a href=&quot;https://github.com/mtytel/twytch&quot;&gt;Twytch&lt;/a&gt;. I’ve decided to keep a devblog after seeing some of the devblog successes in the indie game development world such as &lt;a href=&quot;http://willychyr.com/blog/&quot;&gt;Willy Chyr’s Relativity&lt;/a&gt; and &lt;a href=&quot;http://fractgame.com/news&quot;&gt;Phosfiend Systems’ Fract OSC&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The goal of Twytch is a mix of granular and subtractive synthesis that focuses on glitching live and sampled audio input. It currently runs as a VST and Audio Unit and hopefully will run as a stand-alone synthesizer in the future. Some of the technologies I’m using are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.juce.com/&quot;&gt;JUCE&lt;/a&gt;: for cross platform UI development and VST/AU input and output handling&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mtytel/mopo&quot;&gt;mopo&lt;/a&gt;: a modular and polyphonic synthesizer engine I’m working on&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I started with the code from a past synthesizer I made called &lt;a href=&quot;http://www.gnu.org/software/cursynth/&quot;&gt;cursynth&lt;/a&gt;. It’s this goofy stand-alone ascii synth that runs inside of a terminal with ascii sliders and graphics. From the past weeks of work I have a functioning Audio Unit synthesizer and the beginnings of many of the UI elements. There’s also very cumbersome patch saving and loading, but it works. I’m now at that point in development where you just throw all the controls on the screen and make an ugly UI soup. Have a look:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-01-18-screenshot.png&quot; alt=&quot;Twytch Screenshot&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 17 Jan 2015 23:59:06 -0500</pubDate>
+        <link>http://tytel.org/blog/2015/01/17/twytch-intro/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2015/01/17/twytch-intro/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>devblog</category>
+        
+        <category>twytch</category>
+        
+      </item>
+    
+      <item>
+        <title>Stray Bolts</title>
+        <description>&lt;p&gt;Not born for courts and chains&lt;br /&gt;
+and pendulums swinging up and down,&lt;br /&gt;
+through granada’s royal town.&lt;br /&gt;
+We softly, slowly dance,&lt;br /&gt;
+listening for murmured murmurs.  &lt;/p&gt;
+
+&lt;p&gt;Our vanity endows us&lt;br /&gt;
+though neither foe nor friend allow us,&lt;br /&gt;
+to hear the force of that murderous deed,&lt;br /&gt;
+that made love bleed.  &lt;/p&gt;
+
+&lt;p&gt;To know sometimes we run to madness,&lt;br /&gt;
+in thoughtless throngs and empty noise.&lt;br /&gt;
+Shall truth with fiction, our world of bloom&lt;br /&gt;
+preserve what it first creates?  &lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Jan 2013 00:00:00 -0500</pubDate>
+        <link>http://tytel.org/poetry/stray-bolts/</link>
+        <guid isPermaLink="true">http://tytel.org/poetry/stray-bolts/</guid>
+        
+        
+        <category>poems</category>
+        
+      </item>
+    
+      <item>
+        <title>Set Fire to the Mind</title>
+        <description>&lt;p&gt;From earth’s own elements the race at first rose into life.&lt;br /&gt;
+The mother of a hundred pins of light,&lt;br /&gt;
+holds the rending sound and tints the sky to her lullaby.&lt;br /&gt;
+The breath of her lover, still in the hush of worlds.  &lt;/p&gt;
+
+&lt;p&gt;And when the flowers are gone, we are the seeds,&lt;br /&gt;
+drowned in dew, weary of the game.&lt;br /&gt;
+For us alone are wrapt and mystic,&lt;br /&gt;
+daughters to a noble mind, resonance of harmonious sound&lt;br /&gt;
+wandering upon the earth.  &lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 05 Jan 2013 00:00:00 -0500</pubDate>
+        <link>http://tytel.org/poetry/set-fire/</link>
+        <guid isPermaLink="true">http://tytel.org/poetry/set-fire/</guid>
+        
+        
+        <category>poems</category>
+        
+      </item>
+    
+      <item>
+        <title>Age</title>
+        <description>&lt;p&gt;Healing hands cover both my eyes&lt;br /&gt;
+and old women are somewhere talking.&lt;br /&gt;
+They never hoped for riper age,&lt;br /&gt;
+but they thought they heard it knocking  &lt;/p&gt;
+
+&lt;p&gt;Don’t blame me for my hope,&lt;br /&gt;
+my love’s more large than knowledge.&lt;br /&gt;
+I hear the merry mockeries of others,&lt;br /&gt;
+it’s too late for me,&lt;br /&gt;
+I am not dead.  &lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Jan 2013 00:00:00 -0500</pubDate>
+        <link>http://tytel.org/poetry/age/</link>
+        <guid isPermaLink="true">http://tytel.org/poetry/age/</guid>
+        
+        
+        <category>poems</category>
+        
+      </item>
+    
+      <item>
+        <title>Twilight</title>
+        <description>&lt;p&gt;If none regard heaven’s wake with all her stars&lt;br /&gt;
+then leave the skies awkward briskness&lt;br /&gt;
+watch your shadow wrap around you&lt;br /&gt;
+and force your curving spine&lt;br /&gt;
+to forget and love&lt;br /&gt;
+some pale star&lt;br /&gt;
+of twilight  &lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Jan 2013 00:00:00 -0500</pubDate>
+        <link>http://tytel.org/poetry/twilight/</link>
+        <guid isPermaLink="true">http://tytel.org/poetry/twilight/</guid>
+        
+        
+        <category>poems</category>
+        
+      </item>
+    
+      <item>
+        <title>Eyes and Slumber</title>
+        <description>&lt;p&gt;Eyes and slumber which full high advanced,&lt;br /&gt;
+shone like a star secret plot of fate they open’d, which was seal’d.&lt;br /&gt;
+When? to thee i give,&lt;br /&gt;
+and since you will not like those hounds of hell,&lt;br /&gt;
+scour this my foes alone.&lt;br /&gt;
+Slaughter pen with which he heard a sound,&lt;br /&gt;
+like a mountain on its breast.  &lt;/p&gt;
+
+&lt;p&gt;What recks it if fair alexis from these hill slopes,&lt;br /&gt;
+should away even the glasses of thy bitter pain.&lt;br /&gt;
+The cross of england alike are sent to win!  &lt;/p&gt;
+
+&lt;p&gt;Ah, sweet indeed to rest,&lt;br /&gt;
+or flies inhabitants of sea waves scattered far and wide,&lt;br /&gt;
+as night gleamed as the prying gull.&lt;br /&gt;
+Thine ear some shore where life in fold, on fold,&lt;br /&gt;
+and life go blindworm stretched out.  &lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 02 Jan 2013 00:00:00 -0500</pubDate>
+        <link>http://tytel.org/poetry/eyes/</link>
+        <guid isPermaLink="true">http://tytel.org/poetry/eyes/</guid>
+        
+        
+        <category>poems</category>
+        
+      </item>
+    
+      <item>
+        <title>Rose, the Captive&#39;s Fate</title>
+        <description>&lt;p&gt;Rose, the captive’s fate.&lt;br /&gt;
+His parent’s iron hand did doom more than a day’s work.&lt;br /&gt;
+To investigate this science,&lt;br /&gt;
+one sees that they see, there, that stain upon a brow of pride.  &lt;/p&gt;
+
+&lt;p&gt;I mocked the things that tease and pull the old cant down,&lt;br /&gt;
+they licensed all to speak with mild, yet mournful,&lt;br /&gt;
+to consider himself, for this, he shall live.&lt;br /&gt;
+While summers and mine unfeigned smart and forceth me such faults to find.&lt;br /&gt;
+Thy prophets, i greet the body strait!&lt;br /&gt;
+but if that’s not good reason for your viceroy in me, I should defend.  &lt;/p&gt;
+
+&lt;p&gt;His captived philosophy once dealt to him,&lt;br /&gt;
+and not think life provides.&lt;br /&gt;
+go down the grasses, nodding just request.&lt;br /&gt;
+And by his fatal fire, send me a song of welcome.  &lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jan 2013 00:00:00 -0500</pubDate>
+        <link>http://tytel.org/poetry/rose/</link>
+        <guid isPermaLink="true">http://tytel.org/poetry/rose/</guid>
+        
+        
+        <category>poems</category>
+        
+      </item>
+    
+  </channel>
+</rss>
