@@ -6,8 +6,8 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jan 2015 14:04:56 -0500</pubDate>
-    <lastBuildDate>Mon, 19 Jan 2015 14:04:56 -0500</lastBuildDate>
+    <pubDate>Wed, 21 Jan 2015 12:28:16 -0500</pubDate>
+    <lastBuildDate>Wed, 21 Jan 2015 12:28:16 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -34,7 +34,11 @@ Consider these two methods of element access:&lt;/p&gt;
 &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;two&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;There is a significant difference between the two: at() does boundary checking
-while operator[] does not. Now why would I use at() instead of operator[] in
+while operator[] does not. You don’t normally notice this performance
+difference, but I was running it once per audio sample for every single
+component which totaled in the millions per second.&lt;/p&gt;
+
+&lt;p&gt;Now why would I use at() instead of operator[] in
 the first place? The way mopo sets up polyphony is that all the module
 instances in each voice share a list of input pointers. For example, every
 Filter instance in each poice has a pointer to the same std::vector. Using at()
@@ -52,9 +56,9 @@ dereferencing first so I first chose the slower but prettier method.&lt;/p&gt;
 significant 25% speed boost because of it.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 18 Jan 2015 19:30:00 -0500</pubDate>
-        <link>http://tytel.org/blog/2015/01/18/unexpected-optimization-00/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/01/18/unexpected-optimization-00/</guid>
+        <pubDate>Mon, 19 Jan 2015 07:30:00 -0500</pubDate>
+        <link>http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</guid>
         
         
         <category>blog</category>
