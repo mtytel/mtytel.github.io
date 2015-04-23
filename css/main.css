@@ -292,14 +292,17 @@ pre {
  * Browse Cells
  */
 .browse {
-  font-size: 14px; }
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .browse .video-cell {
   width: 360px;
   padding-top: 5px;
   padding-left: 5px;
   padding-bottom: 10px;
-  margin-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
   height: 250px;
   float: left;
   position: relative; }
@@ -308,7 +311,6 @@ pre {
   position: relative;
   width: 100%;
   height: 100%;
-  display: block;
   background: linear-gradient(transparent, transparent, transparent, rgba(0, 0, 0, 0.3));
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
   -webkit-transition: all 0.1s;
@@ -322,14 +324,14 @@ pre {
   opacity: 1; }
 
 .browse .browse-section {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 12px;
+  float: none;
+  vertical-align: top;
   width: 180px;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-bottom: 10px;
-  margin-right: 5px;
-  height: 180px;
-  display: block;
-  float: left; }
+  height: 180px; }
 
 .browse .browse-section h2 {
   padding-top: 80%;
@@ -343,10 +345,8 @@ pre {
   color: #fff; }
 
 .browse img {
-  float: left;
   display: block;
   position: absolute;
-  margin-right: 5px;
   width: 180px;
   height: 180px;
   box-shadow: 0px 1px 3px #333; }
