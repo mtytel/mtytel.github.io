@@ -112,7 +112,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .wrapper {
       max-width: -webkit-calc(820px - (30px));
       max-width: calc(820px - (30px));
@@ -268,7 +268,7 @@ pre {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .post-title {
       font-size: 36px; } }
 
@@ -276,17 +276,17 @@ pre {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 820px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 820px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 820px) {
       .post-content h4 {
         font-size: 18px; } }
 
@@ -316,6 +316,9 @@ pre {
   transition: all 0.1s ease;
   -webkit-transition: all 0.5s;
   opacity: 0; }
+  @media screen and (max-width: 600px) {
+    .browse .details {
+      opacity: 0.7; } }
 
 .browse .details:hover {
   opacity: 1; }
@@ -329,10 +332,6 @@ pre {
   height: 180px;
   display: block;
   float: left; }
-  @media screen and (max-width: 600px) {
-    .browse .browse-section {
-      width: 300px;
-      font-size: 12px; } }
 
 .browse .browse-section h2 {
   padding-top: 80%;
