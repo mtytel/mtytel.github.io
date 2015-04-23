@@ -63,10 +63,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #baf;
+  color: #FF9100;
   text-decoration: none; }
   a:visited {
-    color: #d8ceff; }
+    color: #ffa024; }
   a:hover {
     text-decoration: underline; }
 
@@ -142,9 +142,9 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 16px solid #eee;
-  border-bottom: 10px solid #eee;
   min-height: 64px;
+  background-color: #673AB7;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
   position: relative; }
 
 .site-title {
@@ -152,9 +152,8 @@ pre {
   line-height: 64px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left; }
-  .site-title, .site-title:visited {
-    color: #424242; }
+  float: left;
+  color: #fff !important; }
 
 .site-nav {
   float: right;
@@ -163,7 +162,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #fff !important;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -173,9 +172,8 @@ pre {
       top: 9px;
       right: 30px;
       background-color: #fdfdfd;
-      border: 4px solid #eee;
-      border-radius: 5px;
-      text-align: right; }
+      text-align: right;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); }
       .site-nav .menu-icon {
         display: block;
         float: right;
@@ -203,7 +201,7 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 4px solid #eee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   padding: 30px 0; }
 
 .footer-heading {
