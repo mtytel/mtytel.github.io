@@ -6,9 +6,58 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Apr 2015 04:02:23 -0700</pubDate>
-    <lastBuildDate>Thu, 23 Apr 2015 04:02:23 -0700</lastBuildDate>
+    <pubDate>Thu, 23 Apr 2015 17:00:22 -0700</pubDate>
+    <lastBuildDate>Thu, 23 Apr 2015 17:00:22 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Long Update</title>
+        <description>&lt;p&gt;Whew, it’s been a while and a lot has changed! I’ve decided to make Twytch
+a free and open source project releasing it under GNU. My new goal is to
+make a very accessible free synth that runs on most platforms. Because of this
+I’ve cut back a lot of the more experimental features like glitches in place
+of more established ones like unison and a good modulation system.&lt;/p&gt;
+
+&lt;p&gt;The new modulation system is heavily inspired by Bitwig Studio though I don’t
+think they were the original creators of this type of system. I’ll talk more
+about how it works in a different post.&lt;/p&gt;
+
+&lt;p&gt;I’ve made a bunch of changes to the UI and there’s a lot more coming! I find
+going back through the iterations entertaining so I’m posting them all here.
+The most recent changes are inspired by &lt;a href=&quot;http://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt;
+which has heavy shadow usage. I used to think drop shadows were pretty
+outdated, but when combined with a flat UI, it looks really fresh.&lt;/p&gt;
+
+&lt;p&gt;Here are the UI screenshots in reverse chronological order:&lt;/p&gt;
+
+&lt;h3 id=&quot;material-design-attempt-1-and-new-colors&quot;&gt;&lt;strong&gt;Material design attempt 1 and new colors:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-04-23-screenshot.png&quot; alt=&quot;Twytch Screenshot 4-23&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;no-more-borders&quot;&gt;&lt;strong&gt;No more borders:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-04-14-screenshot.png&quot; alt=&quot;Twytch Screenshot 4-14&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;trying-out-some-new-colors&quot;&gt;&lt;strong&gt;Trying out some new colors:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-04-01-screenshot.png&quot; alt=&quot;Twytch Screenshot 4-01&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;im-not-sure-if-i-want-this-entire-synth-to-be-purple&quot;&gt;&lt;strong&gt;I’m not sure if I want this entire synth to be purple:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-03-20-screenshot.png&quot; alt=&quot;Twytch Screenshot 3-20&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;prototyping-widgits&quot;&gt;&lt;strong&gt;Prototyping widgits:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-01-18-screenshot.png&quot; alt=&quot;Twytch Screenshot 1-18&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 Apr 2015 05:30:00 -0700</pubDate>
+        <link>http://tytel.org/blog/2015/04/23/long-update/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2015/04/23/long-update/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>devblog</category>
+        
+        <category>twytch</category>
+        
+      </item>
     
       <item>
         <title>Unexpected Optimization #0: at() vs operator[]</title>
