@@ -97,11 +97,12 @@
           <h2>
             <a class="post-link" href="/blog/2015/04/23/long-update/">Long Update</a>
           </h2>
-          <p>Whew, it’s been a while and a lot has changed! I’ve decided to make Twytch
-a free and open source project releasing it under GNU. My new goal is to
-make a very accessible free synth that runs on most platforms. Because of this
-I’ve cut back a lot of the more experimental features like glitches in place
-of more established ones like unison and a good modulation system.</p>
+          <p>Whew, it’s been a while and a lot has changed! I’ve decided to make
+<a href="https://github.com/mtytel/twytch">Twytch</a> a free and open source project releasing it under GNU. My new
+goal is to make a very accessible free synth that runs on most platforms.
+Because of this I’ve cut back a lot of the more experimental features like
+glitches in place of more established ones like unison and a powerful
+modulation system.</p>
 
 <p>The new modulation system is heavily inspired by Bitwig Studio though I don’t
 think they were the original creators of this type of system. I’ll talk more
@@ -115,7 +116,7 @@ outdated, but when combined with a flat UI, it looks really fresh.</p>
 
 <p>Here are the UI screenshots in reverse chronological order:</p>
 
-<h3 id="material-design-attempt-1-and-new-colors"><strong>Material design attempt 1 and new colors:</strong></h3>
+<h3 id="material-design-attempt-1-and-new-colors-look-at-dem-shadows"><strong>Material design attempt 1 and new colors. Look at dem shadows:</strong></h3>
 <p><img src="/static/images/blog/2015-04-23-screenshot.png" alt="Twytch Screenshot 4-23" /></p>
 
 <h3 id="no-more-borders"><strong>No more borders:</strong></h3>
@@ -129,6 +130,44 @@ outdated, but when combined with a flat UI, it looks really fresh.</p>
 
 <h3 id="prototyping-widgits"><strong>Prototyping widgits:</strong></h3>
 <p><img src="/static/images/blog/2015-01-18-screenshot.png" alt="Twytch Screenshot 1-18" /></p>
+
+
+        </li>
+      
+    
+      
+        <li>
+          <span class="post-meta">Feb 10, 2015</span>
+
+          <h2>
+            <a class="post-link" href="/blog/2015/02/10/unexpected-optimization-01/">Unexpected Optimization #1: avoiding denormals</a>
+          </h2>
+          <p>I’ve been noticing a strange spike in CPU usage while playing
+with <a href="https://github.com/mtytel/twytch">Twytch</a>. When a synth voice rings out and is not producing sound
+anymore, it is killed and reused later to save CPU cycles. However, there’s
+a significant increase in CPU cycles right before a voice dies. For a while
+this was a mystery, but I was recently reading <a href="https://github.com/vinniefalco/DSPFilters">some filter code in another
+project</a> that added a very small alternating current to the input
+of the filter. In the comment it said “Hack to prevent denormals”.</p>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Denormal_number">denormal</a> is a type of really small floating point number.
+Wikipedia give a better explanation, but in short the structure of floating
+point numbers cause the gap from 0 to the smallest positive number to be much
+larger than the gap between the two smallest positive numbers. Architectures
+compensate for this by setting aside some numbers that are more evenly spaced
+really close to zero called “denormal numbers” or “subnormal numbers”. The
+problem with this in synth development, is that processing subnormal numbers
+is much slower than normal floating point numbers. Since we create really
+small numbers any time there’s an exponential decay like in an envelope or a
+filter, we need to disable denormals.</p>
+
+<p>The alternative to having denormals is flushing those numbers to zero. All
+we have to do is slap an environment variable setting and we should be good to
+go! (on some machines)</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;fenv.h&gt;</span>
+<span class="c1">// ...</span>
+<span class="n">fesetenv</span><span class="p">(</span><span class="n">FE_DFL_DISABLE_SSE_DENORMS_ENV</span><span class="p">);</span></code></pre></div>
 
 
         </li>
