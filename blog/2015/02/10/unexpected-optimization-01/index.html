@@ -93,7 +93,7 @@
 <p>I’ve been noticing a strange spike in CPU usage while playing
 with <a href="https://github.com/mtytel/twytch">Twytch</a>. When a synth voice rings out and is not producing sound
 anymore, it is killed and reused later to save CPU cycles. However, there’s
-a significant increase in CPU cycles right before a voice dies. For a while
+a significant increase in CPU usage right before a voice dies. For a while
 this was a mystery, but I was recently reading <a href="https://github.com/vinniefalco/DSPFilters">some filter code in another
 project</a> that added a very small alternating current to the input
 of the filter. In the comment it said “Hack to prevent denormals”.</p>
@@ -109,9 +109,10 @@ is much slower than normal floating point numbers. Since we create really
 small numbers any time there’s an exponential decay like in an envelope or a
 filter, we need to disable denormals.</p>
 
-<p>The alternative to having denormals is flushing those numbers to zero. All
-we have to do is slap an environment variable setting and we should be good to
-go! (on some machines)</p>
+<p>The alternative to having denormals is flushing those numbers to zero. Since
+these numbers are so small these jumps are imperceptible in an audio signal.
+All we have to do is slap an environment variable setting and we should be good
+to go! (on some machines)</p>
 
 <div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;fenv.h&gt;</span>
 <span class="c1">// ...</span>

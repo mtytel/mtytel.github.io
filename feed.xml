@@ -6,8 +6,8 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 00:49:55 -0700</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 00:49:55 -0700</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2015 00:42:29 -0700</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2015 00:42:29 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -65,7 +65,7 @@ outdated, but when combined with a flat UI, it looks really fresh.&lt;/p&gt;
         <description>&lt;p&gt;I’ve been noticing a strange spike in CPU usage while playing
 with &lt;a href=&quot;https://github.com/mtytel/twytch&quot;&gt;Twytch&lt;/a&gt;. When a synth voice rings out and is not producing sound
 anymore, it is killed and reused later to save CPU cycles. However, there’s
-a significant increase in CPU cycles right before a voice dies. For a while
+a significant increase in CPU usage right before a voice dies. For a while
 this was a mystery, but I was recently reading &lt;a href=&quot;https://github.com/vinniefalco/DSPFilters&quot;&gt;some filter code in another
 project&lt;/a&gt; that added a very small alternating current to the input
 of the filter. In the comment it said “Hack to prevent denormals”.&lt;/p&gt;
@@ -81,9 +81,10 @@ is much slower than normal floating point numbers. Since we create really
 small numbers any time there’s an exponential decay like in an envelope or a
 filter, we need to disable denormals.&lt;/p&gt;
 
-&lt;p&gt;The alternative to having denormals is flushing those numbers to zero. All
-we have to do is slap an environment variable setting and we should be good to
-go! (on some machines)&lt;/p&gt;
+&lt;p&gt;The alternative to having denormals is flushing those numbers to zero. Since
+these numbers are so small these jumps are imperceptible in an audio signal.
+All we have to do is slap an environment variable setting and we should be good
+to go! (on some machines)&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;fenv.h&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
