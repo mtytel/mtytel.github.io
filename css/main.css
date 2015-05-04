@@ -294,8 +294,7 @@ pre {
 .browse {
   font-size: 14px;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px; }
+  margin-right: auto; }
 
 .browse .video-cell {
   width: 360px;
@@ -395,7 +394,9 @@ pre {
  * Page Descriptions
  */
 .description {
-  overflow: visible; }
+  overflow: auto;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .description img {
   margin-right: 5px;
