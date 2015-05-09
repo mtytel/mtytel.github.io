@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>
+      salad
+    </title>
+    <script src="/static/js/jquery-1.9.1.min.js"></script>
+    <script src="/static/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/static/js/sliders.js"></script>
+    <script src="/static/js/chladni.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/sliders.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/chladni.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls column">
+        <div>
+          <button id="reset" class="normal simple-button">
+            Restart Waves
+          </button>
+        </div>
+        <div>
+          <div class="slider-container">
+            Amplitude
+            <div id="amplitude" class="colorful-slider gray">
+              <div class="slider-handle"></div>
+            </div>
+          </div>
+          <div class="slider-container">
+            Frequency
+            <div id="frequency" class="colorful-slider gray">
+              <div class="slider-handle"></div>
+            </div>
+          </div>
+          <div class="slider-container">
+            Damping
+            <div id="damping" class="colorful-slider gray">
+              <div class="slider-handle"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="position" class="toggle simple-button">
+            Position Coloring
+          </button>
+          <button id="stillness" class="toggle simple-button">
+            Stillness Coloring
+          </button>
+        </div>
+      </div>
+      <div class="canvas column">
+        <canvas id="chladni" width="500px" height="500px"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
