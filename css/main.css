@@ -357,7 +357,7 @@ pre {
   color: white;
   font-weight: bold;
   text-align: center;
-  width: 300px;
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;
@@ -377,22 +377,43 @@ pre {
   text-decoration: none !important; }
 
 .downloads {
-  width: 49%;
+  width: 50%;
+  min-width: 320px;
   float: left;
-  margin-top: 15px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+#mc_embed_signup form {
+  padding-left: 0px !important; }
 
 #mc_embed_signup {
-  width: 49%;
-  float: right;
-  margin: 0; }
+  width: 50%;
+  min-width: 320px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 0px;
+  padding-left: 0px !important; }
 
 #mc_embed_signup_scroll h2 {
   font-size: 20px !important;
-  margin-top: 0 !important; }
+  margin-top: 0 !important;
+  margin-left: 0px !important;
+  padding-left: 0px !important; }
 
 /*
  * Page Descriptions
  */
+.big-header {
+  font-size: 24px;
+  color: #D1C4E9; }
+
+.product-name {
+  font-size: 40px !important;
+  display: inline;
+  margin-left: 0px;
+  margin-right: 20px;
+  color: #7986CB; }
+
 .description {
   overflow: auto;
   padding-top: 5px;
