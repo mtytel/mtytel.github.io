@@ -144,9 +144,8 @@ another (albeit small) performance improvement.</p>
 <span class="kt">int</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don&#39;t know what value this is.</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Automatially wraps :D</span>
   <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">phase</span> <span class="o">&gt;=</span> <span class="mf">1.0</span><span class="p">)</span>
-    <span class="n">phase</span> <span class="o">-=</span> <span class="mf">1.0</span><span class="p">;</span>
 
   <span class="c1">// One bit shift is more efficient than a multiply and cast I believe.</span>
   <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">&gt;&gt;</span> <span class="n">shift</span><span class="p">;</span>
