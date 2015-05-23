@@ -149,7 +149,7 @@ another (albeit small) performance improvement.</p>
 
   <span class="c1">// One bit shift is more efficient than a multiply and cast I believe.</span>
   <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">&gt;&gt;</span> <span class="n">shift</span><span class="p">;</span>
-  <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span>
+  <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span></code></pre></div>
 
 <p>After this improvement I’m would say the DSP is at a releasable efficiency.
