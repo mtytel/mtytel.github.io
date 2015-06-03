@@ -6,9 +6,93 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 23 May 2015 12:22:12 -0700</pubDate>
-    <lastBuildDate>Sat, 23 May 2015 12:22:12 -0700</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 11:42:08 -0700</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 11:42:08 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Stickers!</title>
+        <description>&lt;p&gt;I got some stickers printed of the new logo! If you PayPal me $5 at
+&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#109;&amp;#097;&amp;#116;&amp;#116;&amp;#104;&amp;#101;&amp;#119;&amp;#116;&amp;#121;&amp;#116;&amp;#101;&amp;#108;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#109;&amp;#097;&amp;#116;&amp;#116;&amp;#104;&amp;#101;&amp;#119;&amp;#116;&amp;#121;&amp;#116;&amp;#101;&amp;#108;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; and include your
+address I’ll send you one :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/stickers.jpg&quot; alt=&quot;Helm Stickers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the synth is free this is a way of generating some (small) amount of
+monetary support.&lt;/p&gt;
+
+&lt;p&gt;I got these die cut stickers through Sticker Mule. They make super high quality
+vinyl stickers that are water/sun/scratch resistant. They can even go through
+the dishwasher.&lt;/p&gt;
+
+&lt;p&gt;Dimensions are about 3in x 3in.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2015 05:30:00 -0700</pubDate>
+        <link>http://tytel.org/blog/2015/06/01/stickers/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2015/06/01/stickers/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>devblog</category>
+        
+        <category>helm</category>
+        
+      </item>
+    
+      <item>
+        <title>Experiments with Material Design</title>
+        <description>&lt;p&gt;I’ve done a lot of UI changes with &lt;a href=&quot;https://github.com/mtytel/helm&quot;&gt;Helm&lt;/a&gt; lately based off this
+new design idea called &lt;a href=&quot;http://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt;. You should go check
+it out yourself, but the basic idea is you take flat UI design and organize
+it in layers like pieces of paper. The result is a combination of bold colors
+and skeuomorphic shadows.&lt;/p&gt;
+
+&lt;p&gt;The shadows gave me pause, at first it felt like the 90’s again where you slap
+a drop shadow on everything. After looking through Google’s examples and
+applying many of their ideas to Helm, I have to say that I’m now a born-again
+drop shadow believer. They make colors really pop and are a great way to
+emphasize how important certain elements are.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/shadows.png&quot; alt=&quot;Helm Shadows&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/blog/shadows2.png&quot; alt=&quot;Helm Shadows&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Google’s design doc is pretty funny when they mention &lt;em&gt;how&lt;/em&gt; to implement the
+shadows. They say you shouldn’t approximate the shadows with gradients or
+images. Instead they say, render the shadows with a 3d graphics engine. I
+&lt;em&gt;guess&lt;/em&gt; I get it, when you have multiple layers overlapping the gradients won’t
+look right, but I don’t know many people who can hire a team of developers
+to develop a rendering engine just so the shadows look accurate!&lt;/p&gt;
+
+&lt;p&gt;After the shadows, the &lt;a href=&quot;http://www.google.com/design/spec/style/color.html&quot;&gt;color&lt;/a&gt; section has been the most
+help in designing Helm. If you get overwhelmed with all the combinations of
+possible color palettes like I do, then using Google’s method for picking
+colors is a good place to start. They hit a good balance of restricting the
+colors enough so whatever combination you pick should look decent while also
+having enough colors and shades so not every app using this method will look
+the same.&lt;/p&gt;
+
+&lt;p&gt;If you care about design and want some guidelines to follow I highly recommend
+giving the whole &lt;a href=&quot;http://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt; doc a read. They hit on a
+lot of other topics like animation, layout and widgits that all have decent
+insight on what looks good and what doesn’t.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 17 May 2015 05:30:00 -0700</pubDate>
+        <link>http://tytel.org/blog/2015/05/17/material-design/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2015/05/17/material-design/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>devblog</category>
+        
+        <category>helm</category>
+        
+        <category>features</category>
+        
+      </item>
     
       <item>
         <title>Rebranding - Helm</title>
@@ -373,47 +457,6 @@ wandering upon the earth.  &lt;/p&gt;
         <pubDate>Sat, 05 Jan 2013 00:00:00 -0800</pubDate>
         <link>http://tytel.org/poetry/set-fire/</link>
         <guid isPermaLink="true">http://tytel.org/poetry/set-fire/</guid>
-        
-        
-        <category>poems</category>
-        
-      </item>
-    
-      <item>
-        <title>Age</title>
-        <description>&lt;p&gt;Healing hands cover both my eyes&lt;br /&gt;
-and old women are somewhere talking.&lt;br /&gt;
-They never hoped for riper age,&lt;br /&gt;
-but they thought they heard it knocking  &lt;/p&gt;
-
-&lt;p&gt;Don’t blame me for my hope,&lt;br /&gt;
-my love’s more large than knowledge.&lt;br /&gt;
-I hear the merry mockeries of others,&lt;br /&gt;
-it’s too late for me,&lt;br /&gt;
-I am not dead.  &lt;/p&gt;
-</description>
-        <pubDate>Fri, 04 Jan 2013 00:00:00 -0800</pubDate>
-        <link>http://tytel.org/poetry/age/</link>
-        <guid isPermaLink="true">http://tytel.org/poetry/age/</guid>
-        
-        
-        <category>poems</category>
-        
-      </item>
-    
-      <item>
-        <title>Twilight</title>
-        <description>&lt;p&gt;If none regard heaven’s wake with all her stars&lt;br /&gt;
-then leave the skies awkward briskness&lt;br /&gt;
-watch your shadow wrap around you&lt;br /&gt;
-and force your curving spine&lt;br /&gt;
-to forget and love&lt;br /&gt;
-some pale star&lt;br /&gt;
-of twilight  &lt;/p&gt;
-</description>
-        <pubDate>Thu, 03 Jan 2013 00:00:00 -0800</pubDate>
-        <link>http://tytel.org/poetry/twilight/</link>
-        <guid isPermaLink="true">http://tytel.org/poetry/twilight/</guid>
         
         
         <category>poems</category>

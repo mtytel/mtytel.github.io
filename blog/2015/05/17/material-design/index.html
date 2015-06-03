@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Unexpected Optimization #0: at() vs operator[]</title>
-  <meta name="description" content="Writing a soft synth requires a lot of optimization. As I developtwytch and the synth engine it’s built on, mopo, I’ll beposting many of the optimizations I ...">
+  <title>Experiments with Material Design</title>
+  <meta name="description" content="I’ve done a lot of UI changes with Helm lately based off thisnew design idea called Material Design. You should go checkit out yourself, but the basic idea i...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/blog/2015/01/19/unexpected-optimization-00/">
+  <link rel="canonical" href="http://tytel.org/blog/2015/05/17/material-design/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
   <script type="text/javascript">
 
@@ -87,53 +87,46 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <span class="post-meta">Jan 19, 2015</span>
+        <span class="post-meta">May 17, 2015</span>
 
 <h2>
-  Unexpected Optimization #0: at() vs operator[]
+  Experiments with Material Design
 </h2>
-<p>Writing a soft synth requires a lot of optimization. As I develop
-<a href="https://github.com/mtytel/twytch">twytch</a> and the synth engine it’s built on, <a href="https://github.com/mtytel/mopo">mopo</a>, I’ll be
-posting many of the optimizations I make, especially nonobvious ones. These
-could range from simple things like using one-multiply instead of
-two-multiply interpolation:</p>
+<p>I’ve done a lot of UI changes with <a href="https://github.com/mtytel/helm">Helm</a> lately based off this
+new design idea called <a href="http://www.google.com/design/spec/material-design/">Material Design</a>. You should go check
+it out yourself, but the basic idea is you take flat UI design and organize
+it in layers like pieces of paper. The result is a combination of bold colors
+and skeuomorphic shadows.</p>
 
-<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.</span>
-<span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds</span>
-<span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="c1">// 2 multiplies and 2 adds</span></code></pre></div>
+<p>The shadows gave me pause, at first it felt like the 90’s again where you slap
+a drop shadow on everything. After looking through Google’s examples and
+applying many of their ideas to Helm, I have to say that I’m now a born-again
+drop shadow believer. They make colors really pop and are a great way to
+emphasize how important certain elements are.</p>
 
-<p>Or could be uglier solutions like embedding assembly instructions in C++.
-I’m not a C++ optimization expert yet, so some of these things may be more
-obvious than others.</p>
+<p><img src="/static/images/blog/shadows.png" alt="Helm Shadows" /></p>
 
-<p>This first unexpected optimization concerns accessing values from std::vector.
-Consider these two methods of element access:</p>
+<p><img src="/static/images/blog/shadows2.png" alt="Helm Shadows" /></p>
 
-<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">vect</span> <span class="o">=</span> <span class="p">...;</span>
-<span class="kt">double</span> <span class="n">one</span> <span class="o">=</span> <span class="n">vect</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-<span class="kt">double</span> <span class="n">two</span> <span class="o">=</span> <span class="n">vect</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span></code></pre></div>
+<p>Google’s design doc is pretty funny when they mention <em>how</em> to implement the
+shadows. They say you shouldn’t approximate the shadows with gradients or
+images. Instead they say, render the shadows with a 3d graphics engine. I
+<em>guess</em> I get it, when you have multiple layers overlapping the gradients won’t
+look right, but I don’t know many people who can hire a team of developers
+to develop a rendering engine just so the shadows look accurate!</p>
 
-<p>There is a significant difference between the two: at() does boundary checking
-while operator[] does not. You don’t normally notice this performance
-difference, but I was running it once per audio sample for every single
-component which totaled in the millions per second.</p>
+<p>After the shadows, the <a href="http://www.google.com/design/spec/style/color.html">color</a> section has been the most
+help in designing Helm. If you get overwhelmed with all the combinations of
+possible color palettes like I do, then using Google’s method for picking
+colors is a good place to start. They hit a good balance of restricting the
+colors enough so whatever combination you pick should look decent while also
+having enough colors and shades so not every app using this method will look
+the same.</p>
 
-<p>Now why would I use at() instead of operator[] in
-the first place? The way mopo sets up polyphony is that all the module
-instances in each voice share a list of input pointers. For example, every
-Filter instance in each poice has a pointer to the same std::vector. Using at()
-on a pointer to std::vector is much easier to read than using operator[] or
-dereferencing first so I first chose the slower but prettier method.</p>
-
-<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">pvect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="n">pvect</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
-
-<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.</span>
-<span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1</span>
-<span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="c1">// fast ugly access 2</span></code></pre></div>
-
-<p>Fortunately switching from at() to operator[] an easy thing to fix, and I got a
-significant 25% speed boost because of it.</p>
+<p>If you care about design and want some guidelines to follow I highly recommend
+giving the whole <a href="http://www.google.com/design/spec/material-design/">Material Design</a> doc a read. They hit on a
+lot of other topics like animation, layout and widgits that all have decent
+insight on what looks good and what doesn’t.</p>
 
 
 
