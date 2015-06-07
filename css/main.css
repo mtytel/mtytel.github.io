@@ -7,6 +7,9 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+html {
+  overflow-x: hidden; }
+
 ul {
   list-style: none; }
 
@@ -14,6 +17,7 @@ ul {
  * Basic styling
  */
 body {
+  overflow-x: hidden;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -21,6 +25,9 @@ body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
+
+.synth {
+  background-color: #212121 !important; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -95,8 +102,7 @@ code {
   padding: 1px 5px; }
 
 pre {
-  padding: 8px 12px;
-  overflow-x: scroll; }
+  padding: 8px 12px; }
   pre > code {
     border: 0;
     padding-right: 0;
@@ -338,7 +344,7 @@ pre {
   padding-top: 80%;
   text-align: center;
   text-decoration: none;
-  text-shadow: 0px 2px 4px #000;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
   color: #fff; }
 
 .browse .browse-section a:hover {
@@ -351,58 +357,102 @@ pre {
   width: 180px;
   height: 180px;
   border-radius: 5px;
-  box-shadow: 0px 1px 3px #333; }
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7); }
 
 .background-image {
   position: absolute;
   left: 0;
   right: 0;
-  max-width: 1000px;
+  top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
   z-index: -1; }
+
+.helm-logo {
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 0px 0px #000 !important; }
 
 .download-button {
   color: white;
-  font-weight: bold;
+  font-weight: thin;
+  font-size: 32px;
   text-align: center;
   width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #FFAB00;
   border-radius: 5px;
-  box-shadow: 0px 0px 1px #333;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
 .download-button:hover {
   text-decoration: none !important;
-  box-shadow: 0px 1px 2px #666;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
   background-color: #FFC400; }
+
+.synth {
+  background: #303030 url("/static/images/helm_screenshot_blurry.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2196F3; }
 
 .home a {
   text-decoration: none !important; }
 
 .downloads {
-  width: 50%;
+  width: 100%;
   min-width: 320px;
   float: left;
   margin-top: 15px;
   margin-bottom: 15px; }
 
+.sticker-order {
+  margin: 0;
+  width: 370px;
+  padding-left: 20px;
+  padding-top: 5px;
+  float: left; }
+
+.sticker-order p {
+  width: 100%;
+  color: #ddd; }
+
+.synth h2 {
+  color: #2196F3 !important; }
+
+.sticker-description {
+  width: 160px;
+  display: inline;
+  overflow: auto;
+  float: left;
+  font-size: 14px;
+  margin-top: 4px; }
+
+.sticker-order img {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
 #mc_embed_signup form {
-  padding-left: 0px !important; }
+  padding-left: 0px !important;
+  float: left; }
 
 #mc_embed_signup {
-  width: 50%;
-  min-width: 320px;
-  float: left;
-  margin-top: 15px;
-  margin-left: 0px;
+  width: 310px;
+  margin-top: 10px;
+  margin-left: 30px;
   padding-left: 0px !important; }
+
+#mc_embed_signup_scroll {
+  width: 310px;
+  margin-right: 20px; }
 
 #mc_embed_signup_scroll h2 {
   font-size: 20px !important;
@@ -414,15 +464,25 @@ pre {
  * Page Descriptions
  */
 .big-header {
-  font-size: 24px;
-  color: #D1C4E9; }
+  font-size: 30px;
+  font-weight: 100;
+  color: #FFD740;
+  width: 370px;
+  margin-top: 45px;
+  display: inline-block; }
 
+.screenshot-section {
+  margin: 50px -70px; }
+
+@media (max-width: 960px) {
+  .screenshot-section {
+    margin: 30px 0px; } }
 .product-name {
+  font-weight: bold;
   font-size: 40px !important;
   display: inline;
-  margin-left: 0px;
   margin-right: 20px;
-  color: #7986CB; }
+  color: #2196F3; }
 
 .description {
   overflow: auto;
@@ -433,16 +493,41 @@ pre {
   margin-right: 5px;
   margin-left: 10px;
   overflow: visible;
-  box-shadow: 0px 1px 3px #333;
+  box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.7);
   float: right; }
 
 .home img {
-  box-shadow: 0px 1px 3px #333;
+  box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.7);
   overflow: visible;
   border-radius: 5px; }
 
+.division-bar {
+  box-shadow: 0px 0px 5px black;
+  margin: 0 -9999rem;
+  margin-top: 50px;
+  padding: 0.25rem 9999rem;
+  background: #212121;
+  overflow: auto; }
+
+.binary-description {
+  width: 340px;
+  margin: 20px;
+  color: #ddd;
+  font-size: 14px;
+  float: left;
+  display: inline; }
+
+.free-software-description {
+  width: 340px;
+  margin: 20px;
+  color: #ddd;
+  font-size: 14px;
+  float: left;
+  display: inline; }
+
 .full-video {
-  box-shadow: 0px 1px 3px #333;
+  box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.7);
+  border-radius: 5px;
   overflow: visible; }
 
 .full-video {
@@ -450,6 +535,10 @@ pre {
   position: relative;
   width: -webkit-calc(100% - (30px / 2));
   width: calc(100% - (30px / 2)); }
+
+iframe {
+  box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.7);
+  border-radius: 5px; }
 
 .iframe-container {
   margin-top: 56%;
@@ -462,7 +551,8 @@ pre {
   left: 0;
   right: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  border-radius: 5px; }
 
 /**
  * Syntax highlighting styles
