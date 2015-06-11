@@ -4,9 +4,9 @@ $(document).ready(function initDownload() {
     download_link.prop("href", "/static/dist/Helm.pkg");
   else if (navigator.appVersion.indexOf("Win") != -1) {
     if (navigator.appVersion.indexOf("64") != -1)
-      download_link.prop("href", "/static/dist/Twytch32.msi");
+      download_link.prop("href", "/static/dist/Helm_64.msi");
     else
-      download_link.prop("href", "/static/dist/Twytch32.msi");
+      download_link.prop("href", "/static/dist/Helm_32.msi");
   }
   else if (navigator.appVersion.indexOf("X11") != -1 ||
            navigator.appVersion.indexOf("Linux") != -1) {
