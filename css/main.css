@@ -300,7 +300,8 @@ pre {
 .browse {
   font-size: 14px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  text-align: center; }
 
 .browse .video-cell {
   width: 360px;
@@ -504,7 +505,7 @@ pre {
   margin-left: 10px;
   overflow: visible;
   box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.7);
-  display: inline-block; }
+  float: right; }
 
 .home img {
   box-shadow: 0px 0px 3px rgba(33, 33, 33, 0.7);
