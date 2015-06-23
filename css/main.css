@@ -374,15 +374,17 @@ pre {
   box-shadow: 0px 0px 0px #000 !important; }
 
 .download-button {
+  max-width: 95%;
   color: white;
   font-weight: thin;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 10px;
   background-color: #FFAB00;
   border-radius: 5px;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
@@ -476,11 +478,15 @@ pre {
  * Page Descriptions
  */
 .big-header {
+  max-width: 100%;
   font-size: 30px;
   font-weight: 100;
   color: #FFD740;
   width: 370px;
   margin-top: 0px;
+  display: inline-block; }
+
+.catch-phrase {
   display: inline-block; }
 
 .screenshot-section {
