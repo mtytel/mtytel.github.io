@@ -415,8 +415,8 @@ pre {
   margin-bottom: 15px; }
 
 .sticker-order {
+  max-width: 100%;
   width: 370px;
-  padding-left: 20px;
   padding-top: 5px;
   display: inline-block;
   vertical-align: top;
@@ -433,7 +433,7 @@ pre {
   color: #2196F3 !important; }
 
 .sticker-description {
-  width: 160px;
+  width: 45%;
   overflow: auto;
   display: inline-block;
   font-size: 14px;
@@ -442,7 +442,8 @@ pre {
 
 .sticker-order img {
   float: right;
-  margin-right: 20px;
+  width: 50%;
+  margin-right: 5%;
   margin-bottom: 10px; }
 
 #mc_embed_signup form {
@@ -451,6 +452,7 @@ pre {
   text-align: left; }
 
 #mc_embed_signup {
+  max-width: 100%;
   width: 340px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -523,6 +525,7 @@ pre {
   vertical-align: top; }
 
 .binary-description {
+  max-width: 100%;
   max-width: 340px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -535,6 +538,7 @@ pre {
   text-align: left; }
 
 .free-software-description {
+  max-width: 100%;
   width: 340px;
   margin-top: 20px;
   margin-bottom: 20px;
