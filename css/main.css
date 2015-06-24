@@ -168,6 +168,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
+    color: #fff !important;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -199,6 +200,7 @@ pre {
         display: block;
         padding-bottom: 5px; }
       .site-nav .page-link {
+        color: #ffab00 !important;
         display: block;
         padding: 5px 10px; } }
 
