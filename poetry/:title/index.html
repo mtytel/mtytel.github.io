@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Unexpected Optimization #0: at() vs operator[]</title>
-  <meta name="description" content="Writing a soft synth requires a lot of optimization. As I developtwytch and the synth engine it’s built on, mopo, I’ll beposting many of the optimizations I ...">
+  <title>Stray Bolts</title>
+  <meta name="description" content="Not born for courts and chainsand pendulums swinging up and down,through granada’s royal town.We softly, slowly dance,listening for murmured murmurs.  ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/blog/2015/01/19/unexpected-optimization-00/">
+  <link rel="canonical" href="http://tytel.org/poetry/:title/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
   <script type="text/javascript">
 
@@ -57,15 +57,15 @@
           
         
           
+        
+          
+        
+          
           <a class="page-link" href="/blog/">Blog</a>
           
         
           
           <a class="page-link" href="/info/">Info</a>
-          
-        
-          
-        
           
         
           
@@ -85,54 +85,26 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <span class="post-meta">Jan 19, 2015</span>
+        <span class="post-meta">Jan 6, 2013</span>
 
 <h2>
-  Unexpected Optimization #0: at() vs operator[]
+  Stray Bolts
 </h2>
-<p>Writing a soft synth requires a lot of optimization. As I develop
-<a href="https://github.com/mtytel/twytch">twytch</a> and the synth engine it’s built on, <a href="https://github.com/mtytel/mopo">mopo</a>, I’ll be
-posting many of the optimizations I make, especially nonobvious ones. These
-could range from simple things like using one-multiply instead of
-two-multiply interpolation:</p>
+<p>Not born for courts and chains<br />
+and pendulums swinging up and down,<br />
+through granada’s royal town.<br />
+We softly, slowly dance,<br />
+listening for murmured murmurs.  </p>
 
-<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.</span>
-<span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds</span>
-<span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="c1">// 2 multiplies and 2 adds</span></code></pre></div>
+<p>Our vanity endows us<br />
+though neither foe nor friend allow us,<br />
+to hear the force of that murderous deed,<br />
+that made love bleed.  </p>
 
-<p>Or could be uglier solutions like embedding assembly instructions in C++.
-I’m not a C++ optimization expert yet, so some of these things may be more
-obvious than others.</p>
-
-<p>This first unexpected optimization concerns accessing values from std::vector.
-Consider these two methods of element access:</p>
-
-<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">vect</span> <span class="o">=</span> <span class="p">...;</span>
-<span class="kt">double</span> <span class="n">one</span> <span class="o">=</span> <span class="n">vect</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-<span class="kt">double</span> <span class="n">two</span> <span class="o">=</span> <span class="n">vect</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span></code></pre></div>
-
-<p>There is a significant difference between the two: at() does boundary checking
-while operator[] does not. You don’t normally notice this performance
-difference, but I was running it once per audio sample for every single
-component which totaled in the millions per second.</p>
-
-<p>Now why would I use at() instead of operator[] in
-the first place? The way mopo sets up polyphony is that all the module
-instances in each voice share a list of input pointers. For example, every
-Filter instance in each poice has a pointer to the same std::vector. Using at()
-on a pointer to std::vector is much easier to read than using operator[] or
-dereferencing first so I first chose the slower but prettier method.</p>
-
-<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">pvect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="n">pvect</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
-
-<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.</span>
-<span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1</span>
-<span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="c1">// fast ugly access 2</span></code></pre></div>
-
-<p>Fortunately switching from at() to operator[] an easy thing to fix, and I got a
-significant 25% speed boost because of it.</p>
-
+<p>To know sometimes we run to madness,<br />
+in thoughtless throngs and empty noise.<br />
+Shall truth with fiction, our world of bloom<br />
+preserve what it first creates?  </p>
 
 
       </div>
