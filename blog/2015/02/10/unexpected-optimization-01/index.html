@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Matt Tytel</title>
-  <meta name="description" content="Matt Tytel - personal website
-">
+  <title>Unexpected Optimization #1: avoiding denormals</title>
+  <meta name="description" content="I’ve been noticing a strange spike in CPU usage while playingwith Twytch. When a synth voice rings out and is not producing soundanymore, it is killed and re...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/404.html">
+  <link rel="canonical" href="http://tytel.org/blog/2015/02/10/unexpected-optimization-01/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
 </head>
 
@@ -74,111 +73,40 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <span class="post-meta">Feb 10, 2015</span>
 
-  <div class="browse">
-    <div class="browse-section">
-      <a href="/twytch">
-        <img src="/static/images/twytch_tile.png" alt="twytch" />
-      </a>
-      <a href="/twytch">
-        <div class="details">
-          <h2>Twytch</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/playground">
-        <img src="/static/images/playground_tile.png" alt="leap motion" />
-      </a>
-      <a href="/playground">
-        <div class="details">
-          <h2>Playground</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/leapassets">
-        <img src="/static/images/unity_assets_tile.png" alt="leap motion" />
-      </a>
-      <a href="/leapassets">
-        <div class="details">
-          <h2>Leap Unity Assets</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="http://gnu.org/software/cursynth">
-        <img src="/static/images/cursynth_tile.png" alt="curynth" />
-      </a>
-      <a href="http://gnu.org/software/cursynth">
-        <div class="details">
-          <h2>Cursynth</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="https://vimeo.com/75673013">
-        <img src="/static/images/gold_tile.png" alt="Goldwater Dance" />
-      </a>
-      <a href="https://vimeo.com/75673013">
-        <div class="details">
-          <h2>Goldwater Dance</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/lissa">
-        <img src="/static/images/lissa_tile.png" alt="Lissa Juice" />
-      </a>
-      <a href="/lissa">
-        <div class="details">
-          <h2>Lissa Juice</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="http://littleio.co">
-        <img src="/static/images/little_lfo_tile.png" alt="Little IO" />
-      </a>
-      <a href="http://littleio.co">
-        <div class="details">
-          <h2>Little IO</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="https://soundcloud.com/matt-tytel/sets/leftover-bits-ep/">
-        <img src="/static/images/leftoverbits_tile.png" alt="Leftover Bits" />
-      </a>
-      <a href="https://soundcloud.com/matt-tytel/sets/leftover-bits-ep/">
-        <div class="details">
-          <h2>Leftover Bits</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/poetry">
-        <img src="/static/images/poetry_tile.png" alt="Generative Collage Poetry" />
-      </a>
-      <a href="/poetry">
-        <div class="details">
-          <h2>Generative Poetry</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/salad">
-        <img src="/static/images/salad_tile.png" alt="Chladni Resonance" />
-      </a>
-      <a href="/salad">
-        <div class="details">
-          <h2>Chladni Figures</h2>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
+<h2>
+  Unexpected Optimization #1: avoiding denormals
+</h2>
+<p>I’ve been noticing a strange spike in CPU usage while playing
+with <a href="https://github.com/mtytel/twytch">Twytch</a>. When a synth voice rings out and is not producing sound
+anymore, it is killed and reused later to save CPU cycles. However, there’s
+a significant increase in CPU usage right before a voice dies. For a while
+this was a mystery, but I was recently reading <a href="https://github.com/vinniefalco/DSPFilters">some filter code in another
+project</a> that added a very small alternating current to the input
+of the filter. In the comment it said “Hack to prevent denormals”.</p>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Denormal_number">denormal</a> is a type of really small floating point number.
+Wikipedia give a better explanation, but in short the structure of floating
+point numbers cause the gap from 0 to the smallest positive number to be much
+larger than the gap between the two smallest positive numbers. Architectures
+compensate for this by setting aside some numbers that are more evenly spaced
+really close to zero called “denormal numbers” or “subnormal numbers”. The
+problem with this in synth development, is that processing subnormal numbers
+is much slower than normal floating point numbers. Since we create really
+small numbers any time there’s an exponential decay like in an envelope or a
+filter, we need to disable denormals.</p>
+
+<p>The alternative to having denormals is flushing those numbers to zero. Since
+these numbers are so small these jumps are imperceptible in an audio signal.
+All we have to do is slap an environment variable setting and we should be good
+to go! (on some machines)</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;fenv.h&gt;</span>
+<span class="c1">// ...</span>
+<span class="n">fesetenv</span><span class="p">(</span><span class="n">FE_DFL_DISABLE_SSE_DENORMS_ENV</span><span class="p">);</span></code></pre></div>
+
+
 
       </div>
     </div>

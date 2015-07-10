@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Matt Tytel</title>
-  <meta name="description" content="Matt Tytel - personal website
-">
+  <title>Starting Development on Twytch, an open source synthesizer</title>
+  <meta name="description" content="On the 1st day of 2015, I started development on an open source software synth, Twytch. I’ve decided to keep a devblog after seeing some of the devblog succe...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/404.html">
+  <link rel="canonical" href="http://tytel.org/blog/2015/01/17/twytch-intro/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
 </head>
 
@@ -74,111 +73,25 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <span class="post-meta">Jan 17, 2015</span>
 
-  <div class="browse">
-    <div class="browse-section">
-      <a href="/twytch">
-        <img src="/static/images/twytch_tile.png" alt="twytch" />
-      </a>
-      <a href="/twytch">
-        <div class="details">
-          <h2>Twytch</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/playground">
-        <img src="/static/images/playground_tile.png" alt="leap motion" />
-      </a>
-      <a href="/playground">
-        <div class="details">
-          <h2>Playground</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/leapassets">
-        <img src="/static/images/unity_assets_tile.png" alt="leap motion" />
-      </a>
-      <a href="/leapassets">
-        <div class="details">
-          <h2>Leap Unity Assets</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="http://gnu.org/software/cursynth">
-        <img src="/static/images/cursynth_tile.png" alt="curynth" />
-      </a>
-      <a href="http://gnu.org/software/cursynth">
-        <div class="details">
-          <h2>Cursynth</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="https://vimeo.com/75673013">
-        <img src="/static/images/gold_tile.png" alt="Goldwater Dance" />
-      </a>
-      <a href="https://vimeo.com/75673013">
-        <div class="details">
-          <h2>Goldwater Dance</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/lissa">
-        <img src="/static/images/lissa_tile.png" alt="Lissa Juice" />
-      </a>
-      <a href="/lissa">
-        <div class="details">
-          <h2>Lissa Juice</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="http://littleio.co">
-        <img src="/static/images/little_lfo_tile.png" alt="Little IO" />
-      </a>
-      <a href="http://littleio.co">
-        <div class="details">
-          <h2>Little IO</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="https://soundcloud.com/matt-tytel/sets/leftover-bits-ep/">
-        <img src="/static/images/leftoverbits_tile.png" alt="Leftover Bits" />
-      </a>
-      <a href="https://soundcloud.com/matt-tytel/sets/leftover-bits-ep/">
-        <div class="details">
-          <h2>Leftover Bits</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/poetry">
-        <img src="/static/images/poetry_tile.png" alt="Generative Collage Poetry" />
-      </a>
-      <a href="/poetry">
-        <div class="details">
-          <h2>Generative Poetry</h2>
-        </div>
-      </a>
-    </div>
-    <div class="browse-section">
-      <a href="/salad">
-        <img src="/static/images/salad_tile.png" alt="Chladni Resonance" />
-      </a>
-      <a href="/salad">
-        <div class="details">
-          <h2>Chladni Figures</h2>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
+<h2>
+  Starting Development on Twytch, an open source synthesizer
+</h2>
+<p>On the 1st day of 2015, I started development on an open source software synth, <a href="https://github.com/mtytel/twytch">Twytch</a>. I’ve decided to keep a devblog after seeing some of the devblog successes in the indie game development world such as <a href="http://willychyr.com/blog/">Willy Chyr’s Relativity</a> and <a href="http://fractgame.com/news">Phosfiend Systems’ Fract OSC</a>.</p>
+
+<p>The goal of Twytch is a mix of granular and subtractive synthesis that focuses on glitching live and sampled audio input. It currently runs as a VST and Audio Unit and hopefully will run as a stand-alone synthesizer in the future. Some of the technologies I’m using are:</p>
+
+<ul>
+  <li><a href="http://www.juce.com/">JUCE</a>: for cross platform UI development and VST/AU input and output handling</li>
+  <li><a href="https://github.com/mtytel/mopo">mopo</a>: a modular and polyphonic synthesizer engine I’m working on</li>
+</ul>
+
+<p>I started with the code from a past synthesizer I made called <a href="http://www.gnu.org/software/cursynth/">cursynth</a>. It’s this goofy stand-alone ascii synth that runs inside of a terminal with ascii sliders and graphics. From the past weeks of work I have a functioning Audio Unit synthesizer and the beginnings of many of the UI elements. There’s also very cumbersome patch saving and loading, but it works. I’m now at that point in development where you just throw all the controls on the screen and make an ugly UI soup. Have a look:</p>
+
+<p><img src="/static/images/blog/2015-01-18-screenshot.png" alt="Twytch Screenshot" /></p>
+
+
 
       </div>
     </div>
