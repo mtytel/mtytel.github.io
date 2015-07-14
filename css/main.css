@@ -418,15 +418,29 @@ pre {
   margin-top: 15px;
   margin-bottom: 15px; }
 
+.all-downloads-link {
+  color: #FFAB00 !important; }
+
+.all-downloads-link:hover {
+  text-decoration: none !important;
+  color: #FFC400 !important; }
+
+.all-downloads {
+  font-size: 16px;
+  text-align: right;
+  padding-right: 5px; }
+
+.tagline {
+  padding-top: 26px; }
+
 .os-download {
   max-width: 95%;
   color: white;
   font-weight: thin;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 10px;
   background-color: #FFAB00;
   border-radius: 5px;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
