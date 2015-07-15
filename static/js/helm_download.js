@@ -11,8 +11,8 @@ $(document).ready(function initDownload() {
   else if (navigator.appVersion.indexOf("X11") != -1 ||
            navigator.appVersion.indexOf("Linux") != -1) {
     if (navigator.oscpu.indexOf("64") != -1)
-      download_link.prop("href", "https://launchpad.net/~tytel/+archive/ubuntu/helm/+build/7637227/+files/helm_0.3.5-2_amd64.deb");
+      download_link.prop("href", "https://launchpad.net/~tytel/+archive/ubuntu/helm/+build/7652634/+files/helm_0.4.0-1_amd64.deb");
     else
-      download_link.prop("href", "https://launchpad.net/~tytel/+archive/ubuntu/helm/+build/7637228/+files/helm_0.3.5-2_i386.deb");
+      download_link.prop("href", "https://launchpad.net/~tytel/+archive/ubuntu/helm/+build/7652635/+files/helm_0.4.0-1_i386.deb");
   }
 });
