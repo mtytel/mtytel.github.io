@@ -43,12 +43,11 @@
           <input type="hidden" name="cmd" value="_donations">
           <input type="hidden" name="business" value="matthewtytel@gmail.com">
           <input type="hidden" name="lc" value="US">
-          <input type="hidden" name="item_name" value="Helm Synthesizer">
+          <input type="hidden" name="item_name" value="Helm Synthesizer Donation">
           <input type="hidden" name="no_note" value="0">
           <input type="hidden" name="currency_code" value="USD">
           <input type="hidden" name="bn" value="/static/images/paypal_donate.png">
           <input class="donate-button" type="image" src="/static/images/paypal_donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
       </div>
     </nav>
@@ -119,12 +118,36 @@
     </div>
     <div class="sticker-order">
       <div class="sticker-description">
-        <h2>Buy a Sticker!</h2>
+        <form class="sticker-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="matthewtytel@gmail.com">
+          <input type="hidden" name="lc" value="US">
+          <input type="hidden" name="item_name" value="Helm Synth Sticker">
+          <input type="hidden" name="amount" value="5.00">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="button_subtype" value="services">
+          <input type="hidden" name="shipping" value="0.00">
+          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHosted">
+          <input class="sticker-order-text" name="Submit" type="submit" value="Buy a Sticker!">
+        </form>
         <p>High quality vinyl sticker with UV/water/scratch resistance.
         </p>
         <p>Dimensions: 3" x 2.757"</p>
       </div>
-      <img src="/static/images/sticker.png"/>
+      <div class="sticker-description">
+        <form class="sticker-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="matthewtytel@gmail.com">
+          <input type="hidden" name="lc" value="US">
+          <input type="hidden" name="item_name" value="Helm Synth Sticker">
+          <input type="hidden" name="amount" value="5.00">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="button_subtype" value="services">
+          <input type="hidden" name="shipping" value="0.00">
+          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHosted">
+          <input class="sticker-order-img" type="image" src="/static/images/sticker.png" border="0" name="submit" alt="Buy Helm Sticker">
+        </form>
+      </div>
     </div>
   </div>
 </div>
