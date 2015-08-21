@@ -529,10 +529,10 @@ pre {
 
 .faq-question {
   font-weight: bold !important;
-  color: #FFD740; }
+  color: #2196F3; }
 
 .faq-answer {
-  color: #2196F3;
+  color: #dddddd;
   margin-left: 10px;
   margin-bottom: 10px; }
 
