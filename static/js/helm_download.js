@@ -39,8 +39,8 @@ $(document).ready(function initDownload() {
   else if (navigator.appVersion.indexOf("X11") != -1 ||
            navigator.appVersion.indexOf("Linux") != -1) {
     if (navigator.oscpu.indexOf("64") != -1)
-      download_link.prop("href", "https://code.launchpad.net/~tytel/+archive/ubuntu/helm/+build/7737621/+files/helm_0.4.1-0%7E699%7Eubuntu14.04.1_amd64.deb");
+      download_link.prop("href", "/static/dist/helm_0.4.1-710~ubuntu14.04.1_amd64.deb");
     else
-      download_link.prop("href", "https://code.launchpad.net/~tytel/+archive/ubuntu/helm/+build/7737622/+files/helm_0.4.1-0%7E699%7Eubuntu14.04.1_i386.deb");
+      download_link.prop("href", "/static/dist/helm_0.4.1-710~ubuntu14.04.1_i386.deb");
   }
 });
