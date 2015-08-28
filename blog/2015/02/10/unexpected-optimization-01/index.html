@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Matt Tytel</title>
-  <meta name="description" content="Matt Tytel - personal website
-">
+  <title>Unexpected Optimization #1: avoiding denormals</title>
+  <meta name="description" content="I’ve been noticing a strange spike in CPU usage while playingwith Twytch. When a synth voice rings out and is not producing soundanymore, it is killed and re...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/leapassets/">
+  <link rel="canonical" href="http://tytel.org/blog/2015/02/10/unexpected-optimization-01/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
 </head>
 
@@ -76,16 +75,40 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-  <p>I made many of the assets inside of the <a href="https://www.assetstore.unity3d.com/en/#!/content/17770">Leap Motion V2 Unity Assets</a>. They contain features like rigged hand movement, hand creation/deletion management, hand physics, scripts for grabbing objects, and several examples. Some notable apps that were built on these assets are <a href="https://apps.leapmotion.com/apps/form-and-function-3d/osx">Form and Function</a>, <a href="https://apps.leapmotion.com/apps/aboard-the-lookinglass/osx">Aboard the Lookinglass</a>, <a href="https://apps.leapmotion.com/apps/weightless/osx">Weightless</a>, <a href="https://developer.leapmotion.com/gallery/world-of-comenius">World of Comenius</a>, and <a href="https://www.youtube.com/watch?v=1XNnWbfpO3c&feature=youtu.be">Soundscape VR</a>.</p>
-  <p>The video below is a bunch of small demos I made using the V2 assets. Everything I worked on is open source and you can check out the projects at <a href="https://github.com/leapmotion-examples/">https://github.com/leapmotion-examples/</a></p>
-  <div class="full-video">
-    <div class="iframe-container">
-      <iframe src="//player.vimeo.com/video/94621276" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </div>
+        <span class="post-meta">Feb 10, 2015</span>
 
-</div>
+<h2>
+  Unexpected Optimization #1: avoiding denormals
+</h2>
+<p>I’ve been noticing a strange spike in CPU usage while playing
+with <a href="https://github.com/mtytel/twytch">Twytch</a>. When a synth voice rings out and is not producing sound
+anymore, it is killed and reused later to save CPU cycles. However, there’s
+a significant increase in CPU usage right before a voice dies. For a while
+this was a mystery, but I was recently reading <a href="https://github.com/vinniefalco/DSPFilters">some filter code in another
+project</a> that added a very small alternating current to the input
+of the filter. In the comment it said “Hack to prevent denormals”.</p>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Denormal_number">denormal</a> is a type of really small floating point number.
+Wikipedia give a better explanation, but in short the structure of floating
+point numbers cause the gap from 0 to the smallest positive number to be much
+larger than the gap between the two smallest positive numbers. Architectures
+compensate for this by setting aside some numbers that are more evenly spaced
+really close to zero called “denormal numbers” or “subnormal numbers”. The
+problem with this in synth development, is that processing subnormal numbers
+is much slower than normal floating point numbers. Since we create really
+small numbers any time there’s an exponential decay like in an envelope or a
+filter, we need to disable denormals.</p>
+
+<p>The alternative to having denormals is flushing those numbers to zero. Since
+these numbers are so small these jumps are imperceptible in an audio signal.
+All we have to do is slap an environment variable setting and we should be good
+to go! (on some machines)</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;fenv.h&gt;</span>
+<span class="c1">// ...</span>
+<span class="n">fesetenv</span><span class="p">(</span><span class="n">FE_DFL_DISABLE_SSE_DENORMS_ENV</span><span class="p">);</span></code></pre></div>
+
+
 
       </div>
     </div>
