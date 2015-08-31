@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Stickers!</title>
-  <meta name="description" content="I got some stickers printed of the new logo! If you PayPal me $5 at&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#116;&#121;&#116;&#101;&#108;&#064;&#103;&#109;...">
+  <title>Experiments with Material Design</title>
+  <meta name="description" content="I’ve done a lot of UI changes with Helm lately based off thisnew design idea called Material Design. You should go checkit out yourself, but the basic idea i...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tytel.org/blog/:year/:month/:day/:title/">
+  <link rel="canonical" href="http://tytel.org/blog/2015/05/17/material-design/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
 </head>
 
@@ -39,13 +39,7 @@
           
         
           
-        
-          
-        
-          
-        
-          
-        
+          <a class="page-link" href="/info/">Info</a>
           
         
           
@@ -57,7 +51,13 @@
           
         
           
-          <a class="page-link" href="/info/">Info</a>
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -75,25 +75,47 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <span class="post-meta">Jun 1, 2015</span>
+        <span class="post-meta">May 17, 2015</span>
 
 <h2>
-  Stickers!
+  Experiments with Material Design
 </h2>
-<p>I got some stickers printed of the new logo! If you PayPal me $5 at
-<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#116;&#121;&#116;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#116;&#121;&#116;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a> and include your
-address I’ll send you one :D</p>
+<p>I’ve done a lot of UI changes with <a href="https://github.com/mtytel/helm">Helm</a> lately based off this
+new design idea called <a href="http://www.google.com/design/spec/material-design/">Material Design</a>. You should go check
+it out yourself, but the basic idea is you take flat UI design and organize
+it in layers like pieces of paper. The result is a combination of bold colors
+and skeuomorphic shadows.</p>
 
-<p><img src="/static/images/blog/stickers.jpg" alt="Helm Stickers" /></p>
+<p>The shadows gave me pause, at first it felt like the 90’s again where you slap
+a drop shadow on everything. After looking through Google’s examples and
+applying many of their ideas to Helm, I have to say that I’m now a born-again
+drop shadow believer. They make colors really pop and are a great way to
+emphasize how important certain elements are.</p>
 
-<p>Since the synth is free this is a way of generating some (small) amount of
-monetary support.</p>
+<p><img src="/static/images/blog/shadows.png" alt="Helm Shadows" /></p>
 
-<p>I got these die cut stickers through Sticker Mule. They make super high quality
-vinyl stickers that are water/sun/scratch resistant. They can even go through
-the dishwasher.</p>
+<p><img src="/static/images/blog/shadows2.png" alt="Helm Shadows" /></p>
 
-<p>Dimensions are about 3in x 3in.</p>
+<p>Google’s design doc is pretty funny when they mention <em>how</em> to implement the
+shadows. They say you shouldn’t approximate the shadows with gradients or
+images. Instead they say, render the shadows with a 3d graphics engine. I
+<em>guess</em> I get it, when you have multiple layers overlapping the gradients won’t
+look right, but I don’t know many people who can hire a team of developers
+to develop a rendering engine just so the shadows look accurate!</p>
+
+<p>After the shadows, the <a href="http://www.google.com/design/spec/style/color.html">color</a> section has been the most
+help in designing Helm. If you get overwhelmed with all the combinations of
+possible color palettes like I do, then using Google’s method for picking
+colors is a good place to start. They hit a good balance of restricting the
+colors enough so whatever combination you pick should look decent while also
+having enough colors and shades so not every app using this method will look
+the same.</p>
+
+<p>If you care about design and want some guidelines to follow I highly recommend
+giving the whole <a href="http://www.google.com/design/spec/material-design/">Material Design</a> doc a read. They hit on a
+lot of other topics like animation, layout and widgits that all have decent
+insight on what looks good and what doesn’t.</p>
+
 
 
       </div>
