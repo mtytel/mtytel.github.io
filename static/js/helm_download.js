@@ -31,10 +31,18 @@ $(document).ready(function initDownload() {
   if (navigator.appVersion.indexOf("Mac") != -1)
     download_link.prop("href", "/static/dist/Helm_v0_4_1.pkg");
   else if (navigator.appVersion.indexOf("Win") != -1) {
-    if (navigator.oscpu.indexOf("64") != -1)
-      download_link.prop("href", "/static/dist/Helm_64bit_v0_4_1.msi");
-    else
-      download_link.prop("href", "/static/dist/Helm_32bit_v0_4_1.msi");
+    if (navigator.oscpu) {
+      if (navigator.oscpu.indexOf("64") != -1)
+        download_link.prop("href", "/static/dist/Helm_64bit_v0_4_1.msi");
+      else
+        download_link.prop("href", "/static/dist/Helm_32bit_v0_4_1.msi");
+    }
+    else {
+      if (navigator.platform.indexOf("64") != -1)
+        download_link.prop("href", "/static/dist/Helm_64bit_v0_4_1.msi");
+      else
+        download_link.prop("href", "/static/dist/Helm_32bit_v0_4_1.msi");
+    }
   }
   else if (navigator.appVersion.indexOf("X11") != -1 ||
            navigator.appVersion.indexOf("Linux") != -1) {
