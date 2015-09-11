@@ -427,16 +427,17 @@ pre {
   text-align: right;
   float: left;
   display: inline;
-  font-size: 15.5px;
+  font-size: 16px;
   margin-left: 5px; }
 
 #donation-amount {
-  width: 40px;
+  width: 50px;
   height: 18px;
   font-size: 16px;
   background-color: #333;
   border-width: 1px;
   margin-top: 10px;
+  margin-right: 4px;
   border-color: #888;
   border-style: solid;
   float: left;
@@ -468,11 +469,12 @@ pre {
   clear: left;
   margin-left: 0px;
   margin-top: 10px;
-  text-align: left;
-  font-size: 15.5px;
+  padding-right: 6px;
+  text-align: right;
+  font-size: 16px;
   float: left;
   display: inline-block;
-  width: 200px; }
+  width: 180px; }
 
 #slider-section {
   width: 350px; }
