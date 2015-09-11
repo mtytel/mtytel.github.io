@@ -419,6 +419,93 @@ pre {
   vertical-align: top;
   box-shadow: 0px 0px 0px #000 !important; }
 
+.money-sign {
+  width: 10px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  float: left;
+  display: inline;
+  font-size: 16px;
+  margin-left: 5px; }
+
+#donation-amount {
+  width: 40px;
+  height: 18px;
+  font-size: 16px;
+  background-color: #333;
+  border-width: 1px;
+  margin-top: 10px;
+  border-color: #888;
+  border-style: solid;
+  float: left;
+  color: #bbb; }
+
+.contribute-button {
+  height: 50px;
+  width: 94px;
+  color: white;
+  float: right;
+  display: inline-block;
+  font-weight: thin;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 23px;
+  background-color: #FFAB00;
+  border-width: 0px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.contribute-button:hover {
+  text-decoration: none !important;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+  background-color: #FFC400; }
+
+#donation-info {
+  clear: left;
+  margin-left: 0px;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 16px;
+  float: left;
+  display: inline-block;
+  width: 200px; }
+
+#slider-section {
+  width: 350px; }
+
+.donation-form {
+  width: 100%;
+  margin-top: 10px; }
+
+.donation-slider {
+  font-size: 14px;
+  width: 240px; }
+
+#slider {
+  float: left;
+  width: 100%;
+  margin-top: 35px; }
+
+.donation-number {
+  float: left;
+  text-align: left; }
+
+.donation-slider .ui-slider-range {
+  background: #2196F3;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px; }
+
+.donation-slider .ui-widget-content {
+  background: #333;
+  border-color: #222;
+  border-width: 2px; }
+
 .download-button {
   width: 100%;
   color: white;
@@ -453,7 +540,7 @@ pre {
 .home a {
   text-decoration: none !important; }
 
-.downloads {
+#downloads {
   min-width: 290px;
   width: 100%;
   float: left;

@@ -19,8 +19,11 @@
   <link rel="canonical" href="http://tytel.org/helm/">
   <link rel="alternate" type="application/rss+xml" title="Matt Tytel" href="http://tytel.org/feed.xml" />
   <link rel="image_src" href="http://tytel.org/static/images/helm_og_image.png" / >
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="/static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="/static/js/helm_download.js" type="text/javascript"></script>
+  <script src="/static/js/helm_donation_slider.js" type="text/javascript"></script>
 
 </head>
 
@@ -74,7 +77,26 @@
       </div>
     </div>
 
-    <div class="downloads">
+    <div id="slider-section">
+      <div class="donation-slider">
+        <div id="donation">
+        </div>
+      </div>
+      <form class="donation-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="matthewtytel@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Helm Contribution">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="shipping" value="0.00">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHosted">
+        <input class="contribute-button" type="submit" value="Contribute" border="0" name="submit" alt="Helm Contribution">
+        <div id="donation-info">I'd like to contribute to Helm</div>
+        <input id="donation-amount" name="amount" value="$5">
+      </form>
+    </div>
+    <div id="downloads">
       <a id="download-link" href="downloads">
         <div class="download-button">
           Download Helm Beta
