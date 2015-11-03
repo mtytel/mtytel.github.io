@@ -46,6 +46,9 @@ $(function() {
   download_link.click(function() {
     downloads.fadeTo("slow", 0, function() { downloads.hide(); });
     slider_section.fadeTo("slow", 1);
+    slider_section.css({
+      "visibility":"visible",
+    });
   });
 
   var downloads = $("#downloads");

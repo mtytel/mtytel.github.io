@@ -477,7 +477,8 @@ pre {
   width: 180px; }
 
 #slider-section {
-  width: 350px; }
+  width: 350px;
+  visibility: hidden; }
 
 .donation-form {
   width: 100%;
