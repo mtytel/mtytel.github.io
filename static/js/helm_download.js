@@ -30,8 +30,8 @@ $(document).ready(function initDownload() {
   var linux32 = "/static/dist/helm_0.6.0-863~ubuntu14.04.1_i386.deb";
   var linux64 = "/static/dist/helm_0.6.0-863~ubuntu14.04.1_amd64.deb";
   var osx = "/static/dist/Helm_v0_6_0.pkg";
-  var win32 = "/static/dist/Helm_32bit_v0_5_0.msi";
-  var win64 = "/static/dist/Helm_64bit_v0_5_0.msi";
+  var win32 = "/static/dist/Helm_32bit_v0_6_0.msi";
+  var win64 = "/static/dist/Helm_64bit_v0_6_0.msi";
 
   var download_link = $("#download-link");
 
