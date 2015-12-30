@@ -157,7 +157,7 @@ pre {
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
   opacity: 0.8;
   min-height: 64px;
   position: relative; }
@@ -223,8 +223,9 @@ pre {
   .synth-nav .page-link {
     line-height: 58px;
     font-size: 16px;
-    text-shadow: 0px 2px 4px #000000;
-    margin-top: 40px; }
+    text-shadow: 0px 2px 2px #000000;
+    margin-top: 40px;
+    color: #9999aa; }
     .synth-nav .page-link:not(:first-child) {
       margin-left: 40px; }
   .synth-nav .page-link:hover {
@@ -235,9 +236,12 @@ pre {
     float: right;
     line-height: 1.5;
     margin-top: 14px;
-    margin-right: 40px; }
+    margin-right: 20px; }
     .synth-nav .donate-button-form:not(:first-child) {
       margin-left: 40px; }
+    @media only screen and (max-width: 450px) {
+      .synth-nav .donate-button-form {
+        margin-top: 0; } }
   .synth-nav .donate-button-form input {
     box-shadow: 0px 1px 5px black;
     border-radius: 10px; }
@@ -413,10 +417,19 @@ pre {
   margin-right: auto;
   z-index: -1; }
 
-.helm-logo {
+#helm-icon {
+  display: inline-block;
+  margin: auto;
+  padding-top: 25px;
+  vertical-align: top;
+  box-shadow: 0px 0px 0px #000 !important; }
+
+#helm-logo {
   display: inline-block;
   margin: auto;
   vertical-align: top;
+  width: 256px;
+  height: 256px;
   box-shadow: 0px 0px 0px #000 !important; }
 
 .money-sign {
@@ -443,14 +456,14 @@ pre {
   float: left;
   color: #bbb; }
 
-.contribute-button {
+#nopay-button, #contribute-button {
   height: 50px;
   width: 94px;
   color: white;
   float: right;
   display: inline-block;
   font-weight: thin;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   margin-top: 23px;
   background-color: #FFAB00;
@@ -460,7 +473,13 @@ pre {
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
-.contribute-button:hover {
+#nopay-button {
+  display: none; }
+
+#nopay-button p {
+  padding-top: 12px; }
+
+#nopay-button:hover, #contribute-button:hover {
   text-decoration: none !important;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
   background-color: #FFC400; }
@@ -474,11 +493,12 @@ pre {
   font-size: 16px;
   float: left;
   display: inline-block;
-  width: 180px; }
+  width: 155px; }
 
 #slider-section {
-  width: 350px;
-  visibility: hidden; }
+  width: 325px;
+  visibility: hidden;
+  display: none; }
 
 .donation-form {
   width: 100%;
@@ -486,7 +506,7 @@ pre {
 
 .donation-slider {
   font-size: 14px;
-  width: 240px; }
+  width: 215px; }
 
 #slider {
   float: left;
@@ -543,13 +563,25 @@ pre {
 .home a {
   text-decoration: none !important; }
 
+#download-list {
+  width: 360px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-align: center; }
+  @media only screen and (max-width: 655px) {
+    #download-list {
+      width: 300px; } }
+
 #downloads {
   min-width: 290px;
   width: 100%;
   float: left;
   margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 15px; }
+  @media only screen and (max-width: 655px) {
+    #downloads {
+      width: 300px; } }
 
 .all-downloads-link {
   color: #FFAB00 !important; }
@@ -564,7 +596,13 @@ pre {
   padding-right: 5px; }
 
 .tagline {
-  padding-top: 26px; }
+  width: 360px;
+  max-width: 100%;
+  text-align: left;
+  padding-top: 46px; }
+  @media only screen and (max-width: 655px) {
+    .tagline {
+      width: 300px; } }
 
 .os-download {
   max-width: 95%;
@@ -634,13 +672,29 @@ pre {
   width: 100%;
   margin-bottom: 10px; }
 
+.sticker-order-suggest {
+  font-size: 18px !important;
+  padding: 0;
+  margin: 0;
+  color: #FFAB00 !important;
+  font-weight: 300;
+  text-align: left;
+  overflow: visible;
+  display: inline;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer; }
+
+.sticker-order-suggest:hover {
+  color: #FFC400 !important; }
+
 .sticker-order-text {
   font-size: 20px !important;
   margin-top: 0 !important;
-  margin-left: 0px !important;
   margin-bottom: 15px !important;
   padding-left: 0px !important;
   color: #2196F3 !important;
+  font-weight: 300;
   vertical-align: bottom;
   text-align: left;
   overflow: visible;
@@ -649,6 +703,10 @@ pre {
   background-color: inherit;
   border: 0;
   cursor: pointer; }
+
+#sticker-tooltip {
+  width: 416px;
+  height: 416px; }
 
 #mc_embed_signup form {
   padding-left: 0px !important;
@@ -683,14 +741,37 @@ pre {
  * Page Descriptions
  */
 .big-header {
-  max-width: 100%;
+  max-width: 360px;
   font-size: 30px;
   font-weight: 100;
   color: #FFD740;
   display: inline-block; }
 
+#thanks {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #2196F3; }
+
+#nothanks {
+  margin-top: 0px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #2196F3; }
+
+#auto-download-info {
+  margin-left: 16px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: left;
+  color: #ccd; }
+
 .catch-phrase {
   display: inline-block; }
+  @media only screen and (max-width: 655px) {
+    .catch-phrase {
+      font-size: 25px !important; } }
 
 .faq-title .catch-phrase {
   padding-left: 30px;
@@ -704,11 +785,14 @@ pre {
   .screenshot-section {
     margin: 30px 0px; } }
 .product-name {
+  display: inline;
   font-weight: bold;
   font-size: 40px !important;
-  display: inline;
   margin-right: 20px;
   color: #2196F3; }
+  @media only screen and (max-width: 655px) {
+    .product-name {
+      font-size: 32px !important; } }
 
 .description {
   overflow: auto;
