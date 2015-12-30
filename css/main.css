@@ -625,6 +625,7 @@ pre {
   max-width: 100%;
   max-width: 370px;
   display: inline-block;
+  background-color: inherit;
   vertical-align: top;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -676,6 +677,7 @@ pre {
   padding: 0;
   margin: 0;
   color: #FFAB00 !important;
+  background-color: inherit;
   font-weight: 300;
   text-align: left;
   overflow: visible;
@@ -749,13 +751,13 @@ pre {
 #thanks {
   margin-top: 20px;
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 700;
   color: #2196F3; }
 
 #nothanks {
   margin-top: 0px;
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
   color: #2196F3; }
 
 #auto-download-info {
