@@ -232,8 +232,7 @@ pre {
     color: #FFC400;
     text-decoration: none !important; }
   .synth-nav .donate-button-form {
-    display: inline;
-    float: right;
+    display: inline-block;
     line-height: 1.5;
     margin-top: 14px;
     margin-right: 20px; }
