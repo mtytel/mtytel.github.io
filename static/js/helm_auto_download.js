@@ -29,9 +29,7 @@ $(document).ready(function initDownload() {
   var url = getOsDownload();
   if (url) {
     function download() {
-      var download = $('<iframe />').attr('src', url)
-                                    .hide()
-                                    .appendTo('body');
+      window.location = url;
     }
     setTimeout(download, 4000);
   }
