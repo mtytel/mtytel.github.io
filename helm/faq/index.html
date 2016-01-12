@@ -125,6 +125,39 @@
         There is no manual yet, but the 1.0 release of Helm will come with some nice documentation.
       </div>
       <div class="faq-question">
+        Where does Helm store files?
+      </div>
+      <div class="faq-answer">
+        GNU/Linux:
+        <p>Standalone    - /usr/bin/helm</p>
+        <p>LV2           - /usr/lib/lvs/helm.lv2</p>
+        <p>VST           - /usr/lib/lxvst/helm.so (if installed)</p>
+        <p>Local Presets - ~/.helm/patches</p>
+        <p>Factory Files - /usr/share/helm/</p>
+        <p>Config File   - ~/.helm/Helm.config</p>
+
+      </div>
+      <div class="faq-answer">
+        Mac OSX:
+        <p>Standalone      - /Applications/Helm.app</p>
+        <p>VST             - /Library/Audio/Plug-Ins/VST/helm.vst</p>
+        <p>VST3            - /Library/Audio/Plug-Ins/VST3/helm.vst3</p>
+        <p>AU              - /Library/Audio/Plug-Ins/Components/helm.component</p>
+        <p>AAX             - /Library/Application Support/Avid/Audio/Plug-Ins/helm.aaxplugin</p>
+        <p>Local Presets   - ~/Library/Audio/Presets/Helm</p>
+        <p>Factory Presets - /Library/Audio/Presets/Helm</p>
+        <p>Config File     - ~/Library/Application Support/helm</p>
+      </div>
+      <div class="faq-answer">
+        Windows:
+        <p>Standalone      - C:\Program Files\Helm\helm.exe (default)</p>
+        <p>VST             - C:\Program Files\Steinberg\VstPlugins (default)</p>
+        <p>VST3            - C:\Program Files\Common Files\VST3\Helm\helm.vst3</p>
+        <p>Local Presets   - C:\Documents and Settings\&lt;username&gt;\Application Data\helm\patches</p>
+        <p>Factory Presets - C:\Program Files\Helm\Patches</p>
+        <p>Config File     - C:\Documents and Settings\&lt;username&gt;\Application Data\helm\Helm.config</p>
+      </div>
+      <div class="faq-question">
         I think I found a bug. What should I do?
       </div>
       <div class="faq-answer">

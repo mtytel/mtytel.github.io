@@ -668,6 +668,11 @@ pre {
   margin-left: 10px;
   margin-bottom: 10px; }
 
+.faq-answer p {
+  padding: 0;
+  margin: 0;
+  padding-left: 20px; }
+
 .sticker-form {
   width: 100%;
   background-color: transparent; }
