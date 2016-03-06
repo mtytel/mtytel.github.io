@@ -70,10 +70,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #ffffff;
+  color: #FF9100;
   text-decoration: none; }
   a:visited {
-    color: white; }
+    color: #ffa024; }
   a:hover {
     text-decoration: underline; }
 
@@ -109,6 +109,22 @@ pre {
     padding-left: 0; }
 
 /**
+ * Small Wrapper
+ */
+.small-wrapper {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 820px) {
+    .small-wrapper {
+      max-width: -webkit-calc(100% - (30px));
+      max-width: calc(100% - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
  * Wrapper
  */
 .wrapper {
@@ -138,7 +154,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .browse-wrapper:after, .footer-col-wrapper:after {
+.small-wrapper:after, .wrapper:after, .browse-wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -360,6 +376,9 @@ pre {
   height: 100%;
   overflow: hidden; }
 
+.browse .browse-text a {
+  color: #fff !important; }
+
 .browse .browse-text {
   display: inline-block;
   margin: 0;
@@ -371,7 +390,6 @@ pre {
   right: 0;
   top: 0;
   width: 320px;
-  color: #fff;
   text-align: left;
   font-size: 20px;
   color: #fff !important;
