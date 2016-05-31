@@ -26,15 +26,16 @@
  *
  */
 
-function getOsDownload() {
-  var linux32 = "/static/dist/helm_0.6.0-868-ubuntu14.04.1_i386.deb";
-  var linux64 = "/static/dist/helm_0.6.0-868-ubuntu14.04.1_amd64.deb";
-  var osx = "/static/dist/Helm_v0_6_0.pkg";
-  var win32 = "/static/dist/Helm_32bit_v0_6_0.msi";
-  var win64 = "/static/dist/Helm_64bit_v0_6_0.msi";
+var download_lookup = {};
+download_lookup.linux32 = "/static/dist/helm_0.7.0-963~ubuntu14.04.1_i386.deb";
+download_lookup.linux64 = "/static/dist/helm_0.7.0-963~ubuntu14.04.1_amd64.deb";
+download_lookup.osx = "/static/dist/Helm_v0_7_0.pkg";
+download_lookup.win32 = "/static/dist/Helm_32bit_v0_7_0.msi";
+download_lookup.win64 = "/static/dist/Helm_64bit_v0_7_0.msi";
 
+function getOs() {
   if (navigator.appVersion.indexOf("Mac") != -1)
-    return osx;
+    return "osx";
 
   var os_string = null;
   if (navigator.userAgent)
@@ -49,17 +50,25 @@ function getOsDownload() {
 
   if (navigator.appVersion.indexOf("Win") != -1) {
     if (os_string.indexOf("64") != -1)
-      return win64;
+      return "win64";
     else
-      return win32;
+      return "win32";
   }
   else if (navigator.appVersion.indexOf("X11") != -1 ||
            navigator.appVersion.indexOf("Linux") != -1) {
     if (os_string.indexOf("64") != -1)
-      return linux64;
+      return "linux64";
     else
-      return linux32;
+      return "linux32";
   }
 
   return null;
+}
+
+function lookupDownload(os) {
+  return download_lookup[os];
+}
+
+function getOsDownload() {
+  return lookupDownload(getOs());
 };

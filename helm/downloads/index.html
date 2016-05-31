@@ -36,7 +36,6 @@
   </script>
 
   <script src="/static/js/helm_download.js" type="text/javascript"></script>
-  <script src="/static/js/helm_donation_slider.js" type="text/javascript"></script>
   <script src="/static/js/helm_tooltip.js" type="text/javascript"></script>
 
 </head>
@@ -86,25 +85,112 @@
 </a>
 
 <div class="big-header">
-  <div id="download-list">
-    <a href="/static/dist/helm_0.6.0-868-ubuntu14.04.1_amd64.deb">
-      <div class="os-download">GNU/Linux 64 bit</div>
-    </a>
-    <a href="/static/dist/helm_0.6.0-868-ubuntu14.04.1_i386.deb">
-      <div class="os-download">GNU/Linux 32 bit</div>
-    </a>
-    <a href="/static/dist/Helm_v0_6_0.pkg">
-      <div class="os-download">Mac OSX</div>
-    </a>
-    <a href="/static/dist/Helm_64bit_v0_6_0.msi">
-      <div class="os-download">Windows 64 bit</div>
-    </a>
-    <a href="/static/dist/Helm_32bit_v0_6_0.msi">
-      <div class="os-download">Windows 32 bit</div>
+  <div id="downloads" class="download-list">
+    <a href="/static/dist/helm_0.7.0-963~ubuntu14.04.1_amd64.deb">
+  <div name="linux64" class="os-download">GNU/Linux 64 bit</div>
+</a>
+<a href="/static/dist/helm_0.7.0-963~ubuntu14.04.1_i386.deb">
+  <div name="linux32" class="os-download">GNU/Linux 32 bit</div>
+</a>
+<a href="/static/dist/Helm_v0_7_0.pkg">
+  <div name="osx" class="os-download">Mac OSX</div>
+</a>
+<a href="/static/dist/Helm_64bit_v0_7_0.msi">
+  <div name="win64" class="os-download">Windows 64 bit</div>
+</a>
+<a href="/static/dist/Helm_32bit_v0_7_0.msi">
+  <div name="win32" class="os-download">Windows 32 bit</div>
+</a>
+
+  </div>
+
+  <div class="tagline" style="visibility:hidden;">
+    <h2 id="product-name" class="product-name">Helm</h2>
+    <div id="catch-phrase" class="catch-phrase">
+      Steer your sound
+    </div>
+  </div>
+
+  <div id="pity-section">
+  <div>
+    If everyone who downloaded gave $1, it would support full-time development. That means faster bug fixes, more features, and more free software in the future.
+  </div>
+  <div>
+    <form class="pity-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="matthewtytel@gmail.com">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="item_name" value="Helm Synthesizer - Download">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="button_subtype" value="services">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="cn" value="Add special instructions to the seller:">
+      <input type="hidden" name="no_shipping" value="1">
+      <input type="hidden" name="rm" value="1">
+      <input class="return-link" type="hidden" name="return" value="http://tytel.org/helm/processed/">
+      <input class="pity-amount" type="hidden" name="amount" value="$1">
+      <input class="pity-button" type="submit" value="Give $1" border="0" name="submit" alt="Helm Purchase">
+    </form>
+    <a href="/helm/nopay/" class="pity-link">
+      <input class="pity-button" type="submit" value="No Thanks" border="0" name="submit" alt="Helm Purchase">
     </a>
   </div>
 </div>
 
+
+  <div id="slider-section">
+  <div class="donation-slider">
+    <div id="donation">
+    </div>
+  </div>
+
+  <form class="donation-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="matthewtytel@gmail.com">
+    <input type="hidden" name="lc" value="US">
+    <input type="hidden" name="item_name" value="Helm Synthesizer Download">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="button_subtype" value="services">
+    <input type="hidden" name="no_note" value="0">
+    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+    <input type="hidden" name="no_shipping" value="1">
+    <input type="hidden" name="rm" value="1">
+    <input class="return-link" type="hidden" name="return" value="http://tytel.org/helm/processed/">
+    <input id="contribute-button" type="submit" value="Buy" border="0" name="submit" alt="Helm Purchase">
+    <a href="/helm/nopay">
+      <div id="nopay-button" alt="Helm No Pay">
+        <p>Nothing</p>
+      </div>
+    </a>
+    <div id="donation-info">Helm is worth </div>
+    <input id="donation-amount" name="amount" value="$5">
+  </form>
+</div>
+
+
+</div>
+
+<script src="/static/js/helm_donation_slider.js" type="text/javascript"></script>
+
+
+  <div class="division-bar">
+  <div class="binary-description">
+    <h2>Run Anywhere</h2>
+    <p>Helm runs in GNU/Linux, Mac OSX and Windows.</p>
+    <p>Run Helm as a standalone synthesizer or as an LV2, VST, AU, or AAX plugin.</p>
+    <p>Comes in both 32-bit and 64-bit versions</p>
+  </div>
+  <div class="free-software-description">
+    <h2>Helm is Free Software</h2>
+    <p>This means you are free to run Helm anywhere without the pains of DRM, you can <a href="https://github.com/mtytel/helm">study and change the source code</a> and redistribute exact or modified copies of Helm.</p>
+    <p><a href="https://www.gnu.org/philosophy/">Read more about software freedom.</a></p>
+  </div>
+</div>
+
+
+  <div class="screenshot-section">
+    <img src="/static/images/helm_screenshot.png">
+  </div>
 
   <div class="division-bar">
   <link href="/static/css/mail_chimp.css" rel="stylesheet" type="text/css">
@@ -164,25 +250,6 @@
         <input class="sticker-order-img" type="image" src="/static/images/sticker.png" border="0" name="submit" alt="Buy Helm Sticker">
       </form>
     </div>
-  </div>
-</div>
-
-
-  <div class="screenshot-section">
-    <img src="/static/images/helm_screenshot.png">
-  </div>
-
-  <div class="division-bar">
-  <div class="binary-description">
-    <h2>Run Anywhere</h2>
-    <p>Helm runs in GNU/Linux, Mac OSX and Windows.</p>
-    <p>Run Helm as a standalone synthesizer or as an LV2, VST, AU, or AAX plugin.</p>
-    <p>Comes in both 32-bit and 64-bit versions</p>
-  </div>
-  <div class="free-software-description">
-    <h2>Helm is Free Software</h2>
-    <p>This means you are free to run Helm anywhere without the pains of DRM, you can <a href="https://github.com/mtytel/helm">study and change the source code</a> and redistribute exact or modified copies of Helm.</p>
-    <p><a href="https://www.gnu.org/philosophy/">Read more about software freedom.</a></p>
   </div>
 </div>
 

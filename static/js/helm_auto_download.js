@@ -26,10 +26,22 @@
  */
 
 $(document).ready(function initDownload() {
-  var url = getOsDownload();
-  if (url) {
+  var url = $(location).attr('href');
+  var segments = url.split('/');
+  var os = segments.pop();
+  var download_url = lookupDownload(os);
+
+  if (!download_url) {
+    os = segments.pop();
+    download_url = lookupDownload(os);
+  }
+
+  if (!download_url)
+    download_url = getOsDownload();
+
+  if (download_url) {
     function download() {
-      window.location = url;
+      window.location = download_url;
     }
     setTimeout(download, 4000);
   }
