@@ -27,11 +27,11 @@
  */
 
 var download_lookup = {};
-download_lookup.linux32 = "/static/dist/helm_0.8.0-1017~ubuntu14.04.1_i386.deb";
-download_lookup.linux64 = "/static/dist/helm_0.8.0-1017~ubuntu14.04.1_amd64.deb";
-download_lookup.osx = "/static/dist/Helm_v0_8_0.pkg";
-download_lookup.win32 = "/static/dist/Helm_32bit_v0_8_0.msi";
-download_lookup.win64 = "/static/dist/Helm_64bit_v0_8_0.msi";
+download_lookup.linux32 = "/static/dist/helm_0.8.1-1019~ubuntu14.04.1_i386.deb";
+download_lookup.linux64 = "/static/dist/helm_0.8.1-1019~ubuntu14.04.1_amd64.deb";
+download_lookup.osx = "/static/dist/Helm_v0_8_1.pkg";
+download_lookup.win32 = "/static/dist/Helm_32bit_v0_8_1.msi";
+download_lookup.win64 = "/static/dist/Helm_64bit_v0_8_1.msi";
 
 function getOs() {
   if (navigator.appVersion.indexOf("Mac") != -1)
