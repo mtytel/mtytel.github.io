@@ -131,10 +131,23 @@ function setupDonateSlider() {
     }
   });
 
+  amount.keypress(function(e) {
+    var value = amount.val();
+    value = value.replace("$", "");
+    var float_value = parseFloat(value);
+
+    if (e.keyCode == 13 && !(float_value > 0)) {
+      showPity();
+      return false;
+    }
+    return true;
+  });
+
   amount.on("input", function() {
     var value = $(this).val();
     value = value.replace("$", "");
     var float_value = parseFloat(value);
+
     var contribute_button = $("#contribute-button");
     var nopay_button = $("#nopay-button");
 
