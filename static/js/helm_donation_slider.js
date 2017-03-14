@@ -90,8 +90,10 @@ function setupDonateSlider() {
   for (var i = 1; i < amounts.length; i++)
     amounts_display.push("$" + amounts[i]);
 
+  var display = $("#donation-display");
+  display.val(amounts_display[default_amount_index]);
   var amount = $("#donation-amount");
-  amount.val(amounts_display[default_amount_index]);
+  amount.val(amounts[default_amount_index]);
   var donation = $("#donation");
 
   var slider_section = $("#slider-section");
@@ -117,7 +119,8 @@ function setupDonateSlider() {
     range: "min",
     value: default_amount_index,
     slide: function(event, ui) {
-      amount.val(amounts_display[ui.value]);
+      display.val(amounts_display[ui.value]);
+      amount.val(amounts[ui.value]);
       var contribute_button = $("#contribute-button");
       var nopay_button = $("#nopay-button");
       if (ui.value == 0) {
@@ -131,10 +134,11 @@ function setupDonateSlider() {
     }
   });
 
-  amount.keypress(function(e) {
-    var value = amount.val();
+  display.keypress(function(e) {
+    var value = display.val();
     value = value.replace("$", "");
     var float_value = parseFloat(value);
+    amount.val(float_value);
 
     if (e.keyCode == 13 && !(float_value > 0)) {
       showPity();
@@ -143,10 +147,11 @@ function setupDonateSlider() {
     return true;
   });
 
-  amount.on("input", function() {
+  display.on("input", function() {
     var value = $(this).val();
     value = value.replace("$", "");
     var float_value = parseFloat(value);
+    amount.val(float_value);
 
     var contribute_button = $("#contribute-button");
     var nopay_button = $("#nopay-button");
