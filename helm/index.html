@@ -10,10 +10,10 @@
   <meta property="og:site_name" content="Helm" />
   <meta property="og:url" content="http://tytel.org/helm/" />
   <meta property="og:image" content="http://tytel.org/static/images/helm_og_image_small.png" />
-  <meta property="og:description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or as a LV2/VST/AU/AAX plugin." />
+  <meta property="og:description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or as a LV2/VST/VST3/AU plugin." />
 
   <title>Helm by Matt Tytel</title>
-  <meta name="description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or LV2/VST/AU/AAX plugin." />
+  <meta name="description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or LV2/VST/VST3/AU plugin." />
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://tytel.org/helm/">
@@ -57,8 +57,8 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" href="/blog">BLOG</a>
         <a class="page-link" href="/helm/faq">FAQ</a>
+        <a class="page-link" href="/static/docs/helm_manual.pdf">MANUAL</a>
         <a class="page-link" href="/helm/downloads">DOWNLOADS</a>
 
         <form class="page-link donate-button-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -100,37 +100,19 @@
     </div>
   </div>
 
-  <div id="pity-section">
-  <div>
-    If everyone who downloaded gave $1, it would support full-time development. That means faster bug fixes, more features, and more free software in the future.
-  </div>
-  <div>
-    <form class="pity-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="matthewtytel@gmail.com">
-      <input type="hidden" name="lc" value="US">
-      <input type="hidden" name="item_name" value="Helm Synthesizer - Download">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="button_subtype" value="services">
-      <input type="hidden" name="no_note" value="0">
-      <input type="hidden" name="cn" value="Add special instructions to the seller:">
-      <input type="hidden" name="no_shipping" value="1">
-      <input type="hidden" name="rm" value="1">
-      <input class="return-link" type="hidden" name="return" value="http://tytel.org/helm/processed/">
-      <input class="pity-amount" type="hidden" name="amount" value="1">
-      <input class="pity-button" type="submit" value="Give $1" border="0" name="submit" alt="Helm Purchase">
-    </form>
-    <a href="/helm/nopay/" class="pity-link">
-      <input class="pity-button" type="submit" value="Give $0" border="0" name="submit" alt="Helm Purchase">
-    </a>
-  </div>
-</div>
+  <div id="payment-section">
 
-
-  <div id="slider-section">
-  <div class="donation-slider">
-    <div id="donation">
-    </div>
+  <div class="pay-amount-button amount-not-pressed">
+    $100
+  </div>
+  <div class="pay-amount-button amount-not-pressed">
+    $50
+  </div>
+  <div class="pay-amount-button amount-pressed">
+    $25
+  </div>
+  <div class="pay-amount-button amount-not-pressed">
+    $10
   </div>
 
   <form class="donation-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -145,15 +127,16 @@
     <input type="hidden" name="no_shipping" value="1">
     <input type="hidden" name="rm" value="1">
     <input class="return-link" type="hidden" name="return" value="http://tytel.org/helm/processed/">
+    <div>
+    <input id="donation-display" value="" placeholder='$5'>
+    </div>
     <input id="contribute-button" type="submit" value="Buy" border="0" name="submit" alt="Helm Purchase">
-    <a href="/helm/nopay">
-      <div id="nopay-button" alt="Helm No Pay">
-        <p>Nothing</p>
+    <a href="/helm/remind" class="remind">
+      <div id="nopay-button" alt="Helm Remind">
+        <p>Remind Me</p>
       </div>
     </a>
-    <div id="donation-info">Helm is worth </div>
-    <input id="donation-display" value="$5">
-    <input type="hidden" id="donation-amount" name="amount" value="5">
+    <input type="hidden" id="donation-amount" name="amount" value="25">
   </form>
 </div>
 
@@ -167,7 +150,7 @@
   <div class="binary-description">
     <h2>Run Anywhere</h2>
     <p>Helm runs in GNU/Linux, Mac OSX and Windows.</p>
-    <p>Run Helm as a standalone synthesizer or as an LV2, VST, AU, or AAX plugin.</p>
+    <p>Run Helm as a standalone synthesizer or as an LV2, VST, VST3 or AU plugin.</p>
     <p>Comes in both 32-bit and 64-bit versions</p>
   </div>
   <div class="free-software-description">

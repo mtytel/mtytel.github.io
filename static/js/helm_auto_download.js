@@ -28,16 +28,18 @@
 $(document).ready(function initDownload() {
   var url = $(location).attr('href');
   var segments = url.split('/');
-  var os = segments.pop();
-  var download_url = lookupDownload(os);
+  var paid = false;
+  var download_url = null;
 
-  if (!download_url) {
-    os = segments.pop();
-    download_url = lookupDownload(os);
+  for (var i = 0; i < segments.length; ++i) {
+    paid == paid || segments[i].indexOf("processed") !== -1;
+    var download = lookupDownload(segments[i], paid);
+    if (download)
+      download_url = download;
   }
 
   if (!download_url)
-    download_url = getOsDownload();
+    download_url = getOsDownload(paid);
 
   if (download_url) {
     function download() {

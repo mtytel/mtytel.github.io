@@ -35,12 +35,12 @@ function showSticker() {
 
 function showDonate() {
   var downloads = $("#downloads");
-  var slider_section = $("#slider-section");
+  var payment_section = $("#payment-section");
   downloads.fadeTo(400, 0, function() {
     downloads.css({"visibility":"hidden"});
 
-    slider_section.css({"visibility":"visible"});
-    slider_section.fadeTo(400, 1);
+    payment_section.css({"visibility":"visible"});
+    payment_section.fadeTo(400, 1);
 
     var tagline = $(".tagline");
     tagline.css({"visibility":"visible",
@@ -60,79 +60,25 @@ function showDonate() {
   });
 }
 
-function showPity() {
-  var slider_section = $("#slider-section");
-  var pity_section = $("#pity-section");
-  slider_section.fadeTo(400, 0, function() {
-    slider_section.css({"visibility":"hidden"});
-
-    pity_section.css({"visibility":"visible"});
-    pity_section.fadeTo(400, 1);
-  });
-
-  var catch_phrase = $("#catch-phrase");
-  catch_phrase.fadeOut(400, function() {
-    catch_phrase.text("give at least $1");
-    $(this).fadeIn(400);
-  });
-
-  var name = $("#product-name");
-  name.fadeOut(400, function() {
-    name.text("Wait");
-    $(this).fadeIn(400);
-  });
-}
-
-function setupDonateSlider() {
-  var default_amount_index = 4;
-  var amounts = [0, 1, 2, 5, 10, 20, 50, 100];
-  var amounts_display = ["$-"];
-  for (var i = 1; i < amounts.length; i++)
-    amounts_display.push("$" + amounts[i]);
+function setupDonate() {
+  var default_amount_index = 3;
 
   var display = $("#donation-display");
-  display.val(amounts_display[default_amount_index]);
   var amount = $("#donation-amount");
-  amount.val(amounts[default_amount_index]);
   var donation = $("#donation");
 
-  var slider_section = $("#slider-section");
-  var pity_section = $("#pity-section");
+  var payment_section = $("#payment-section");
   var download_list_section = $(".download-list");
 
-  slider_section.css({
-    "position":"absolute",
-  });
-  pity_section.css({
+  payment_section.css({
     "position":"absolute",
   });
   download_list_section.css({
     "position":"absolute",
   });
 
-  slider_section.fadeTo(0, 0);
-  slider_section.hide();
-
-  var slider = $("<div id='slider'></div>").insertAfter(donation).slider({
-    min: 0,
-    max: 7,
-    range: "min",
-    value: default_amount_index,
-    slide: function(event, ui) {
-      display.val(amounts_display[ui.value]);
-      amount.val(amounts[ui.value]);
-      var contribute_button = $("#contribute-button");
-      var nopay_button = $("#nopay-button");
-      if (ui.value == 0) {
-        nopay_button.show();
-        contribute_button.hide();
-      }
-      else {
-        nopay_button.hide();
-        contribute_button.show();
-      }
-    }
-  });
+  payment_section.fadeTo(0, 0);
+  payment_section.hide();
 
   display.keypress(function(e) {
     var value = display.val();
@@ -140,43 +86,55 @@ function setupDonateSlider() {
     var float_value = parseFloat(value);
     amount.val(float_value);
 
-    if (e.keyCode == 13 && !(float_value > 0)) {
-      showPity();
-      return false;
-    }
     return true;
   });
 
-  display.on("input", function() {
-    var value = $(this).val();
+  var contribute_button = $("#contribute-button");
+  var nopay_button = $("#nopay-button");
+  var pay_buttons = $(".pay-amount-button");
+
+  var displayCheck = function() {
+    var value = display.val();
     value = value.replace("$", "");
     var float_value = parseFloat(value);
     amount.val(float_value);
 
-    var contribute_button = $("#contribute-button");
-    var nopay_button = $("#nopay-button");
-
     if (float_value > 0) {
-      var slider_index = 1;
-      for (var i = 1; i < amounts.length - 1; ++i) {
-        if (float_value > amounts[i])
-          slider_index = i + 1;
-      }
-
-      slider.slider("option", "value", slider_index);
       nopay_button.hide();
       contribute_button.show();
     }
     else {
-      slider.slider("option", "value", 0);
       nopay_button.show();
       contribute_button.hide();
     }
+  }
+
+  display.click(function() {
+    display.attr("class", "text-selected");
+    pay_buttons.attr("class", "pay-amount-button amount-not-pressed");
+    displayCheck();
+  });
+
+  pay_buttons.click(function() {
+    display.attr("class", "");
+    pay_buttons.attr("class", "pay-amount-button amount-not-pressed");
+    $(this).attr("class", "pay-amount-button amount-pressed");
+    var value = $(this).text();
+    value = value.replace("$", "");
+    value = value.replace(" ", "");
+    var float_value = parseFloat(value);
+    amount.val(float_value);
+    nopay_button.hide();
+    contribute_button.show();
+  });
+
+  display.on("input", function() {
+    displayCheck();
   });
 }
 
 $(function() {
-  setupDonateSlider();
+  setupDonate();
 
   var download_link = $("#download-link");
   download_link.click(function() {
@@ -188,19 +146,13 @@ $(function() {
   specific_download_link.click(function() {
     var os = $(this).attr("name");
     if (os) {
-      var new_pity_link = "/helm/nopay/" + os + "/";
-      $(".pity-link").attr("href", new_pity_link);
+      var new_remind_link = "/helm/remind/" + os + "/";
+      $(".remind").attr("href", new_remind_link);
 
       var new_return_link = "http://tytel.org/helm/processed/" + os + "/";
       $(".return-link").val(new_return_link);
     }
     showDonate();
-    return false;
-  });
-
-  var nopay_button = $("#nopay-button");
-  nopay_button.click(function() {
-    showPity();
     return false;
   });
 });

@@ -560,17 +560,56 @@ pre {
   margin-left: 5px; }
 
 #donation-display {
-  width: 50px;
-  height: 18px;
-  font-size: 16px;
+  height: 40px;
+  width: 56px;
+  font-size: 18px;
   background-color: #333;
   border-width: 1px;
-  margin-top: 10px;
-  margin-right: 4px;
   border-color: #888;
   border-style: solid;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 23px;
   float: left;
+  display: inline-block;
   color: #bbb; }
+
+#donation-display.text-selected {
+  border-color: #FFAB00;
+  border-width: 3px;
+  height: 36px;
+  width: 52px; }
+
+.pay-amount-button {
+  width: 59px;
+  margin-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  float: left;
+  display: inline-block;
+  font-weight: thin;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 23px;
+  border-width: 1px;
+  border-color: #555;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+  cursor: pointer; }
+
+.amount-pressed {
+  color: white;
+  background-color: #FFAB00; }
+
+.amount-pressed:hover {
+  background-color: #FFBB10; }
+
+.amount-not-pressed {
+  color: #bbb;
+  background-color: #333; }
+
+.amount-not-pressed:hover {
+  background-color: #444; }
 
 .pity-button {
   height: 35px;
@@ -593,7 +632,7 @@ pre {
 
 #nopay-button, #contribute-button {
   height: 50px;
-  width: 94px;
+  width: 193px;
   color: white;
   float: right;
   display: inline-block;
@@ -601,10 +640,9 @@ pre {
   font-size: 18px;
   text-align: center;
   margin-top: 23px;
-  background-color: #FFAB00;
+  background-color: #03a9f4;
   border-width: 0px;
-  border-radius: 3px;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer; }
@@ -618,7 +656,7 @@ pre {
 #nopay-button:hover, #contribute-button:hover, .pity-button:hover {
   text-decoration: none !important;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
-  background-color: #FFC400; }
+  background-color: #13b9ff; }
 
 #donation-info {
   clear: left;
@@ -636,6 +674,11 @@ pre {
   visibility: hidden;
   display: none; }
 
+#payment-section {
+  width: 325px;
+  visibility: hidden;
+  display: none; }
+
 #pity-section {
   width: 325px;
   visibility: hidden;
@@ -649,7 +692,7 @@ pre {
 
 .donation-form {
   width: 100%;
-  margin-top: 10px; }
+  margin-top: 0px; }
 
 .donation-slider {
   font-size: 14px;
@@ -916,7 +959,7 @@ pre {
 
 #nothanks {
   margin-top: 0px;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   color: #2196F3; }
 

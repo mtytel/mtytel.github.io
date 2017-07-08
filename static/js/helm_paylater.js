@@ -26,7 +26,6 @@
  *
  */
 
-
 function getUrlParameter(param) {
   var url = decodeURIComponent(window.location.search.substring(1));
   var variables = url.split('&');
@@ -51,3 +50,4 @@ $(document).ready(function initPayment() {
   $("#donation-amount").attr("value", amount);
   $(".donation-form").submit();
 });
+

@@ -10,10 +10,10 @@
   <meta property="og:site_name" content="Helm" />
   <meta property="og:url" content="http://tytel.org/helm/" />
   <meta property="og:image" content="http://tytel.org/static/images/helm_og_image_small.png" />
-  <meta property="og:description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or as a LV2/VST/AU/AAX plugin." />
+  <meta property="og:description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or as a LV2/VST/VST3/AU plugin." />
 
   <title>Helm by Matt Tytel</title>
-  <meta name="description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or LV2/VST/AU/AAX plugin." />
+  <meta name="description" content="Helm is a free, cross-platform, polyphonic synthesizer with a powerful modulation system. Helm runs on GNU/Linux, Mac, and Windows as a standalone program or LV2/VST/VST3/AU plugin." />
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://tytel.org/helm/faq/">
@@ -57,8 +57,8 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" href="/blog">BLOG</a>
         <a class="page-link" href="/helm/faq">FAQ</a>
+        <a class="page-link" href="/static/docs/helm_manual.pdf">MANUAL</a>
         <a class="page-link" href="/helm/downloads">DOWNLOADS</a>
 
         <form class="page-link donate-button-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -115,13 +115,22 @@
         Will Helm work with my setup?
       </div>
       <div class="faq-answer">
-        Helm works almost everywhere in all major plugin formats. If you can't get Helm to work with your setup, please let me know at <a href="mailto:matthewtytel@gmail.com">matthewtytel@gmail.com</a>
+        Helm is released as VST, AU, LV2 and standalone.
+        <br />
+        OS Requirements:
+        <ul>
+          <li>Windows 7 or later</li>
+          <li>MacOS 10.7 or later</li>
+          <li>Ubuntu Trusty 14.04 or later</li>
+          <li>Debian Jessie or later</li>
+        </ul>
+        If you can't get Helm to work with your setup, please let me know at <a href="mailto:matthewtytel@gmail.com">matthewtytel@gmail.com</a>
       </div>
       <div class="faq-question">
         How does Helm work? Is there a manual?
       </div>
       <div class="faq-answer">
-        There is no manual yet, but the 1.0 release of Helm will come with some nice documentation.
+        Yes! Check it out <a href="/static/docs/helm_manual.pdf">here</a>.
       </div>
       <div class="faq-question">
         Where does Helm store files?
@@ -142,7 +151,6 @@
         <p>VST             - /Library/Audio/Plug-Ins/VST/helm.vst</p>
         <p>VST3            - /Library/Audio/Plug-Ins/VST3/helm.vst3</p>
         <p>AU              - /Library/Audio/Plug-Ins/Components/helm.component</p>
-        <p>AAX             - /Library/Application Support/Avid/Audio/Plug-Ins/helm.aaxplugin</p>
         <p>Local Presets   - ~/Library/Audio/Presets/Helm</p>
         <p>Factory Presets - /Library/Audio/Presets/Helm</p>
         <p>Config File     - ~/Library/Application Support/helm</p>
@@ -152,8 +160,8 @@
         <p>Standalone      - C:\Program Files\Helm\helm.exe (default)</p>
         <p>VST             - C:\Program Files\Steinberg\VstPlugins (default)</p>
         <p>VST3            - C:\Program Files\Common Files\VST3\Helm\helm.vst3</p>
-        <p>Local Presets   - C:\Documents and Settings\&lt;username&gt;\Application Data\helm\patches</p>
-        <p>Factory Presets - C:\Program Files\Helm\Patches</p>
+        <p>Local Presets   - C:\Users\&lt;username&gt;\Documents\Helm\Patches</p>
+        <p>Factory Presets - C:\Users\Public\Documents\Helm\Patches</p>
         <p>Config File     - C:\Documents and Settings\&lt;username&gt;\Application Data\helm\Helm.config</p>
       </div>
       <div class="faq-question">
