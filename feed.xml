@@ -6,8 +6,8 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jul 2017 12:36:17 -0400</pubDate>
-    <lastBuildDate>Sun, 23 Jul 2017 12:36:17 -0400</lastBuildDate>
+    <pubDate>Mon, 18 Sep 2017 10:16:37 -0700</pubDate>
+    <lastBuildDate>Mon, 18 Sep 2017 10:16:37 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -27,7 +27,7 @@ the dishwasher.&lt;/p&gt;
 
 &lt;p&gt;Dimensions are about 3in x 3in.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 01 Jun 2015 08:30:00 -0400</pubDate>
+        <pubDate>Mon, 01 Jun 2015 05:30:00 -0700</pubDate>
         <link>http://tytel.org/blog/2015/06/01/stickers/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/06/01/stickers/</guid>
         
@@ -79,7 +79,7 @@ lot of other topics like animation, layout and widgits that all have decent
 insight on what looks good and what doesn’t.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 17 May 2015 08:30:00 -0400</pubDate>
+        <pubDate>Sun, 17 May 2015 05:30:00 -0700</pubDate>
         <link>http://tytel.org/blog/2015/05/17/material-design/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/05/17/material-design/</guid>
         
@@ -128,7 +128,7 @@ I’m happy with. Here’s the development in reverse chronological order.&lt;/p
 &lt;p&gt;&lt;img src=&quot;/static/images/blog/helm_logo0.png&quot; alt=&quot;Helm Logo 0&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 08 May 2015 08:30:00 -0400</pubDate>
+        <pubDate>Fri, 08 May 2015 05:30:00 -0700</pubDate>
         <link>http://tytel.org/blog/2015/05/08/rebranding-to-helm/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/05/08/rebranding-to-helm/</guid>
         
@@ -212,7 +212,7 @@ efficiency as there are a lot of moving parts in Twytch and most of them are
 not CPU friendly.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 01 May 2015 08:30:00 -0400</pubDate>
+        <pubDate>Fri, 01 May 2015 05:30:00 -0700</pubDate>
         <link>http://tytel.org/blog/2015/05/01/unexpected-optimization-02/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/05/01/unexpected-optimization-02/</guid>
         
@@ -264,7 +264,7 @@ outdated, but when combined with a flat UI, it looks really fresh.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-01-18-screenshot.png&quot; alt=&quot;Twytch Screenshot 1-18&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 23 Apr 2015 08:30:00 -0400</pubDate>
+        <pubDate>Thu, 23 Apr 2015 05:30:00 -0700</pubDate>
         <link>http://tytel.org/blog/2015/04/23/long-update/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/04/23/long-update/</guid>
         
@@ -308,7 +308,7 @@ to go! (on some machines)&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fesetenv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FE_DFL_DISABLE_SSE_DENORMS_ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Tue, 10 Feb 2015 07:30:00 -0500</pubDate>
+        <pubDate>Tue, 10 Feb 2015 04:30:00 -0800</pubDate>
         <link>http://tytel.org/blog/2015/02/10/unexpected-optimization-01/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/02/10/unexpected-optimization-01/</guid>
         
@@ -369,7 +369,7 @@ dereferencing first so I first chose the slower but prettier method.&lt;/p&gt;
 significant 25% speed boost because of it.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 19 Jan 2015 07:30:00 -0500</pubDate>
+        <pubDate>Mon, 19 Jan 2015 04:30:00 -0800</pubDate>
         <link>http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</guid>
         
@@ -400,7 +400,7 @@ significant 25% speed boost because of it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-01-18-screenshot.png&quot; alt=&quot;Twytch Screenshot&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 17 Jan 2015 23:59:06 -0500</pubDate>
+        <pubDate>Sat, 17 Jan 2015 20:59:06 -0800</pubDate>
         <link>http://tytel.org/blog/2015/01/17/twytch-intro/</link>
         <guid isPermaLink="true">http://tytel.org/blog/2015/01/17/twytch-intro/</guid>
         
@@ -431,7 +431,7 @@ in thoughtless throngs and empty noise.&lt;br /&gt;
 Shall truth with fiction, our world of bloom&lt;br /&gt;
 preserve what it first creates?  &lt;/p&gt;
 </description>
-        <pubDate>Sun, 06 Jan 2013 00:00:00 -0500</pubDate>
+        <pubDate>Sun, 06 Jan 2013 00:00:00 -0800</pubDate>
         <link>http://tytel.org/poetry/stray-bolts/</link>
         <guid isPermaLink="true">http://tytel.org/poetry/stray-bolts/</guid>
         
@@ -454,7 +454,7 @@ daughters to a noble mind, resonance of harmonious sound&lt;br /&gt;
 wandering upon the earth.  &lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 05 Jan 2013 00:00:00 -0500</pubDate>
+        <pubDate>Sat, 05 Jan 2013 00:00:00 -0800</pubDate>
         <link>http://tytel.org/poetry/set-fire/</link>
         <guid isPermaLink="true">http://tytel.org/poetry/set-fire/</guid>
         
