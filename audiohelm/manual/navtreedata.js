@@ -6,7 +6,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"utils.html#ae017e4dbc4caaaa223baa83ba5122621"
+"class_audio_helm_1_1_utils.html#ae017e4dbc4caaaa223baa83ba5122621"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
