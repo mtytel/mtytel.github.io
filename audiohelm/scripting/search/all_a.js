@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['native',['Native',['../class_audio_helm_1_1_native.html',1,'AudioHelm']]],
   ['note',['Note',['../class_audio_helm_1_1_note.html',1,'AudioHelm']]],
   ['noteexistsinrange',['NoteExistsInRange',['../class_audio_helm_1_1_sequencer.html#a304d229f08cd107f8198434f6d1dbe16',1,'AudioHelm::Sequencer']]],
   ['notehandler',['NoteHandler',['../interface_audio_helm_1_1_note_handler.html',1,'AudioHelm']]],

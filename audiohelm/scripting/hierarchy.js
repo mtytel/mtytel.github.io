@@ -16,12 +16,13 @@ var hierarchy =
       [ "AudioHelm.Sequencer", "class_audio_helm_1_1_sequencer.html", [
         [ "AudioHelm.HelmSequencer", "class_audio_helm_1_1_helm_sequencer.html", null ],
         [ "AudioHelm.SampleSequencer", "class_audio_helm_1_1_sample_sequencer.html", null ]
-      ] ],
-      [ "AudioHelm.Utils", "class_audio_helm_1_1_utils.html", null ]
+      ] ]
     ] ],
+    [ "AudioHelm.Native", "class_audio_helm_1_1_native.html", null ],
     [ "AudioHelm.NoteHandler", "interface_audio_helm_1_1_note_handler.html", [
       [ "AudioHelm.HelmController", "class_audio_helm_1_1_helm_controller.html", null ],
       [ "AudioHelm.Sampler", "class_audio_helm_1_1_sampler.html", null ],
       [ "AudioHelm.Sequencer", "class_audio_helm_1_1_sequencer.html", null ]
-    ] ]
+    ] ],
+    [ "AudioHelm.Utils", "class_audio_helm_1_1_utils.html", null ]
 ];

@@ -8,6 +8,7 @@ var namespace_audio_helm =
     [ "HelmPatchSettings", "class_audio_helm_1_1_helm_patch_settings.html", "class_audio_helm_1_1_helm_patch_settings" ],
     [ "HelmSequencer", "class_audio_helm_1_1_helm_sequencer.html", "class_audio_helm_1_1_helm_sequencer" ],
     [ "Keyzone", "class_audio_helm_1_1_keyzone.html", "class_audio_helm_1_1_keyzone" ],
+    [ "Native", "class_audio_helm_1_1_native.html", "class_audio_helm_1_1_native" ],
     [ "Note", "class_audio_helm_1_1_note.html", "class_audio_helm_1_1_note" ],
     [ "NoteHandler", "interface_audio_helm_1_1_note_handler.html", "interface_audio_helm_1_1_note_handler" ],
     [ "NoteRow", "class_audio_helm_1_1_note_row.html", "class_audio_helm_1_1_note_row" ],

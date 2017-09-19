@@ -1,5 +1,8 @@
 var class_audio_helm_1_1_helm_patch_settings =
 [
+    [ "ConvertToPlugin", "class_audio_helm_1_1_helm_patch_settings.html#a70a6b48200a056be8faca4ac4b97f2f1", null ],
+    [ "GetDestinationIndex", "class_audio_helm_1_1_helm_patch_settings.html#adeff5e4227404a2b4dda8f046379b043", null ],
+    [ "GetSourceIndex", "class_audio_helm_1_1_helm_patch_settings.html#a792d04b28ac3d3170fac454e28d6902e", null ],
     [ "amp_attack", "class_audio_helm_1_1_helm_patch_settings.html#a5265de4cae7cf896b1e8aa9615f162c8", null ],
     [ "amp_decay", "class_audio_helm_1_1_helm_patch_settings.html#a7fc41cb92027e945713dd156c4219c12", null ],
     [ "amp_release", "class_audio_helm_1_1_helm_patch_settings.html#ae777d409c5f2ccaaa77d066482b3c6f1", null ],
@@ -42,6 +45,7 @@ var class_audio_helm_1_1_helm_patch_settings =
     [ "keytrack", "class_audio_helm_1_1_helm_patch_settings.html#a4a23795c0fd46eb0e09b88c8093b0686", null ],
     [ "kMaxCharacters", "class_audio_helm_1_1_helm_patch_settings.html#ad6cacc5d7bedb4cbd106ab46d6161540", null ],
     [ "kMaxModulations", "class_audio_helm_1_1_helm_patch_settings.html#ab004ea63f0dc718e62d001a97454a5a6", null ],
+    [ "kShortenNames", "class_audio_helm_1_1_helm_patch_settings.html#aa2f0ea67e8c3bbf3f381c2b954e4f4fc", null ],
     [ "legato", "class_audio_helm_1_1_helm_patch_settings.html#ac06c8b4a470620564aac1c4d7ea0b85b", null ],
     [ "mod_attack", "class_audio_helm_1_1_helm_patch_settings.html#aae121b4fa61ccb2ebd8d8043c75378ab", null ],
     [ "mod_decay", "class_audio_helm_1_1_helm_patch_settings.html#a27111302676d04aa1bf28a95a980dafd", null ],
