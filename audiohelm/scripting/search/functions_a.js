@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validfornote',['ValidForNote',['../class_helm_1_1_keyzone.html#aad946eb2509c54e7e81eb0e7b73608f0',1,'Helm.Keyzone.ValidForNote(int note)'],['../class_helm_1_1_keyzone.html#a912b474011a7296ba9b953c3f25d2133',1,'Helm.Keyzone.ValidForNote(int note, float velocity)']]]
+  ['validfornote',['ValidForNote',['../class_audio_helm_1_1_keyzone.html#a1eaa1f3bd2d47fd5693dc3ecacfa0142',1,'AudioHelm.Keyzone.ValidForNote(int note)'],['../class_audio_helm_1_1_keyzone.html#a944d58a1ba9747540ee4380c09be8a79',1,'AudioHelm.Keyzone.ValidForNote(int note, float velocity)']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['division',['Division',['../class_helm_1_1_sequencer.html#a4e3db351f3f68feb4a48108882053823',1,'Helm.Sequencer.Division()'],['../class_helm_1_1_sequencer.html#aabc4f58cc8c69ccc2ddf6138896c5dcc',1,'Helm.Sequencer.division()']]]
+  ['division',['Division',['../class_audio_helm_1_1_sequencer.html#a809446b71657b4e48e2b52c22904accc',1,'AudioHelm.Sequencer.Division()'],['../class_audio_helm_1_1_sequencer.html#a03f799df1c88335e4b01ff9a2077e189',1,'AudioHelm.Sequencer.division()']]]
 ];

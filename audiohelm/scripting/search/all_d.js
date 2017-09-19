@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['rangesoverlap',['RangesOverlap',['../class_helm_1_1_utils.html#a95c027bbee5569420e43afe431443803',1,'Helm::Utils']]],
-  ['reference',['Reference',['../class_helm_1_1_helm_sequencer.html#a11bb04291b10acc390da2af19be42a31',1,'Helm.HelmSequencer.Reference()'],['../class_helm_1_1_sequencer.html#a5130f9bb73e0a43915d22bfe2c40f818',1,'Helm.Sequencer.Reference()']]],
-  ['removekeyzone',['RemoveKeyzone',['../class_helm_1_1_sampler.html#a44f5d62b1106258f8aea3b930e6d47f1',1,'Helm::Sampler']]],
-  ['removenote',['RemoveNote',['../class_helm_1_1_sequencer.html#aa48315b93156e6634a1f45885a393e1e',1,'Helm::Sequencer']]],
-  ['removenotescontainedinrange',['RemoveNotesContainedInRange',['../class_helm_1_1_sequencer.html#a3e49cd27fc69c485836a2e22379453f4',1,'Helm::Sequencer']]],
-  ['removenotesinrange',['RemoveNotesInRange',['../class_helm_1_1_sequencer.html#a3ed07fd7371de1e50f4bfcdee90e618a',1,'Helm::Sequencer']]],
-  ['removerange',['RemoveRange',['../class_helm_1_1_note.html#aca7aadb5532a615776de8686c08d259f',1,'Helm::Note']]]
+  ['rangesoverlap',['RangesOverlap',['../class_audio_helm_1_1_utils.html#a4e0333b8241979087d2d3f5309b82160',1,'AudioHelm::Utils']]],
+  ['reference',['Reference',['../class_audio_helm_1_1_helm_sequencer.html#a758ec99c458a45c9a136892459ba3721',1,'AudioHelm.HelmSequencer.Reference()'],['../class_audio_helm_1_1_sequencer.html#ad05759fc8c06838c945a08e88b02459e',1,'AudioHelm.Sequencer.Reference()']]],
+  ['removekeyzone',['RemoveKeyzone',['../class_audio_helm_1_1_sampler.html#a04aca034c1915a1c38d589770496a5d8',1,'AudioHelm::Sampler']]],
+  ['removenote',['RemoveNote',['../class_audio_helm_1_1_sequencer.html#a4b9dee924de5133d1b917c64351678e2',1,'AudioHelm::Sequencer']]],
+  ['removenotescontainedinrange',['RemoveNotesContainedInRange',['../class_audio_helm_1_1_sequencer.html#aa3da2a0d6a436070d335e13885471bcd',1,'AudioHelm::Sequencer']]],
+  ['removenotesinrange',['RemoveNotesInRange',['../class_audio_helm_1_1_sequencer.html#a26d97da8dcf03239889b0470b4ece66d',1,'AudioHelm::Sequencer']]],
+  ['removerange',['RemoveRange',['../class_audio_helm_1_1_note.html#a0a3acd82b8f169c85bc638b97481f2ee',1,'AudioHelm::Note']]]
 ];

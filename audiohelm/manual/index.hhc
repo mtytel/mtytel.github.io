@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Namespaces"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm"><param name="Local" value="namespace_helm.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace Members"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Enumerations"><param name="Local" value="namespacemembers_enum.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm"><param name="Local" value="namespace_helm.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmAudioInit"><param name="Local" value="class_helm_1_1_helm_audio_init.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmBpm"><param name="Local" value="class_helm_1_1_helm_bpm.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGlobalBpm"><param name="Local" value="class_helm_1_1_helm_bpm.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bpm"><param name="Local" value="class_helm_1_1_helm_bpm.html#ad62004cd45a80085cf449b18181354f0"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmController"><param name="Local" value="class_helm_1_1_helm_controller.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AllNotesOff"><param name="Local" value="class_helm_1_1_helm_controller.html#a4eab6ef6509bc6844450643b18db298d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPressedNotes"><param name="Local" value="class_helm_1_1_helm_controller.html#ad3645814ca2ba0ce624c9dad943e05b1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="IsNoteOn"><param name="Local" value="class_helm_1_1_helm_controller.html#a22d21afda75417205fcf21b27fd467d5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOff"><param name="Local" value="class_helm_1_1_helm_controller.html#ae18242a2c346b8d67a9b15328e7b757e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="class_helm_1_1_helm_controller.html#a96593eb90727997a231652667bbf8cec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="class_helm_1_1_helm_controller.html#a0430edb52a149a5485d9bc527f585838"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetAftertouch"><param name="Local" value="class_helm_1_1_helm_controller.html#a0565009a587fafc19c0c1fedcfb0106f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetModWheel"><param name="Local" value="class_helm_1_1_helm_controller.html#adbff15ebfdeb990d344a1e468700fc51"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetParameter"><param name="Local" value="class_helm_1_1_helm_controller.html#a4e1ae4db7a09b5fd8a3b46c066207911"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetParameter"><param name="Local" value="class_helm_1_1_helm_controller.html#a1ae290181631eff9992a4e8ce1cdc625"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetPitchWheel"><param name="Local" value="class_helm_1_1_helm_controller.html#aed60c6b233f5649f6566fefa2a187ab8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="channel"><param name="Local" value="class_helm_1_1_helm_controller.html#a27a233563e3f6cea23e3fae0dbe1f27b"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmModulationSetting"><param name="Local" value="class_helm_1_1_helm_modulation_setting.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="amount"><param name="Local" value="class_helm_1_1_helm_modulation_setting.html#aee138e56f37750d7d4d85cde623a8ced"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="destination"><param name="Local" value="class_helm_1_1_helm_modulation_setting.html#ae984dc992639bcd7c277cdf77c0e1b24"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="source"><param name="Local" value="class_helm_1_1_helm_modulation_setting.html#abcd2b63e112391505fff3428a1d0a4e7"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmPatchFormat"><param name="Local" value="class_helm_1_1_helm_patch_format.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="author"><param name="Local" value="class_helm_1_1_helm_patch_format.html#a93b6feaafce9fc0906d2962c79f0b440"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="folder_name"><param name="Local" value="class_helm_1_1_helm_patch_format.html#ac4cab0e3da03165e17881b44875e43ea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="license"><param name="Local" value="class_helm_1_1_helm_patch_format.html#a8aa4a6565758a973e29e84af9819eed0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="patch_name"><param name="Local" value="class_helm_1_1_helm_patch_format.html#af71b8cf2c474242b75b66269431b55a0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="settings"><param name="Local" value="class_helm_1_1_helm_patch_format.html#a95d2a827cc205f3df96aa50ca22ffa0e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="synth_version"><param name="Local" value="class_helm_1_1_helm_patch_format.html#a92374f35f7546700ce6f5a7c6469e528"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmPatchSettings"><param name="Local" value="class_helm_1_1_helm_patch_settings.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="amp_attack"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac0bd0bec9f86a1e1de5731a7556dad86"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="amp_decay"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#af3d873c20e4778ef73abddc69b662334"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="amp_release"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#add5a5615514c945e10c61f48898a64b1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="amp_sustain"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a9eef65e1314685e3b4a0e4c59bdcc89c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a7661f80d6a17c2cb6095da465879f274"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_gate"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aeeedfa77e75e7aef0f87ea4e1d0722f7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_octaves"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a58565cff3cca8778814016102ff4b5ca"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae5d77c86cbd62c3b432537c8d7852c07"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_pattern"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac7a2572e9bb9bd0a5716b026349489ec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac505e8f059fd732da8a17e238ea096dd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="arp_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a656f5163b5a46c56baab357f13cd4231"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="beats_per_minute"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a030349e991414336c1ee6f98d40950be"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="cross_modulation"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad07ba7b799464a0662d623c07cc6c903"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="cutoff"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ace46085a4888ef3d8432b2b968daa067"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="delay_dry_wet"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aa46851765cd90dc23ddef706fe21233e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="delay_feedback"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a8cc5e4e8d970d0d314f728085bbf6f68"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="delay_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aa129e0f7e255158eac3293fa9e8523c8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="delay_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2b954278edd5d7156012c8cd8977d632"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="delay_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a189f7de0eb01af2c48b5773a667a9803"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="delay_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a820265688437a60412b4010bcef6262d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="distortion_drive"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a73618ee8f329d3251544449a3112eba0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="distortion_mix"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a3c7d5d1cb038409a07098242ea584190"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="distortion_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a859b2ad815102dcd38e90936a2794ffc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="distortion_type"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#abad4036864822f4a5351817289d7155b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="fil_attack"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a8506375ac5efcc39426390985f0e62a2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="fil_decay"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a0a3d339cf87fb2582bc48a255477c791"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="fil_env_depth"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2ae2da9c66cdf85bba30a279e9ee7742"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="fil_release"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae4f50f4283ad6f4cb03ee39ac776f9dd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="fil_sustain"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#adb2455ba8204de849813400bae789f00"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_blend"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aed42b5ba455618d9d44dd1ef8f5c1294"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_drive"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#acd36331c551e91c75c2a0ed0dd3259ea"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a5e1412472d2323192a07d8116f00c8a8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_saturation"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2fbb128a081c017d7ac9a4de1895d799"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_shelf"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a5cd52d195894b838a609c8905e943758"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_style"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2a71876e7435bca3ac9233e38f9bcbf3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_type"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ab5dae5fe767f477e2fa359935403c96c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="formant_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a27a93bf266d173adf2f246f5982d1d30"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="formant_x"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a3dff14dd370a928fa300a8d54dd86124"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="formant_y"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2f8ed7cc1a70144742ba561e9c643796"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keytrack"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a309c440ca6c65bf62f87b996bfa4a0b4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMaxCharacters"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2ea7a14460a9b314f98674d3f62e7ba3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMaxModulations"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a6f3dd6a35b5db05debef66a89043e39d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="legato"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a0b5ec536a88aa3bdfba71346aeecbdb6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mod_attack"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a27f5a21f376830c1725a173f28ae59ef"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mod_decay"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a9afb6b2fbf53fa6c88be1a693a5cd422"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mod_release"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad5010895673c95b304ae0f7c9478c11b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mod_sustain"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#abfca27893179d2204259587da09133d7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="modulations"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2295fd46dc8f533f5cc150afcde417a7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_1_amplitude"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#acf7d1bbcf7149099b6e20935987c3ecb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_1_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a8c0215906a598a51ee861c4e564522f2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_1_retrigger"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a1d2382ec887dc6252868e3e923877e37"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_1_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a55985530cb119773e158bb44d90cda55"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_1_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#af4cb0dafc49f827a6a3172137eb96ab0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_1_waveform"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a20e2dacd62ce682b2cd21cf8aafd7824"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_2_amplitude"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a4998663818527cd859a482f3a35963f6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_2_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ab1e4039f5c521b5fc2213c984ed06812"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_2_retrigger"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a343d4693b42a2f369d251d63c2234749"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_2_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a3fb875b91b684995089c2f95968d39b6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_2_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac4f29519add96c4f9bae1c946ec55510"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mono_lfo_2_waveform"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aa220171b46219b3294d814df2984f691"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="noise_volume"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aa93c5f9eea8aa3aa53d9690d02a66219"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="num_steps"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a6387893c621c0fce8e6a59577fc267d4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_1_transpose"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a6e803f16e8f05622de690702ee361a7b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_1_tune"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad77ee5ed936b8799f8abbe2ecc934f5e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_1_unison_detune"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae560cee7b83bfa6036c4feabfc98d791"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_1_unison_voices"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad844d5ce8bc36dbdf4a2ed2f2bb90e2a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_1_volume"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ab6e1419ad2ac03dd0dd853e77c45cbfe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_1_waveform"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a0227bca593e96df1039b6a41f71a0280"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_2_transpose"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a043bbcd1344a90cf5b9ad46612e61a28"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_2_tune"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a4eca1383580bb7e2ee9ce1119bfa441d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_2_unison_detune"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a3432934c8cd8d4a6facf316d6427e483"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_2_unison_voices"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a5be9e25d33ed325083c8d76fc4928db5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_2_volume"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac88c129d4ba2f84734fd7bc3933aa0c6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_2_waveform"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aa950ac912f59fa226f34bfa377fa307e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_feedback_amount"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a6e333cbee4dc4457e52dfe45d31aadf4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_feedback_transpose"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a52b1e2a89fc4111e0e5a5bce47550d2a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_feedback_tune"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aebcf5e949b28a5e38876c8185b780bd4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="osc_mix"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a74302cfe0c19e7e1df2338e191ce5034"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="pitch_bend_range"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a51a442660bce571333e2e56fac531b66"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="poly_lfo_amplitude"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a04002132a3208cbe2f694a68752d382a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="poly_lfo_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a9ea03ba471a800481fe1ef4bda6a2753"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="poly_lfo_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#add8e59dbc00f27da079aa49c22c2c883"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="poly_lfo_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac7c3cdccabd96bb062f962b77bed9c72"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="poly_lfo_waveform"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a7f7bc74fcf322f874faec65390858a2e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="polyphony"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a104e95f1758f36bb1f8ac88273aa3112"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="portamento"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aebb3d800ab50318a984c9d8c1a0ce84f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="portamento_type"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a22a69ed5c26f60c76454cf98c8e6656e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="resonance"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae008e0eb3f96b13877d78c2673ae3dcc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="reverb_damping"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a416bbc7d71d397ed8d4cb2c329ef7156"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="reverb_dry_wet"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a4c47ff14af106aba0adb502263dfd973"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="reverb_feedback"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a8b43c8c78b9503536facecd7a4e39243"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="reverb_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad0dcd09866aa1bfd043ff88321b47ddc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a23f0fdfb6a273ae4cc27fcb2275a1677"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_00"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a711e8ad4f378793c640c367ac75aeb92"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_02"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a513f10d3392947e7b97680625656abd0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_04"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ab948e1a6012a41c610d1029f87805d74"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_06"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ab87803fd3bee32756fffc6131797fbc5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_08"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac918871f7ca8c99af0b6ee345aaa979c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_10"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a5636030d6f91f4129372c058232ab501"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_12"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad68218205a9285835f3e67ac3718336a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_14"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a72a7db7e34b3e1968cd7d92d112fe9ce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_16"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#acb818053e85061cf82a1355d4b690dfc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_18"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae39807c2c8a9beca1af39d12af248356"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_20"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a879ab9a2c0f478b721cf7d55541111fe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_22"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a7d9aff24ea82b09f15c8ac6ebfe385b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_24"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a1a67c1a5cffa490ae0852fd44b38ab0b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_26"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a34c6aca6f6f880d262c0ba54b139d15e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_28"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a3a8e87a4c91de016211c47791e27300b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_seq_30"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad5900c0c4708c5babbe55a7f965b06e4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_sequencer_retrigger"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aa9abd28f3e001ca07a7a4b5c52f809ff"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_sequencer_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae8a45660dd0e6b793a86c2456513ef40"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_sequencer_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#adb6c322d3e777d6fe5c29c9f09e8f0d7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="step_smoothing"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad1083a146090e5a8482631769dd668f3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a17f366908a5c1ca20db15d2d9b156d33"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_on"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#af4ba37c66b574872aaa7d09ebc3c594a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_resample_frequency"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aec2e404185b0bc68197cef16481f8026"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_resample_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac5e31b9328dbee712c8780115ae0b8e1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_resample_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a6066b22d226ee6be603a0966aee077ce"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_softness"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a81e4f21c607f9105edb0a0c0cb69add2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_sync"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a70702e272827456702a9d693ce471162"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="stutter_tempo"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac464c1a38df5812548ef6f591ef009ca"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="sub_octave"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#aded09743303839dfcb8e15685675277d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="sub_shuffle"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a926d80208759bf0cf4a489e2d5661d78"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="sub_volume"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2575d807ede4e9adee573da684bce408"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="sub_waveform"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ac49394fd7b2a67d790f6121e6139e6f2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="unison_1_harmonize"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#abc49427a39189b831d57440cdb8752d1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="unison_2_harmonize"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#acf950b598d7277d71f95d8e75a09b798"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="velocity_track"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ae2ca496e3bba20ddf46ee9a9b8c848b7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="volume"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a33b53cd93a68fd1c1fe4abc8717da44d"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmSequencer"><param name="Local" value="class_helm_1_1_helm_sequencer.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AllNotesOff"><param name="Local" value="class_helm_1_1_helm_sequencer.html#a3f6ccecb5b84584652cf67d67e6d74dc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOff"><param name="Local" value="class_helm_1_1_helm_sequencer.html#adc81a694c63c803f65c033befbbf5efd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="class_helm_1_1_helm_sequencer.html#afc56f512a79a6a9583084e127ae35c58"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reference"><param name="Local" value="class_helm_1_1_helm_sequencer.html#a11bb04291b10acc390da2af19be42a31"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartOnNextCycle"><param name="Local" value="class_helm_1_1_helm_sequencer.html#a25054b98128b0ff4fa3600ffe9634177"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartScheduled"><param name="Local" value="class_helm_1_1_helm_sequencer.html#a31e1f283c64be9a6298b34fd788cfe7f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="channel"><param name="Local" value="class_helm_1_1_helm_sequencer.html#a700f8b05d1cd36540fcff121f0c35f21"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Keyzone"><param name="Local" value="class_helm_1_1_keyzone.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ValidForNote"><param name="Local" value="class_helm_1_1_keyzone.html#aad946eb2509c54e7e81eb0e7b73608f0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ValidForNote"><param name="Local" value="class_helm_1_1_keyzone.html#a912b474011a7296ba9b953c3f25d2133"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="audioClip"><param name="Local" value="class_helm_1_1_keyzone.html#a1f32362545d6f2298d1d8690ed52a50b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="maxKey"><param name="Local" value="class_helm_1_1_keyzone.html#ae8ec0128519ab0040cbf80d5c8007593"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="maxVelocity"><param name="Local" value="class_helm_1_1_keyzone.html#af7e900c2836e78f79651eaf27b12bafb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="minKey"><param name="Local" value="class_helm_1_1_keyzone.html#ac3f40b371ad5f8f775ca73a24baed687"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="minVelocity"><param name="Local" value="class_helm_1_1_keyzone.html#a1a8373644600ab9e177932e1fc987d35"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mixer"><param name="Local" value="class_helm_1_1_keyzone.html#a31dcd1d0f010da5292586c77c0107545"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="rootKey"><param name="Local" value="class_helm_1_1_keyzone.html#a673fb24507549083fc5f99e779fdcc4a"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Note"><param name="Local" value="class_helm_1_1_note.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="InsideRange"><param name="Local" value="class_helm_1_1_note.html#ac4beec98e53411477ab93a96b14f9443"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnAfterDeserialize"><param name="Local" value="class_helm_1_1_note.html#a663428ce37a42fb8e3d39a056077b944"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnBeforeSerialize"><param name="Local" value="class_helm_1_1_note.html#a8bf7f0ed2928d3f74e2a292a6ee979bb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OverlapsRange"><param name="Local" value="class_helm_1_1_note.html#a9589945136a8ffbc55edbc89095dca5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RemoveRange"><param name="Local" value="class_helm_1_1_note.html#aca7aadb5532a615776de8686c08d259f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TryCreate"><param name="Local" value="class_helm_1_1_note.html#abaa1029d2342fb8e3466a6bff3fb53e9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="TryDelete"><param name="Local" value="class_helm_1_1_note.html#a7291f8e380bd44dc02f31fd6ad5aa96b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="parent"><param name="Local" value="class_helm_1_1_note.html#a943e896c22a91699a0758c85e9836343"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="end"><param name="Local" value="class_helm_1_1_note.html#a5574b20084c5d93f3e6d676545e1eeca"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="note"><param name="Local" value="class_helm_1_1_note.html#a725c9917e58e895087890c5a0b294c3d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="start"><param name="Local" value="class_helm_1_1_note.html#a32fda1f1eae7f7728e276556d2555e4d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="velocity"><param name="Local" value="class_helm_1_1_note.html#a022a8f87f03f475ed2b9095da2f58bd2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteHandler"><param name="Local" value="interface_helm_1_1_note_handler.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AllNotesOff"><param name="Local" value="interface_helm_1_1_note_handler.html#a471d396ddbaa8967f03360aa1af3668c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOff"><param name="Local" value="interface_helm_1_1_note_handler.html#af929871a31f0d05613938de12b9c9386"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="interface_helm_1_1_note_handler.html#a28b58dfabb23cba99d98bdc1d62bd348"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteRow"><param name="Local" value="class_helm_1_1_note_row.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnAfterDeserialize"><param name="Local" value="class_helm_1_1_note_row.html#a87a6254e02d00b12f54c0836c3701fb3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="OnBeforeSerialize"><param name="Local" value="class_helm_1_1_note_row.html#af5d3ebaa85a9f8c8c5eeaf9e0cd72a42"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="notes"><param name="Local" value="class_helm_1_1_note_row.html#a4e97a7bdc863305b3cbe00d8c3582720"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Sampler"><param name="Local" value="class_helm_1_1_sampler.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddKeyzone"><param name="Local" value="class_helm_1_1_sampler.html#aa56397b1c22e5445e80be70afc210b5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AllNotesOff"><param name="Local" value="class_helm_1_1_sampler.html#a5a5085b6d4ff5df0e8e83a5782e69f5e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetMaxKey"><param name="Local" value="class_helm_1_1_sampler.html#ab4b1179da5bbaabb52fafa5378c3a2b0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetMinKey"><param name="Local" value="class_helm_1_1_sampler.html#a8fba3117d2c7e59ad94af42198171c4e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOff"><param name="Local" value="class_helm_1_1_sampler.html#a697f221fbd6a12956dd5b05d34fd049a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="class_helm_1_1_sampler.html#ae0f3c011bfc801a5d007bd37b7bc9fcd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOnScheduled"><param name="Local" value="class_helm_1_1_sampler.html#ae5a5d9daef93dd23b58f0a62ae82bd77"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RemoveKeyzone"><param name="Local" value="class_helm_1_1_sampler.html#a44f5d62b1106258f8aea3b930e6d47f1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="keyzones"><param name="Local" value="class_helm_1_1_sampler.html#a852c084d7dcf7c970159bfd17be10fd7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="numVoices"><param name="Local" value="class_helm_1_1_sampler.html#a66656f2f7a2ab061fe66534e89c5afec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="useNoteOff"><param name="Local" value="class_helm_1_1_sampler.html#a1b45c2430f12d26e08c7e3cd066afbbc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="velocityTracking"><param name="Local" value="class_helm_1_1_sampler.html#a48626a703aec25934c4ccf135290b67b"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SampleSequencer"><param name="Local" value="class_helm_1_1_sample_sequencer.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AllNotesOff"><param name="Local" value="class_helm_1_1_sample_sequencer.html#a5c66ddd4ded8366ec682046eb5e45bb5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOff"><param name="Local" value="class_helm_1_1_sample_sequencer.html#a319d2a686a5eb4bed63c8681734707bf"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="class_helm_1_1_sample_sequencer.html#a12f9b746aa175a1d90b459ec8119cebd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartOnNextCycle"><param name="Local" value="class_helm_1_1_sample_sequencer.html#a6b3836cafa43dab9fedc2cb14f2ed891"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartScheduled"><param name="Local" value="class_helm_1_1_sample_sequencer.html#ac860ea9bb851f3d6c58343d8234acdd4"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Sequencer"><param name="Local" value="class_helm_1_1_sequencer.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Division"><param name="Local" value="class_helm_1_1_sequencer.html#a4e3db351f3f68feb4a48108882053823"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="kEighth"><param name="Local" value="class_helm_1_1_sequencer.html#a4e3db351f3f68feb4a48108882053823a23871afeee5c4fb5be0887f8d2585849"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="kSixteenth"><param name="Local" value="class_helm_1_1_sequencer.html#a4e3db351f3f68feb4a48108882053823a6961f559e42163ad938863782d353640"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="kTriplet"><param name="Local" value="class_helm_1_1_sequencer.html#a4e3db351f3f68feb4a48108882053823ac72b2243343c915a3ad5740e6a9a9bf0"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="kThirtySecond"><param name="Local" value="class_helm_1_1_sequencer.html#a4e3db351f3f68feb4a48108882053823ac0ebd1b93ede8b4179f30d96c7b5f5c8"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddNote"><param name="Local" value="class_helm_1_1_sequencer.html#ac8b6c6ae657d4ffae812d06c5f30d60f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AllNotesOff"><param name="Local" value="class_helm_1_1_sequencer.html#ad9512630baebd52358ef592ab1315415"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ClampNotesInRange"><param name="Local" value="class_helm_1_1_sequencer.html#a0d0ce8880723afb3f038aeaaac2f3aaa"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Clear"><param name="Local" value="class_helm_1_1_sequencer.html#adf8f95baba08e8e4162518a7b7534cd5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDivisionLength"><param name="Local" value="class_helm_1_1_sequencer.html#aa4b4d313e2f5e8cf2af8416569642dee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNoteInRange"><param name="Local" value="class_helm_1_1_sequencer.html#a7c873c5791dda8894a61090e93eea57a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetSequencerPosition"><param name="Local" value="class_helm_1_1_sequencer.html#a14e8fa61f51c1693d4783634c6c2f1c8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetSequencerTime"><param name="Local" value="class_helm_1_1_sequencer.html#a71bfbe8256cd0985bcaef51eef87b67f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetSixteenthTime"><param name="Local" value="class_helm_1_1_sequencer.html#a3b889815f010f980c8c0743ecfed6735"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="InitNoteRows"><param name="Local" value="class_helm_1_1_sequencer.html#a5cab0c078c9f482fd2f11f9013dea2bc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteExistsInRange"><param name="Local" value="class_helm_1_1_sequencer.html#a960fb08f23c5f3d16d722e39141ab086"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOff"><param name="Local" value="class_helm_1_1_sequencer.html#aba7aae3494df284a0fcb5281279d8f32"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NoteOn"><param name="Local" value="class_helm_1_1_sequencer.html#a4776201bdf20eee39b3875581fa14002"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="NotifyNoteKeyChanged"><param name="Local" value="class_helm_1_1_sequencer.html#adaaef0dcecee55b1a6837570354a4473"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Reference"><param name="Local" value="class_helm_1_1_sequencer.html#a5130f9bb73e0a43915d22bfe2c40f818"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RemoveNote"><param name="Local" value="class_helm_1_1_sequencer.html#aa48315b93156e6634a1f45885a393e1e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RemoveNotesContainedInRange"><param name="Local" value="class_helm_1_1_sequencer.html#a3e49cd27fc69c485836a2e22379453f4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RemoveNotesInRange"><param name="Local" value="class_helm_1_1_sequencer.html#a3ed07fd7371de1e50f4bfcdee90e618a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartOnNextCycle"><param name="Local" value="class_helm_1_1_sequencer.html#a583e0393b9dca3a35b61686c64120de4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartScheduled"><param name="Local" value="class_helm_1_1_sequencer.html#a98e9e08fb636d8fdaad71c566619b5ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpdatePosition"><param name="Local" value="class_helm_1_1_sequencer.html#a23d86885e460c2175483e6e1ea2ddf2f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="allNotes"><param name="Local" value="class_helm_1_1_sequencer.html#a4d64ef1179011cf16aff7c346ca09934"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="currentIndex"><param name="Local" value="class_helm_1_1_sequencer.html#afdb32cc5e19da188fdbf09acf5b004a0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="division"><param name="Local" value="class_helm_1_1_sequencer.html#aabc4f58cc8c69ccc2ddf6138896c5dcc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMaxLength"><param name="Local" value="class_helm_1_1_sequencer.html#a75659b5321f02a86e17aca402dab3b46"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="length"><param name="Local" value="class_helm_1_1_sequencer.html#ac0e8b5243b07b639c284180d8cd30be5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="syncTime"><param name="Local" value="class_helm_1_1_sequencer.html#a16be3f3aa9392c6ac9320e2cc04758d0"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Utils"><param name="Local" value="class_helm_1_1_utils.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kBpmToSixteenths"><param name="Local" value="class_helm_1_1_utils.html#aea48afa5d213834897f7c3d4a49eac72"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMaxChannels"><param name="Local" value="class_helm_1_1_utils.html#ac156da38c14c3e49b2752b746552fc30"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMiddleC"><param name="Local" value="class_helm_1_1_utils.html#a6900c01d829988f31b692f36ed3450fd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMidiSize"><param name="Local" value="class_helm_1_1_utils.html#ad1fd8a6d639dee3980018b86d609e50c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kMinOctave"><param name="Local" value="class_helm_1_1_utils.html#a0872c2ef619733a272ce3ca00838213b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="kNotesPerOctave"><param name="Local" value="class_helm_1_1_utils.html#affb4987ba12f70c4bd62366b258e8fa1"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmModulationSetting"><param name="Local" value="class_helm_1_1_helm_modulation_setting.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmPatchFormat"><param name="Local" value="class_helm_1_1_helm_patch_format.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmPatchSettings"><param name="Local" value="class_helm_1_1_helm_patch_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="ISerializationCallbackReceiver"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Note"><param name="Local" value="class_helm_1_1_note.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.NoteRow"><param name="Local" value="class_helm_1_1_note_row.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Keyzone"><param name="Local" value="class_helm_1_1_keyzone.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="MonoBehaviour"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmAudioInit"><param name="Local" value="class_helm_1_1_helm_audio_init.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmBpm"><param name="Local" value="class_helm_1_1_helm_bpm.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmController"><param name="Local" value="class_helm_1_1_helm_controller.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Sampler"><param name="Local" value="class_helm_1_1_sampler.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Sequencer"><param name="Local" value="class_helm_1_1_sequencer.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmSequencer"><param name="Local" value="class_helm_1_1_helm_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.SampleSequencer"><param name="Local" value="class_helm_1_1_sample_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Utils"><param name="Local" value="class_helm_1_1_utils.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.NoteHandler"><param name="Local" value="interface_helm_1_1_note_handler.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmController"><param name="Local" value="class_helm_1_1_helm_controller.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Sampler"><param name="Local" value="class_helm_1_1_sampler.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Sequencer"><param name="Local" value="class_helm_1_1_sequencer.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Enumerations"><param name="Local" value="functions_enum.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="functions_prop.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

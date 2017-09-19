@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length',['length',['../class_helm_1_1_sequencer.html#ac0e8b5243b07b639c284180d8cd30be5',1,'Helm::Sequencer']]]
+  ['length',['length',['../class_audio_helm_1_1_sequencer.html#aa79cd7531f727f90e4ff5a4440c3b5e6',1,'AudioHelm::Sequencer']]]
 ];

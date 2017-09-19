@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['helm',['Helm',['../namespace_helm.html',1,'']]]
+  ['audiohelm',['AudioHelm',['../namespace_audio_helm.html',1,'']]]
 ];

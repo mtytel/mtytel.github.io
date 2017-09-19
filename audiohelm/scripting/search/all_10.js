@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['usenoteoff',['useNoteOff',['../class_helm_1_1_sampler.html#a1b45c2430f12d26e08c7e3cd066afbbc',1,'Helm::Sampler']]],
-  ['utils',['Utils',['../class_helm_1_1_utils.html',1,'Helm']]]
+  ['usenoteoff',['useNoteOff',['../class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538',1,'AudioHelm::Sampler']]],
+  ['utils',['Utils',['../class_audio_helm_1_1_utils.html',1,'AudioHelm']]]
 ];

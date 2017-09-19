@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['initaudiosource',['InitAudioSource',['../class_helm_1_1_utils.html#a065fc4f7efce485ed324cc1a0b702152',1,'Helm::Utils']]],
-  ['insiderange',['InsideRange',['../class_helm_1_1_note.html#ac4beec98e53411477ab93a96b14f9443',1,'Helm::Note']]],
-  ['isblackkey',['IsBlackKey',['../class_helm_1_1_utils.html#a682181e295982eb8d9c4bb4ac80787ff',1,'Helm::Utils']]],
-  ['isc',['IsC',['../class_helm_1_1_utils.html#a581f05b4f9dca8739f4ebf2bd5e88734',1,'Helm::Utils']]],
-  ['isnoteon',['IsNoteOn',['../class_helm_1_1_helm_controller.html#a22d21afda75417205fcf21b27fd467d5',1,'Helm::HelmController']]]
+  ['initaudiosource',['InitAudioSource',['../class_audio_helm_1_1_utils.html#a65b5f5f089b979c9dc48bd32a22cb554',1,'AudioHelm::Utils']]],
+  ['insiderange',['InsideRange',['../class_audio_helm_1_1_note.html#ae695479d3c9603451bb10a4e9c48bdce',1,'AudioHelm::Note']]],
+  ['isblackkey',['IsBlackKey',['../class_audio_helm_1_1_utils.html#a5d52b642a98d73da08340d6d64135272',1,'AudioHelm::Utils']]],
+  ['isc',['IsC',['../class_audio_helm_1_1_utils.html#a47c4354155091870ff860277da1c4f60',1,'AudioHelm::Utils']]],
+  ['isnoteon',['IsNoteOn',['../class_audio_helm_1_1_helm_controller.html#a68fb735dff14ff64b4bf4b61ad50f9ac',1,'AudioHelm::HelmController']]]
 ];

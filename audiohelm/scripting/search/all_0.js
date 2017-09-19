@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['addkeyzone',['AddKeyzone',['../class_helm_1_1_sampler.html#aa56397b1c22e5445e80be70afc210b5b',1,'Helm::Sampler']]],
-  ['addnote',['AddNote',['../class_helm_1_1_sequencer.html#ac8b6c6ae657d4ffae812d06c5f30d60f',1,'Helm::Sequencer']]],
-  ['allnotes',['allNotes',['../class_helm_1_1_sequencer.html#a4d64ef1179011cf16aff7c346ca09934',1,'Helm::Sequencer']]],
-  ['allnotesoff',['AllNotesOff',['../class_helm_1_1_helm_controller.html#a4eab6ef6509bc6844450643b18db298d',1,'Helm.HelmController.AllNotesOff()'],['../class_helm_1_1_helm_sequencer.html#a3f6ccecb5b84584652cf67d67e6d74dc',1,'Helm.HelmSequencer.AllNotesOff()'],['../class_helm_1_1_sampler.html#a5a5085b6d4ff5df0e8e83a5782e69f5e',1,'Helm.Sampler.AllNotesOff()'],['../class_helm_1_1_sample_sequencer.html#a5c66ddd4ded8366ec682046eb5e45bb5',1,'Helm.SampleSequencer.AllNotesOff()']]]
+  ['addkeyzone',['AddKeyzone',['../class_audio_helm_1_1_sampler.html#ac15a316bb069ea4a359f8d378849192f',1,'AudioHelm::Sampler']]],
+  ['addnote',['AddNote',['../class_audio_helm_1_1_sequencer.html#a295b222edb7fd1bb237917b422f50541',1,'AudioHelm::Sequencer']]],
+  ['allnotes',['allNotes',['../class_audio_helm_1_1_sequencer.html#a5f938c86a4e3c29bc12876806342f87f',1,'AudioHelm::Sequencer']]],
+  ['allnotesoff',['AllNotesOff',['../class_audio_helm_1_1_helm_controller.html#a45eaaedd2d12b5ff71f24b7ca5031090',1,'AudioHelm.HelmController.AllNotesOff()'],['../class_audio_helm_1_1_helm_sequencer.html#a23741f6dcb1c739167f45ecf28795337',1,'AudioHelm.HelmSequencer.AllNotesOff()'],['../class_audio_helm_1_1_sampler.html#a8ccd15ff4b1391af649f0ca2860b56d5',1,'AudioHelm.Sampler.AllNotesOff()'],['../class_audio_helm_1_1_sample_sequencer.html#ae095b0d5c0f764108b90f19cfc20331e',1,'AudioHelm.SampleSequencer.AllNotesOff()']]],
+  ['audiohelm',['AudioHelm',['../namespace_audio_helm.html',1,'']]]
 ];

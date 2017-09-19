@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['overlapsrange',['OverlapsRange',['../class_helm_1_1_note.html#a9589945136a8ffbc55edbc89095dca5b',1,'Helm::Note']]]
+  ['overlapsrange',['OverlapsRange',['../class_audio_helm_1_1_note.html#a86960761b0fefc98e1bd6e4d2f39fdfd',1,'AudioHelm::Note']]]
 ];
