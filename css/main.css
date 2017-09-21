@@ -799,6 +799,12 @@ pre {
     .tagline {
       width: 300px; } }
 
+::selection {
+  background: #555; }
+
+::-moz-selection {
+  background: #555; }
+
 .os-download {
   max-width: 95%;
   padding-top: 5px;

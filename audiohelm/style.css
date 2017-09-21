@@ -760,6 +760,13 @@ pre {
 .home a:hover {
   text-decoration: underline;}
 
+::selection {
+  background: #555;
+}
+::-moz-selection {
+  background: #555;
+}
+
 .download-list {
   width: 360px !important;
   margin: auto;
