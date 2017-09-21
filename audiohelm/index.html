@@ -213,10 +213,10 @@ ga('send', 'pageview');
           <div class="division-bar">
             <div class="binary-description">
               <h2>Troubleshooting</h2>
-              <p>I'm not getting any sounds through the native synthesizer.</p>
+              <p><i>I'm not getting any sounds through the native synthesizer.</i></p>
               <p>Make sure the <a href="manual/class_audio_helm_1_1_helm_controller.html">HelmController</a> in your scene is active, the AudioSource is pointing to the correct AudioMixerGroup and that the channel on the HelmController/Sequencer matches the channel on the Helm instance on your AudioMixerGroup.</p>
-              <p>The synth plugin is using up too much CPU, what do I do?</p>
-              <p>First thing to try is lowering the polyphony setting in the patches your are using as low as you can go with getting the right effect you want. This is especially true on mobile. Next thing to try is make sure there are no extraneous instances running. If there are still issues please email me at: <a href="mailto:matthewtytel@gmail.com">matthewtytel@gmail.com</a></p>
+              <p><i>The synth plugin is using up too much CPU, what do I do?</i></p>
+              <p>The synthesizer is a native plugin for speed and low latency. That said it is still possible to drive up the CPU usage with many instances or many concurrently running voices. First thing to try is lowering the polyphony setting in the patches your are using as low as you can go with getting the right effect you want. This is especially true on mobile. Next thing to try is make sure there are no extraneous instances running. If there are still issues please email me at: <a href="mailto:matthewtytel@gmail.com">matthewtytel@gmail.com</a></p>
             </div>
           </div>
         </div>
