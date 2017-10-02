@@ -142,10 +142,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a34b648b4c6a9db42325f5ca3917f7faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much the velocity of a note on event affects the volume of the samples. 0.0 for no effect and 1.0 for full effect.  <a href="#a34b648b4c6a9db42325f5ca3917f7faf">More...</a><br /></td></tr>
 <tr class="separator:a34b648b4c6a9db42325f5ca3917f7faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4f2f47e0c5a8de431a95325431dbf41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#ae4f2f47e0c5a8de431a95325431dbf41">numVoices</a> = 2</td></tr>
-<tr class="memdesc:ae4f2f47e0c5a8de431a95325431dbf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of simultaneous voices possible. If your voices cut out early you can increase this number to fix the problem.  <a href="#ae4f2f47e0c5a8de431a95325431dbf41">More...</a><br /></td></tr>
+<tr class="memdesc:ae4f2f47e0c5a8de431a95325431dbf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of concurrently playing sounds from this <a class="el" href="class_audio_helm_1_1_sampler.html" title="Switch to Manual The Sampler is a type of instrument that has a collection of audio samples to play a...">Sampler</a> (polyphony). Increase this if your voices are cutting out from new voices coming in.  <a href="#ae4f2f47e0c5a8de431a95325431dbf41">More...</a><br /></td></tr>
 <tr class="separator:ae4f2f47e0c5a8de431a95325431dbf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a56479da0f4fac8d7d85f851962538"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538">useNoteOff</a> = false</td></tr>
-<tr class="memdesc:a62a56479da0f4fac8d7d85f851962538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the sampler listen to note off events.  <a href="#a62a56479da0f4fac8d7d85f851962538">More...</a><br /></td></tr>
+<tr class="memdesc:a62a56479da0f4fac8d7d85f851962538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does a voice silence when it gets a note off event?  <a href="#a62a56479da0f4fac8d7d85f851962538">More...</a><br /></td></tr>
 <tr class="separator:a62a56479da0f4fac8d7d85f851962538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -408,7 +408,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Total number of simultaneous voices possible. If your voices cut out early you can increase this number to fix the problem. </p>
+<p>Total number of concurrently playing sounds from this <a class="el" href="class_audio_helm_1_1_sampler.html" title="Switch to Manual The Sampler is a type of instrument that has a collection of audio samples to play a...">Sampler</a> (polyphony). Increase this if your voices are cutting out from new voices coming in. </p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Does the sampler listen to note off events. </p>
+<p>Does a voice silence when it gets a note off event? </p>
 
 </div>
 </div>

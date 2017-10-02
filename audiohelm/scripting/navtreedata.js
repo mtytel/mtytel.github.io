@@ -23,7 +23,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_audio_helm_1_1_sequencer.html#a4b9dee924de5133d1b917c64351678e2"
+"class_audio_helm_1_1_sequencer.html#a2d783996e4163537c86d227d27725366"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

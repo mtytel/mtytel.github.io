@@ -12,11 +12,12 @@ var class_audio_helm_1_1_native =
     [ "DeleteSequencer", "class_audio_helm_1_1_native.html#a3c0fd7cf450b7159fc485ee26b2b43cd", null ],
     [ "EnableSequencer", "class_audio_helm_1_1_native.html#a41cbc7b5214f51aafedc73f81993f730", null ],
     [ "HelmAllNotesOff", "class_audio_helm_1_1_native.html#a39911b029736ddcecdabef26bda687a7", null ],
-    [ "HelmChangeParameter", "class_audio_helm_1_1_native.html#a2a1047f0dca53e72f7b89f1593f7148a", null ],
     [ "HelmNoteOff", "class_audio_helm_1_1_native.html#a5f6b930edb856bce47044d4ff0b5e13e", null ],
     [ "HelmNoteOn", "class_audio_helm_1_1_native.html#a2dfb745277ce370441500d2d0abab42f", null ],
     [ "HelmSetAftertouch", "class_audio_helm_1_1_native.html#aea52c5e9e8ba6df863f89ab7c3f23a66", null ],
     [ "HelmSetModWheel", "class_audio_helm_1_1_native.html#a15c5adc4110ba0aad62a3ff85466a924", null ],
+    [ "HelmSetParameterPercent", "class_audio_helm_1_1_native.html#a8de111952ba0990219882c40333b92c9", null ],
+    [ "HelmSetParameterValue", "class_audio_helm_1_1_native.html#a0a5ff2b841facc8cfb128f289b51b13f", null ],
     [ "HelmSetPitchWheel", "class_audio_helm_1_1_native.html#a9e0a3c7d14456bfa04c1bfd4ac9fd43b", null ],
     [ "SetBpm", "class_audio_helm_1_1_native.html#a2c63f0c8a1ddae63b4b80fc1f5ee8c48", null ],
     [ "SyncSequencerStart", "class_audio_helm_1_1_native.html#a03132fa39cad5def4d75057f623ce56a", null ]
