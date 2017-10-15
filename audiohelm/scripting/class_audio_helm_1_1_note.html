@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_note.html','');})
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="class_audio_helm_1_1_note-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AudioHelm.Note Class Reference</div>  </div>
@@ -105,12 +106,21 @@ Inheritance diagram for AudioHelm.Note:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a407f33a1ff3a497c23367bb25209c3ce"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#a407f33a1ff3a497c23367bb25209c3ce">NoteAction</a> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> <a class="el" href="class_audio_helm_1_1_note.html#ae2971aedbdc62ef3847794a8fc36c498">note</a>)</td></tr>
+<tr class="memdesc:a407f33a1ff3a497c23367bb25209c3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A note event.  <a href="#a407f33a1ff3a497c23367bb25209c3ce">More...</a><br /></td></tr>
+<tr class="separator:a407f33a1ff3a497c23367bb25209c3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac18ebb5ca31bf1216dd90146b6d014"><td class="memItemLeft" align="right" valign="top"><a id="a0ac18ebb5ca31bf1216dd90146b6d014"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAfterDeserialize</b> ()</td></tr>
 <tr class="separator:a0ac18ebb5ca31bf1216dd90146b6d014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abced78c8c90fa3487532303058e119b1"><td class="memItemLeft" align="right" valign="top"><a id="abced78c8c90fa3487532303058e119b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBeforeSerialize</b> ()</td></tr>
 <tr class="separator:abced78c8c90fa3487532303058e119b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677038791392333a76eaf17319c1be49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#a677038791392333a76eaf17319c1be49">TriggerNoteOnEvent</a> ()</td></tr>
+<tr class="memdesc:a677038791392333a76eaf17319c1be49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends out a note on event to all listeners.  <a href="#a677038791392333a76eaf17319c1be49">More...</a><br /></td></tr>
+<tr class="separator:a677038791392333a76eaf17319c1be49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c4b9e5f51495ad1a1f840cd6f9908d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#aa8c4b9e5f51495ad1a1f840cd6f9908d">TriggerNoteOffEvent</a> ()</td></tr>
+<tr class="memdesc:aa8c4b9e5f51495ad1a1f840cd6f9908d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends out a note off event to all listeners.  <a href="#aa8c4b9e5f51495ad1a1f840cd6f9908d">More...</a><br /></td></tr>
+<tr class="separator:aa8c4b9e5f51495ad1a1f840cd6f9908d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbfd10803985a3f39cda6c9e6a0c33f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#afbfd10803985a3f39cda6c9e6a0c33f6">TryCreate</a> ()</td></tr>
 <tr class="memdesc:afbfd10803985a3f39cda6c9e6a0c33f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to create a native note representation if one doesn't exist already.  <a href="#afbfd10803985a3f39cda6c9e6a0c33f6">More...</a><br /></td></tr>
 <tr class="separator:afbfd10803985a3f39cda6c9e6a0c33f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,18 +145,27 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ae2971aedbdc62ef3847794a8fc36c498"><td class="memItemLeft" align="right" valign="top"><a id="ae2971aedbdc62ef3847794a8fc36c498"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>note</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ae2971aedbdc62ef3847794a8fc36c498"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#ae2971aedbdc62ef3847794a8fc36c498">note</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae2971aedbdc62ef3847794a8fc36c498"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MIDI note to play.  <a href="#ae2971aedbdc62ef3847794a8fc36c498">More...</a><br /></td></tr>
 <tr class="separator:ae2971aedbdc62ef3847794a8fc36c498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf9c7768975ec8f50ea44848b64071e"><td class="memItemLeft" align="right" valign="top"><a id="adaf9c7768975ec8f50ea44848b64071e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>start</b><code> [get, set]</code></td></tr>
+<tr class="memitem:adaf9c7768975ec8f50ea44848b64071e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#adaf9c7768975ec8f50ea44848b64071e">start</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adaf9c7768975ec8f50ea44848b64071e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The note on time measured in sixteenth notes.  <a href="#adaf9c7768975ec8f50ea44848b64071e">More...</a><br /></td></tr>
 <tr class="separator:adaf9c7768975ec8f50ea44848b64071e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49fab084b6ec831ba34758b28df66813"><td class="memItemLeft" align="right" valign="top"><a id="a49fab084b6ec831ba34758b28df66813"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>end</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a49fab084b6ec831ba34758b28df66813"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#a49fab084b6ec831ba34758b28df66813">end</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a49fab084b6ec831ba34758b28df66813"><td class="mdescLeft">&#160;</td><td class="mdescRight">The note off time measured in sixteenth notes.  <a href="#a49fab084b6ec831ba34758b28df66813">More...</a><br /></td></tr>
 <tr class="separator:a49fab084b6ec831ba34758b28df66813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c26877744d52c19538c0c12b2a344b"><td class="memItemLeft" align="right" valign="top"><a id="a76c26877744d52c19538c0c12b2a344b"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a76c26877744d52c19538c0c12b2a344b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#a76c26877744d52c19538c0c12b2a344b">velocity</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a76c26877744d52c19538c0c12b2a344b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of key press (how hard the note is hit). [0.0, 1.0]  <a href="#a76c26877744d52c19538c0c12b2a344b">More...</a><br /></td></tr>
 <tr class="separator:a76c26877744d52c19538c0c12b2a344b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a52ac9d53a579e73d0616a51987f8260c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_note.html#a407f33a1ff3a497c23367bb25209c3ce">NoteAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#a52ac9d53a579e73d0616a51987f8260c">OnNoteOn</a></td></tr>
+<tr class="memdesc:a52ac9d53a579e73d0616a51987f8260c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event hook for a note on event.  <a href="#a52ac9d53a579e73d0616a51987f8260c">More...</a><br /></td></tr>
+<tr class="separator:a52ac9d53a579e73d0616a51987f8260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c70cbb7056e774caffd7141320d55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_note.html#a407f33a1ff3a497c23367bb25209c3ce">NoteAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_note.html#a76c70cbb7056e774caffd7141320d55f">OnNoteOff</a></td></tr>
+<tr class="memdesc:a76c70cbb7056e774caffd7141320d55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event hook for a note off event.  <a href="#a76c70cbb7056e774caffd7141320d55f">More...</a><br /></td></tr>
+<tr class="separator:a76c70cbb7056e774caffd7141320d55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representation of a note in a sequencer. Changing the values in this object will change them in the sequencer. </p>
@@ -183,6 +202,32 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b><code> [
   <table class="params">
     <tr><td class="paramname">rangeStart</td><td>Start of the range.</td></tr>
     <tr><td class="paramname">rangeEnd</td><td>End of the range.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a407f33a1ff3a497c23367bb25209c3ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407f33a1ff3a497c23367bb25209c3ce">&#9670;&nbsp;</a></span>NoteAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void AudioHelm.Note.NoteAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_audio_helm_1_1_note.html">Note</a>&#160;</td>
+          <td class="paramname"><em>note</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A note event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">note</td><td>The <a class="el" href="class_audio_helm_1_1_note.html" title="Representation of a note in a sequencer. Changing the values in this object will change them in the s...">Note</a> object that triggered the event.</td></tr>
   </table>
   </dd>
 </dl>
@@ -264,6 +309,44 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b><code> [
 
 </div>
 </div>
+<a id="aa8c4b9e5f51495ad1a1f840cd6f9908d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c4b9e5f51495ad1a1f840cd6f9908d">&#9670;&nbsp;</a></span>TriggerNoteOffEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.Note.TriggerNoteOffEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends out a note off event to all listeners. </p>
+
+</div>
+</div>
+<a id="a677038791392333a76eaf17319c1be49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677038791392333a76eaf17319c1be49">&#9670;&nbsp;</a></span>TriggerNoteOnEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.Note.TriggerNoteOnEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends out a note on event to all listeners. </p>
+
+</div>
+</div>
 <a id="afbfd10803985a3f39cda6c9e6a0c33f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbfd10803985a3f39cda6c9e6a0c33f6">&#9670;&nbsp;</a></span>TryCreate()</h2>
 
@@ -319,8 +402,138 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b><code> [
 
 </div>
 </div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a49fab084b6ec831ba34758b28df66813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49fab084b6ec831ba34758b28df66813">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.Note.end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The note off time measured in sixteenth notes. </p>
+
+</div>
+</div>
+<a id="ae2971aedbdc62ef3847794a8fc36c498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2971aedbdc62ef3847794a8fc36c498">&#9670;&nbsp;</a></span>note</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AudioHelm.Note.note</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The MIDI note to play. </p>
+
+</div>
+</div>
+<a id="adaf9c7768975ec8f50ea44848b64071e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf9c7768975ec8f50ea44848b64071e">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.Note.start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The note on time measured in sixteenth notes. </p>
+
+</div>
+</div>
+<a id="a76c26877744d52c19538c0c12b2a344b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c26877744d52c19538c0c12b2a344b">&#9670;&nbsp;</a></span>velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.Note.velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The velocity of key press (how hard the note is hit). [0.0, 1.0] </p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a76c70cbb7056e774caffd7141320d55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c70cbb7056e774caffd7141320d55f">&#9670;&nbsp;</a></span>OnNoteOff</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_note.html#a407f33a1ff3a497c23367bb25209c3ce">NoteAction</a> AudioHelm.Note.OnNoteOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event hook for a note off event. </p>
+
+</div>
+</div>
+<a id="a52ac9d53a579e73d0616a51987f8260c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ac9d53a579e73d0616a51987f8260c">&#9670;&nbsp;</a></span>OnNoteOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_note.html#a407f33a1ff3a497c23367bb25209c3ce">NoteAction</a> AudioHelm.Note.OnNoteOn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event hook for a note on event. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Helm/Scripts/Note.cs</li>
+<li>AudioHelm/Scripts/Note.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

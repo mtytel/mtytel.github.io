@@ -101,8 +101,8 @@ Inheritance diagram for AudioHelm.HelmSequencer:</div>
  <div class="center">
   <img src="class_audio_helm_1_1_helm_sequencer.png" usemap="#AudioHelm.HelmSequencer_map" alt=""/>
   <map id="AudioHelm.HelmSequencer_map" name="AudioHelm.HelmSequencer_map">
-<area href="class_audio_helm_1_1_sequencer.html" title="A series of notes and velocities on a timeline that can be used to trigger synth or sampler notes..." alt="AudioHelm.Sequencer" shape="rect" coords="88,56,254,80"/>
-<area href="interface_audio_helm_1_1_note_handler.html" title="An interface for classes that can receive note on and off events. " alt="AudioHelm.NoteHandler" shape="rect" coords="176,0,342,24"/>
+<area href="class_audio_helm_1_1_sequencer.html" title="A series of notes and velocities on a timeline that can be used to trigger synth or sampler notes..." alt="AudioHelm.Sequencer" shape="rect" coords="194,56,378,80"/>
+<area href="interface_audio_helm_1_1_note_handler.html" title="An interface for classes that can receive note on and off events. " alt="AudioHelm.NoteHandler" shape="rect" coords="194,0,378,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -127,12 +127,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6c787a050d68909d1bdd858a81a9f819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the sequencer on the start next cycle. This is useful if you have multiple synced sequencers and you want to start this one on the next go around.  <a href="#a6c787a050d68909d1bdd858a81a9f819">More...</a><br /></td></tr>
 <tr class="separator:a6c787a050d68909d1bdd858a81a9f819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_audio_helm_1_1_sequencer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_audio_helm_1_1_sequencer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a></td></tr>
+<tr class="memitem:a6c9af6cf13255e01f8d6d13ff65896fc inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a6c9af6cf13255e01f8d6d13ff65896fc">NoteAction</a> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note)</td></tr>
+<tr class="memdesc:a6c9af6cf13255e01f8d6d13ff65896fc inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">A note event.  <a href="class_audio_helm_1_1_sequencer.html#a6c9af6cf13255e01f8d6d13ff65896fc">More...</a><br /></td></tr>
+<tr class="separator:a6c9af6cf13255e01f8d6d13ff65896fc inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92660977119cb2ded6d73842934d6d9 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ab92660977119cb2ded6d73842934d6d9">BeatAction</a> (int index)</td></tr>
+<tr class="memdesc:ab92660977119cb2ded6d73842934d6d9 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">A beat event.  <a href="class_audio_helm_1_1_sequencer.html#ab92660977119cb2ded6d73842934d6d9">More...</a><br /></td></tr>
+<tr class="separator:ab92660977119cb2ded6d73842934d6d9 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e15d09f5617fcde962a6bced7de613f inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="a1e15d09f5617fcde962a6bced7de613f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBeforeSerialize</b> ()</td></tr>
+<tr class="separator:a1e15d09f5617fcde962a6bced7de613f inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ae9b6566a773b0ccde79aed433bd9a inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="ae6ae9b6566a773b0ccde79aed433bd9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAfterDeserialize</b> ()</td></tr>
+<tr class="separator:ae6ae9b6566a773b0ccde79aed433bd9a inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10f26308f774cdf822887611bbf8db9 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ae10f26308f774cdf822887611bbf8db9">Reset</a> ()</td></tr>
+<tr class="memdesc:ae10f26308f774cdf822887611bbf8db9 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the sequencer at the beginning.  <a href="class_audio_helm_1_1_sequencer.html#ae10f26308f774cdf822887611bbf8db9">More...</a><br /></td></tr>
+<tr class="separator:ae10f26308f774cdf822887611bbf8db9 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a001a503e63104f0543fe98cc4a66a683 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a001a503e63104f0543fe98cc4a66a683">GetDivisionLength</a> ()</td></tr>
 <tr class="memdesc:a001a503e63104f0543fe98cc4a66a683 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the length of the division measured in sixteenth notes.  <a href="class_audio_helm_1_1_sequencer.html#a001a503e63104f0543fe98cc4a66a683">More...</a><br /></td></tr>
 <tr class="separator:a001a503e63104f0543fe98cc4a66a683 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a2dd4554358c73845292e1cb1fe119 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a99a2dd4554358c73845292e1cb1fe119">NotifyNoteKeyChanged</a> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note, int oldKey)</td></tr>
-<tr class="memdesc:a99a2dd4554358c73845292e1cb1fe119 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the sequencer of a change to one of the notes.  <a href="class_audio_helm_1_1_sequencer.html#a99a2dd4554358c73845292e1cb1fe119">More...</a><br /></td></tr>
+<tr class="memdesc:a99a2dd4554358c73845292e1cb1fe119 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the sequencer of a change to the key of one of the notes.  <a href="class_audio_helm_1_1_sequencer.html#a99a2dd4554358c73845292e1cb1fe119">More...</a><br /></td></tr>
 <tr class="separator:a99a2dd4554358c73845292e1cb1fe119 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae37fcaa659781ba6a0109225cb4e615 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#aae37fcaa659781ba6a0109225cb4e615">NotifyNoteStartChanged</a> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note, float oldStart)</td></tr>
+<tr class="memdesc:aae37fcaa659781ba6a0109225cb4e615 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the sequencer of a change to one of the note start positions.  <a href="class_audio_helm_1_1_sequencer.html#aae37fcaa659781ba6a0109225cb4e615">More...</a><br /></td></tr>
+<tr class="separator:aae37fcaa659781ba6a0109225cb4e615 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448333d67dfca2c7cce39f6ed2aead6f inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a448333d67dfca2c7cce39f6ed2aead6f">NotifyNoteEndChanged</a> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note, float oldEnd)</td></tr>
+<tr class="memdesc:a448333d67dfca2c7cce39f6ed2aead6f inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the sequencer of a change to one of the note end positions.  <a href="class_audio_helm_1_1_sequencer.html#a448333d67dfca2c7cce39f6ed2aead6f">More...</a><br /></td></tr>
+<tr class="separator:a448333d67dfca2c7cce39f6ed2aead6f inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9dee924de5133d1b917c64351678e2 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a4b9dee924de5133d1b917c64351678e2">RemoveNote</a> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note)</td></tr>
 <tr class="memdesc:a4b9dee924de5133d1b917c64351678e2 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a note from the sequencer.  <a href="class_audio_helm_1_1_sequencer.html#a4b9dee924de5133d1b917c64351678e2">More...</a><br /></td></tr>
 <tr class="separator:a4b9dee924de5133d1b917c64351678e2 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +163,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6a1489ad2c3dc12621e93d09682756b inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_note.html">Note</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ad6a1489ad2c3dc12621e93d09682756b">GetNoteInRange</a> (int note, float start, float end, <a class="el" href="class_audio_helm_1_1_note.html">Note</a> ignore=null)</td></tr>
 <tr class="memdesc:ad6a1489ad2c3dc12621e93d09682756b inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first note in a given range in the sequencer.  <a href="class_audio_helm_1_1_sequencer.html#ad6a1489ad2c3dc12621e93d09682756b">More...</a><br /></td></tr>
 <tr class="separator:ad6a1489ad2c3dc12621e93d09682756b inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d4703a3f1f10ad97c96ebdf50785fd inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_audio_helm_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a06d4703a3f1f10ad97c96ebdf50785fd">GetAllNoteOnsInRange</a> (float start, float end)</td></tr>
+<tr class="memdesc:a06d4703a3f1f10ad97c96ebdf50785fd inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all <a class="el" href="class_audio_helm_1_1_note.html" title="Representation of a note in a sequencer. Changing the values in this object will change them in the s...">Note</a> objects that have a note on in the given range in this sequencer.  <a href="class_audio_helm_1_1_sequencer.html#a06d4703a3f1f10ad97c96ebdf50785fd">More...</a><br /></td></tr>
+<tr class="separator:a06d4703a3f1f10ad97c96ebdf50785fd inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ed0e481b3e4586b2727ad9ee1111c1 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_audio_helm_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a61ed0e481b3e4586b2727ad9ee1111c1">GetAllNoteOffsInRange</a> (float start, float end)</td></tr>
+<tr class="memdesc:a61ed0e481b3e4586b2727ad9ee1111c1 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all <a class="el" href="class_audio_helm_1_1_note.html" title="Representation of a note in a sequencer. Changing the values in this object will change them in the s...">Note</a> objects that have a note off in the given range in this sequencer.  <a href="class_audio_helm_1_1_sequencer.html#a61ed0e481b3e4586b2727ad9ee1111c1">More...</a><br /></td></tr>
+<tr class="separator:a61ed0e481b3e4586b2727ad9ee1111c1 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26d97da8dcf03239889b0470b4ece66d inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a26d97da8dcf03239889b0470b4ece66d">RemoveNotesInRange</a> (int note, float start, float end)</td></tr>
 <tr class="memdesc:a26d97da8dcf03239889b0470b4ece66d inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all notes that overlap a given range.  <a href="class_audio_helm_1_1_sequencer.html#a26d97da8dcf03239889b0470b4ece66d">More...</a><br /></td></tr>
 <tr class="separator:a26d97da8dcf03239889b0470b4ece66d inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +181,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a295b222edb7fd1bb237917b422f50541 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_note.html">Note</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a295b222edb7fd1bb237917b422f50541">AddNote</a> (int note, float start, float end, float velocity=1.0f)</td></tr>
 <tr class="memdesc:a295b222edb7fd1bb237917b422f50541 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a note to the sequencer.  <a href="class_audio_helm_1_1_sequencer.html#a295b222edb7fd1bb237917b422f50541">More...</a><br /></td></tr>
 <tr class="separator:a295b222edb7fd1bb237917b422f50541 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee8a73de1be158934cdfb03d86bd8be inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#afee8a73de1be158934cdfb03d86bd8be">ReadMidiFile</a> (Stream midiStream)</td></tr>
+<tr class="memdesc:afee8a73de1be158934cdfb03d86bd8be inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a MIDI file's tracks into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected.  <a href="class_audio_helm_1_1_sequencer.html#afee8a73de1be158934cdfb03d86bd8be">More...</a><br /></td></tr>
+<tr class="separator:afee8a73de1be158934cdfb03d86bd8be inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab260233497d115c14ea59a0161e8a666 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ab260233497d115c14ea59a0161e8a666">ReadMidiFile</a> (UnityEngine.Object midiFile)</td></tr>
+<tr class="memdesc:ab260233497d115c14ea59a0161e8a666 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a MIDI file's tracks into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected.  <a href="class_audio_helm_1_1_sequencer.html#ab260233497d115c14ea59a0161e8a666">More...</a><br /></td></tr>
+<tr class="separator:ab260233497d115c14ea59a0161e8a666 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6abe110120ab9203f85dd7c928a797ce inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a6abe110120ab9203f85dd7c928a797ce">Clear</a> ()</td></tr>
 <tr class="memdesc:a6abe110120ab9203f85dd7c928a797ce inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the sequencer of all notes.  <a href="class_audio_helm_1_1_sequencer.html#a6abe110120ab9203f85dd7c928a797ce">More...</a><br /></td></tr>
 <tr class="separator:a6abe110120ab9203f85dd7c928a797ce inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cdd6e79fb10cb5c8ed042a7de0c455 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ac4cdd6e79fb10cb5c8ed042a7de0c455">GetSixteenthTime</a> ()</td></tr>
 <tr class="memdesc:ac4cdd6e79fb10cb5c8ed042a7de0c455 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time in seconds of a single sixteenth note in the sequencer.  <a href="class_audio_helm_1_1_sequencer.html#ac4cdd6e79fb10cb5c8ed042a7de0c455">More...</a><br /></td></tr>
 <tr class="separator:ac4cdd6e79fb10cb5c8ed042a7de0c455 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa3d94804a5b74be068046a4168f716 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a4fa3d94804a5b74be068046a4168f716">GetSequencerPosition</a> ()</td></tr>
+<tr class="memdesc:a4fa3d94804a5b74be068046a4168f716 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current position of the sequencer measured in sixteenth notes.  <a href="class_audio_helm_1_1_sequencer.html#a4fa3d94804a5b74be068046a4168f716">More...</a><br /></td></tr>
+<tr class="separator:a4fa3d94804a5b74be068046a4168f716 inherit pub_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -197,18 +233,31 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 <tr class="separator:a809446b71657b4e48e2b52c22904accc inherit pub_types_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_audio_helm_1_1_sequencer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_audio_helm_1_1_sequencer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a></td></tr>
+<tr class="memitem:ab8386b40331b552d9dd7b3c6dba67cb0 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="ab8386b40331b552d9dd7b3c6dba67cb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSortedNoteEvents</b> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note)</td></tr>
+<tr class="separator:ab8386b40331b552d9dd7b3c6dba67cb0 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6823f81c550a626dc633461935a0626 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="aa6823f81c550a626dc633461935a0626"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddSortedNoteEvents</b> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note)</td></tr>
+<tr class="separator:aa6823f81c550a626dc633461935a0626 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79e7f1268e8fa6644be5cd07a34ee05 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="af79e7f1268e8fa6644be5cd07a34ee05"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InitNoteRows</b> ()</td></tr>
 <tr class="separator:af79e7f1268e8fa6644be5cd07a34ee05 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1004c3f13c428e3a3286f3682741a101 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="a1004c3f13c428e3a3286f3682741a101"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSequencerTime</b> ()</td></tr>
 <tr class="separator:a1004c3f13c428e3a3286f3682741a101 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa3d94804a5b74be068046a4168f716 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="a4fa3d94804a5b74be068046a4168f716"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSequencerPosition</b> ()</td></tr>
-<tr class="separator:a4fa3d94804a5b74be068046a4168f716 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7053d6b0aedbc4d3be374f50205a7337 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a id="a7053d6b0aedbc4d3be374f50205a7337"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()</td></tr>
+<tr class="memitem:a7053d6b0aedbc4d3be374f50205a7337 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a7053d6b0aedbc4d3be374f50205a7337">UpdatePosition</a> ()</td></tr>
+<tr class="memdesc:a7053d6b0aedbc4d3be374f50205a7337 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the position of the sequencer and fire any events that have occurred.  <a href="class_audio_helm_1_1_sequencer.html#a7053d6b0aedbc4d3be374f50205a7337">More...</a><br /></td></tr>
 <tr class="separator:a7053d6b0aedbc4d3be374f50205a7337 inherit pro_methods_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header events_class_audio_helm_1_1_sequencer"><td colspan="2" onclick="javascript:toggleInherit('events_class_audio_helm_1_1_sequencer')"><img src="closed.png" alt="-"/>&#160;Events inherited from <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a></td></tr>
+<tr class="memitem:aea65c92c2e2635da11d8490d5803a0e6 inherit events_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer.html#a6c9af6cf13255e01f8d6d13ff65896fc">NoteAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#aea65c92c2e2635da11d8490d5803a0e6">OnNoteOn</a></td></tr>
+<tr class="memdesc:aea65c92c2e2635da11d8490d5803a0e6 inherit events_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event hook for a note on event.  <a href="class_audio_helm_1_1_sequencer.html#aea65c92c2e2635da11d8490d5803a0e6">More...</a><br /></td></tr>
+<tr class="separator:aea65c92c2e2635da11d8490d5803a0e6 inherit events_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2c1cbfb6566d6a1bcfe620aa05caa1 inherit events_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer.html#a6c9af6cf13255e01f8d6d13ff65896fc">NoteAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ade2c1cbfb6566d6a1bcfe620aa05caa1">OnNoteOff</a></td></tr>
+<tr class="memdesc:ade2c1cbfb6566d6a1bcfe620aa05caa1 inherit events_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event hook for a note off event.  <a href="class_audio_helm_1_1_sequencer.html#ade2c1cbfb6566d6a1bcfe620aa05caa1">More...</a><br /></td></tr>
+<tr class="separator:ade2c1cbfb6566d6a1bcfe620aa05caa1 inherit events_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde12554607f164da351bd1f2fc10a4e inherit events_class_audio_helm_1_1_sequencer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer.html#ab92660977119cb2ded6d73842934d6d9">BeatAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#adde12554607f164da351bd1f2fc10a4e">OnBeat</a></td></tr>
+<tr class="memdesc:adde12554607f164da351bd1f2fc10a4e inherit events_class_audio_helm_1_1_sequencer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event hook for a beat event.  <a href="class_audio_helm_1_1_sequencer.html#adde12554607f164da351bd1f2fc10a4e">More...</a><br /></td></tr>
+<tr class="separator:adde12554607f164da351bd1f2fc10a4e inherit events_class_audio_helm_1_1_sequencer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h2><a href="../manual/class_audio_helm_1_1_helm_sequencer.html">Switch to Manual</a><br />
@@ -240,7 +289,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()
 
 <p>Triggers note off events for all notes currently on in the referenced Helm instance(s). </p>
 
-<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a>.</p>
+<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html#ad87216b6cacc97b8bbfb9d0a302b7a7d">AudioHelm.Sequencer</a>.</p>
 
 </div>
 </div>
@@ -276,7 +325,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a>.</p>
+<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html#a5b35539e8b39d13e67f7aa223330f483">AudioHelm.Sequencer</a>.</p>
 
 </div>
 </div>
@@ -323,7 +372,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a>.</p>
+<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html#a38b1d7b2e1156c39290bf6270a2dc42d">AudioHelm.Sequencer</a>.</p>
 
 </div>
 </div>
@@ -382,7 +431,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()
 
 <p>Starts the sequencer on the start next cycle. This is useful if you have multiple synced sequencers and you want to start this one on the next go around. </p>
 
-<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a>.</p>
+<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html#a5a64532d956a3c912db8807936789ac8">AudioHelm.Sequencer</a>.</p>
 
 </div>
 </div>
@@ -418,7 +467,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html">AudioHelm.Sequencer</a>.</p>
+<p>Implements <a class="el" href="class_audio_helm_1_1_sequencer.html#a27d5d27e87f7e33cfb44aa68c27d6505">AudioHelm.Sequencer</a>.</p>
 
 </div>
 </div>
@@ -440,7 +489,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Helm/Scripts/HelmSequencer.cs</li>
+<li>AudioHelm/Scripts/HelmSequencer.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

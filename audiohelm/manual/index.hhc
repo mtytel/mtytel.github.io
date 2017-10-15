@@ -25,10 +25,10 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmAudioInit"><param name="Local" value="class_helm_1_1_helm_audio_init.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmBpm"><param name="Local" value="class_helm_1_1_helm_bpm.html"><param name="ImageNumber" value="1"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AudioHelmClock"><param name="Local" value="class_helm_1_1_audio_helm_clock.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGlobalBpm"><param name="Local" value="class_helm_1_1_helm_bpm.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="bpm"><param name="Local" value="class_helm_1_1_helm_bpm.html#ad62004cd45a80085cf449b18181354f0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetGlobalBpm"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="bpm"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#ad62004cd45a80085cf449b18181354f0"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="HelmController"><param name="Local" value="class_helm_1_1_helm_controller.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -326,8 +326,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Keyzone"><param name="Local" value="class_helm_1_1_keyzone.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="MonoBehaviour"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.AudioHelmClock"><param name="Local" value="class_helm_1_1_audio_helm_clock.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmAudioInit"><param name="Local" value="class_helm_1_1_helm_audio_init.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmBpm"><param name="Local" value="class_helm_1_1_helm_bpm.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.HelmController"><param name="Local" value="class_helm_1_1_helm_controller.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Sampler"><param name="Local" value="class_helm_1_1_sampler.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Helm.Sequencer"><param name="Local" value="class_helm_1_1_sequencer.html"><param name="ImageNumber" value="1"></OBJECT>

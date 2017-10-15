@@ -1,7 +1,7 @@
 var namespace_audio_helm =
 [
+    [ "AudioHelmClock", "class_audio_helm_1_1_audio_helm_clock.html", "class_audio_helm_1_1_audio_helm_clock" ],
     [ "HelmAudioInit", "class_audio_helm_1_1_helm_audio_init.html", null ],
-    [ "HelmBpm", "class_audio_helm_1_1_helm_bpm.html", "class_audio_helm_1_1_helm_bpm" ],
     [ "HelmController", "class_audio_helm_1_1_helm_controller.html", "class_audio_helm_1_1_helm_controller" ],
     [ "HelmModulationSetting", "class_audio_helm_1_1_helm_modulation_setting.html", "class_audio_helm_1_1_helm_modulation_setting" ],
     [ "HelmPatchFormat", "class_audio_helm_1_1_helm_patch_format.html", "class_audio_helm_1_1_helm_patch_format" ],

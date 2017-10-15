@@ -14,7 +14,8 @@ var NAVTREE =
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Properties", "functions_prop.html", null ]
+        [ "Properties", "functions_prop.html", null ],
+        [ "Events", "functions_evnt.html", null ]
       ] ]
     ] ]
   ] ]
@@ -23,7 +24,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_audio_helm_1_1_sequencer.html#a2d783996e4163537c86d227d27725366"
+"class_audio_helm_1_1_sequencer.html#a06d4703a3f1f10ad97c96ebdf50785fd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

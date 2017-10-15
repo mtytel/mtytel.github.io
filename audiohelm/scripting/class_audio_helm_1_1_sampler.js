@@ -10,6 +10,6 @@ var class_audio_helm_1_1_sampler =
     [ "RemoveKeyzone", "class_audio_helm_1_1_sampler.html#a04aca034c1915a1c38d589770496a5d8", null ],
     [ "keyzones", "class_audio_helm_1_1_sampler.html#ab4e3fe03ccb343def6a15c5466bd46ea", null ],
     [ "numVoices", "class_audio_helm_1_1_sampler.html#ae4f2f47e0c5a8de431a95325431dbf41", null ],
-    [ "useNoteOff", "class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538", null ],
-    [ "velocityTracking", "class_audio_helm_1_1_sampler.html#a34b648b4c6a9db42325f5ca3917f7faf", null ]
+    [ "velocityTracking", "class_audio_helm_1_1_sampler.html#a34b648b4c6a9db42325f5ca3917f7faf", null ],
+    [ "useNoteOff", "class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538", null ]
 ];

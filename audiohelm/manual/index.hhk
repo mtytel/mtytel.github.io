@@ -31,7 +31,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_keyzone.html#a1f32362545d6f2298d1d8690ed52a50b"><param name="Name" value="audioClip"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_patch_format.html#a93b6feaafce9fc0906d2962c79f0b440"><param name="Name" value="author"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a030349e991414336c1ee6f98d40950be"><param name="Name" value="beats_per_minute"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html#ad62004cd45a80085cf449b18181354f0"><param name="Name" value="bpm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#ad62004cd45a80085cf449b18181354f0"><param name="Name" value="bpm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html#a27a233563e3f6cea23e3fae0dbe1f27b"><param name="Name" value="channel"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html#a27a233563e3f6cea23e3fae0dbe1f27b"><param name="Name" value="Helm::HelmController"></OBJECT>
@@ -75,7 +75,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a2f8ed7cc1a70144742ba561e9c643796"><param name="Name" value="formant_y"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a0918bfe08e70fa134c7bb4c39dbe0606"><param name="Name" value="GetDestinationIndex"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_sequencer.html#aa4b4d313e2f5e8cf2af8416569642dee"><param name="Name" value="GetDivisionLength"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html#a71066a1de4f4b014b0805d21c0cc493e"><param name="Name" value="GetGlobalBpm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#a71066a1de4f4b014b0805d21c0cc493e"><param name="Name" value="GetGlobalBpm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_sampler.html#ab4b1179da5bbaabb52fafa5378c3a2b0"><param name="Name" value="GetMaxKey"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_sampler.html#a8fba3117d2c7e59ad94af42198171c4e"><param name="Name" value="GetMinKey"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_sequencer.html#a7c873c5791dda8894a61090e93eea57a"><param name="Name" value="GetNoteInRange"></OBJECT>
@@ -86,12 +86,12 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_sequencer.html#a3b889815f010f980c8c0743ecfed6735"><param name="Name" value="GetSixteenthTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#a1835b3231bc5ebfd0f947dfd3055893b"><param name="Name" value="GetSourceIndex"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_helm.html"><param name="Name" value="Helm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html"><param name="Name" value="Helm::AudioHelmClock"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_audio_init.html"><param name="Name" value="Helm::HelmAudioInit"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html"><param name="Name" value="Helm::HelmBpm"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html#ad62004cd45a80085cf449b18181354f0"><param name="Name" value="bpm"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html#a71066a1de4f4b014b0805d21c0cc493e"><param name="Name" value="GetGlobalBpm"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="Name" value="SetGlobalBpm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#ad62004cd45a80085cf449b18181354f0"><param name="Name" value="bpm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#a71066a1de4f4b014b0805d21c0cc493e"><param name="Name" value="GetGlobalBpm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="Name" value="SetGlobalBpm"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html"><param name="Name" value="Helm::HelmController"></OBJECT>
   <UL>
@@ -500,7 +500,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_patch_settings.html#ad0dcd09866aa1bfd043ff88321b47ddc"><param name="Name" value="reverb_on"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_keyzone.html#a673fb24507549083fc5f99e779fdcc4a"><param name="Name" value="rootKey"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html#a0565009a587fafc19c0c1fedcfb0106f"><param name="Name" value="SetAftertouch"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_bpm.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="Name" value="SetGlobalBpm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_audio_helm_clock.html#a61b64eb56b59696bf01d84d72bc99ba3"><param name="Name" value="SetGlobalBpm"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html#adbff15ebfdeb990d344a1e468700fc51"><param name="Name" value="SetModWheel"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html#a4e1ae4db7a09b5fd8a3b46c066207911"><param name="Name" value="SetParameter"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_helm_1_1_helm_controller.html#aed60c6b233f5649f6566fefa2a187ab8"><param name="Name" value="SetPitchWheel"></OBJECT>

@@ -2,9 +2,9 @@ var NAVTREEINDEX0 =
 {
 "annotated.html":[1,0],
 "class_audio_helm_1_1_helm_audio_init.html":[1,0,0,0],
-"class_audio_helm_1_1_helm_bpm.html":[1,0,0,1],
-"class_audio_helm_1_1_helm_bpm.html#a3a5ccaae4978b5968c79367ce5245cd1":[1,0,0,1,0],
-"class_audio_helm_1_1_helm_bpm.html#a60bce3bcb9e241b82b4b32e349665f82":[1,0,0,1,1],
+"class_audio_helm_1_1_audio_helm_clock.html":[1,0,0,1],
+"class_audio_helm_1_1_audio_helm_clock.html#a3a5ccaae4978b5968c79367ce5245cd1":[1,0,0,1,0],
+"class_audio_helm_1_1_audio_helm_clock.html#a60bce3bcb9e241b82b4b32e349665f82":[1,0,0,1,1],
 "class_audio_helm_1_1_helm_controller.html":[1,0,0,2],
 "class_audio_helm_1_1_helm_controller.html#a060eeba7929936e85d9a3c0ce9c3095e":[1,0,0,2,8],
 "class_audio_helm_1_1_helm_controller.html#a228b3cdd8cf75f190bda23abd63ffa94":[1,0,0,2,1],

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['validfornote',['ValidForNote',['../class_audio_helm_1_1_keyzone.html#a1eaa1f3bd2d47fd5693dc3ecacfa0142',1,'AudioHelm.Keyzone.ValidForNote(int note)'],['../class_audio_helm_1_1_keyzone.html#a944d58a1ba9747540ee4380c09be8a79',1,'AudioHelm.Keyzone.ValidForNote(int note, float velocity)']]],
-  ['velocitytracking',['velocityTracking',['../class_audio_helm_1_1_sampler.html#a34b648b4c6a9db42325f5ca3917f7faf',1,'AudioHelm::Sampler']]]
+  ['updateposition',['UpdatePosition',['../class_audio_helm_1_1_sequencer.html#a7053d6b0aedbc4d3be374f50205a7337',1,'AudioHelm::Sequencer']]],
+  ['usenoteoff',['useNoteOff',['../class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538',1,'AudioHelm::Sampler']]],
+  ['utils',['Utils',['../class_audio_helm_1_1_utils.html',1,'AudioHelm']]]
 ];

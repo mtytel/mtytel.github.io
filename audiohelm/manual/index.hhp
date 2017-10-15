@@ -15,8 +15,8 @@ main="Audio Helm","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,
 namespace_helm.html
 class_helm_1_1_helm_audio_init.html
 class_helm_1_1_helm_audio_init-members.html
-class_helm_1_1_helm_bpm.html
-class_helm_1_1_helm_bpm-members.html
+class_helm_1_1_audio_helm_clock.html
+class_helm_1_1_audio_helm_clock-members.html
 class_helm_1_1_helm_controller.html
 class_helm_1_1_helm_controller-members.html
 class_helm_1_1_helm_modulation_setting.html
@@ -72,7 +72,7 @@ bdwn.png
 sync_on.png
 sync_off.png
 class_helm_1_1_helm_audio_init.png
-class_helm_1_1_helm_bpm.png
+class_helm_1_1_audio_helm_clock.png
 class_helm_1_1_helm_controller.png
 class_helm_1_1_helm_sequencer.png
 class_helm_1_1_note.png

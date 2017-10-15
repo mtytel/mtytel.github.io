@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['trycreate',['TryCreate',['../class_audio_helm_1_1_note.html#afbfd10803985a3f39cda6c9e6a0c33f6',1,'AudioHelm::Note']]],
-  ['trydelete',['TryDelete',['../class_audio_helm_1_1_note.html#a0b7aba5e1f1ec4aa67a99302f6185885',1,'AudioHelm::Note']]]
+  ['setaftertouch',['SetAftertouch',['../class_audio_helm_1_1_helm_controller.html#a99aa7d2d04182d6ff71d4725dece4e01',1,'AudioHelm::HelmController']]],
+  ['setmodwheel',['SetModWheel',['../class_audio_helm_1_1_helm_controller.html#aa3186c72fafc705a3c26477bfe7fb8e4',1,'AudioHelm::HelmController']]],
+  ['setparameterpercent',['SetParameterPercent',['../class_audio_helm_1_1_helm_controller.html#a1576badc73b894dcb1116159a9888382',1,'AudioHelm.HelmController.SetParameterPercent(Param parameter, float newPercent)'],['../class_audio_helm_1_1_helm_controller.html#a8d589a38bc7431ae2c217cf8f71d7f27',1,'AudioHelm.HelmController.SetParameterPercent(CommonParam parameter, float newPercent)']]],
+  ['setparametervalue',['SetParameterValue',['../class_audio_helm_1_1_helm_controller.html#ad9c6f02ce6e3d6ee10d246e49370499e',1,'AudioHelm.HelmController.SetParameterValue(Param parameter, float newValue)'],['../class_audio_helm_1_1_helm_controller.html#ab1ab9b744fd26d7e0aa2d627feaea81c',1,'AudioHelm.HelmController.SetParameterValue(CommonParam parameter, float newValue)']]],
+  ['setpitchwheel',['SetPitchWheel',['../class_audio_helm_1_1_helm_controller.html#a6a2242f64ac662f60a1141d61427a47d',1,'AudioHelm::HelmController']]],
+  ['startonnextcycle',['StartOnNextCycle',['../class_audio_helm_1_1_helm_sequencer.html#a6c787a050d68909d1bdd858a81a9f819',1,'AudioHelm.HelmSequencer.StartOnNextCycle()'],['../class_audio_helm_1_1_sample_sequencer.html#a61e3300dd2de945bc1936e6ba3951e17',1,'AudioHelm.SampleSequencer.StartOnNextCycle()'],['../class_audio_helm_1_1_sequencer.html#a5a64532d956a3c912db8807936789ac8',1,'AudioHelm.Sequencer.StartOnNextCycle()']]],
+  ['startscheduled',['StartScheduled',['../class_audio_helm_1_1_helm_sequencer.html#a0b86b50d98fe6ed78ab5ff726b00e375',1,'AudioHelm.HelmSequencer.StartScheduled()'],['../class_audio_helm_1_1_sample_sequencer.html#abf3a9293fe94ad50b5111823ef41b906',1,'AudioHelm.SampleSequencer.StartScheduled()'],['../class_audio_helm_1_1_sequencer.html#a27d5d27e87f7e33cfb44aa68c27d6505',1,'AudioHelm.Sequencer.StartScheduled()']]]
 ];

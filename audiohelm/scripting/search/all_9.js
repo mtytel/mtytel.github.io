@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['midichangetoratio',['MidiChangeToRatio',['../class_audio_helm_1_1_utils.html#a233841bd3984c823416bab0362a12201',1,'AudioHelm::Utils']]]
+  ['length',['length',['../class_audio_helm_1_1_sequencer.html#aa79cd7531f727f90e4ff5a4440c3b5e6',1,'AudioHelm::Sequencer']]]
 ];

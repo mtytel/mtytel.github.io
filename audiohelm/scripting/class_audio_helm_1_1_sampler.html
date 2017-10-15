@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_sampler.html','')
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_audio_helm_1_1_sampler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AudioHelm.Sampler Class Reference</div>  </div>
@@ -141,10 +142,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a34b648b4c6a9db42325f5ca3917f7faf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#a34b648b4c6a9db42325f5ca3917f7faf">velocityTracking</a> = 1.0f</td></tr>
 <tr class="memdesc:a34b648b4c6a9db42325f5ca3917f7faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much the velocity of a note on event affects the volume of the samples. 0.0 for no effect and 1.0 for full effect.  <a href="#a34b648b4c6a9db42325f5ca3917f7faf">More...</a><br /></td></tr>
 <tr class="separator:a34b648b4c6a9db42325f5ca3917f7faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f2f47e0c5a8de431a95325431dbf41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#ae4f2f47e0c5a8de431a95325431dbf41">numVoices</a> = 2</td></tr>
+<tr class="memitem:ae4f2f47e0c5a8de431a95325431dbf41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#ae4f2f47e0c5a8de431a95325431dbf41">numVoices</a> = 8</td></tr>
 <tr class="memdesc:ae4f2f47e0c5a8de431a95325431dbf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of concurrently playing sounds from this <a class="el" href="class_audio_helm_1_1_sampler.html" title="Switch to Manual The Sampler is a type of instrument that has a collection of audio samples to play a...">Sampler</a> (polyphony). Increase this if your voices are cutting out from new voices coming in.  <a href="#ae4f2f47e0c5a8de431a95325431dbf41">More...</a><br /></td></tr>
 <tr class="separator:ae4f2f47e0c5a8de431a95325431dbf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a56479da0f4fac8d7d85f851962538"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538">useNoteOff</a> = false</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a62a56479da0f4fac8d7d85f851962538"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538">useNoteOff</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a62a56479da0f4fac8d7d85f851962538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does a voice silence when it gets a note off event?  <a href="#a62a56479da0f4fac8d7d85f851962538">More...</a><br /></td></tr>
 <tr class="separator:a62a56479da0f4fac8d7d85f851962538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -403,28 +407,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int AudioHelm.Sampler.numVoices = 2</td>
+          <td class="memname">int AudioHelm.Sampler.numVoices = 8</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Total number of concurrently playing sounds from this <a class="el" href="class_audio_helm_1_1_sampler.html" title="Switch to Manual The Sampler is a type of instrument that has a collection of audio samples to play a...">Sampler</a> (polyphony). Increase this if your voices are cutting out from new voices coming in. </p>
-
-</div>
-</div>
-<a id="a62a56479da0f4fac8d7d85f851962538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a56479da0f4fac8d7d85f851962538">&#9670;&nbsp;</a></span>useNoteOff</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AudioHelm.Sampler.useNoteOff = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Does a voice silence when it gets a note off event? </p>
 
 </div>
 </div>
@@ -444,8 +432,33 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a62a56479da0f4fac8d7d85f851962538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a56479da0f4fac8d7d85f851962538">&#9670;&nbsp;</a></span>useNoteOff</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioHelm.Sampler.useNoteOff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does a voice silence when it gets a note off event? </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Helm/Scripts/Sampler.cs</li>
+<li>AudioHelm/Scripts/Sampler.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

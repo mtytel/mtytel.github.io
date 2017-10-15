@@ -20,5 +20,6 @@ var class_audio_helm_1_1_native =
     [ "HelmSetParameterValue", "class_audio_helm_1_1_native.html#a0a5ff2b841facc8cfb128f289b51b13f", null ],
     [ "HelmSetPitchWheel", "class_audio_helm_1_1_native.html#a9e0a3c7d14456bfa04c1bfd4ac9fd43b", null ],
     [ "SetBpm", "class_audio_helm_1_1_native.html#a2c63f0c8a1ddae63b4b80fc1f5ee8c48", null ],
+    [ "ShiftSequencerStart", "class_audio_helm_1_1_native.html#a68703ebc15db89641c0bb6ea7c86086b", null ],
     [ "SyncSequencerStart", "class_audio_helm_1_1_native.html#a03132fa39cad5def4d75057f623ce56a", null ]
 ];
