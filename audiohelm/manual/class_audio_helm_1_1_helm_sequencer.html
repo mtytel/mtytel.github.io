@@ -87,6 +87,16 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_helm_sequencer.ht
     </div>
   </div>
 
+  <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Load MIDI File</h2>
+
+  <div class="memitem">
+    <div class="memdoc">
+
+      <p>Loads all the notes from a MIDI file into the sequencer. This is useful if you have an existing MIDI file or if you want to create a song in a DAW and import the pattern into Unity.</p>
+
+    </div>
+  </div>
+
   <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Channel</h2>
 
   <div class="memitem">
@@ -112,7 +122,57 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_helm_sequencer.ht
   <div class="memitem">
     <div class="memdoc">
 
-      <p>The division of the graphical sequencer. Changing this does not change the sequence of notes, but can makes it easier to add notes in different rhythms.</p>
+      <p>The division of the graphical sequencer. Changing this does not change the sequence of notes, but can makes it easier to add notes in different rhythms, and will give you beat events at different intervals.</p>
+
+    </div>
+  </div>
+
+  <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Zoom</h2>
+
+  <div class="memitem">
+    <div class="memdoc">
+
+      <p>How zoomed into the sequencer we are. When you have larger sequences you can zoom in to look at a portion and zoom out to look at more of the sequence.</p>
+
+    </div>
+  </div>
+
+  <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Auto Scroll</h2>
+
+  <div class="memitem">
+    <div class="memdoc">
+
+      <p>If enabled the sequencer will scroll to keep the playhead visible.</p>
+
+    </div>
+  </div>
+
+  <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Note On Event</h2>
+
+  <div class="memitem">
+    <div class="memdoc">
+
+      <p>An event hook for a note on event in the sequencer. Passes a Note object to the function which contains the key played, the velocity and the start and end point in the sequencer.</p>
+
+    </div>
+  </div>
+
+  <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Note Off Event</h2>
+
+  <div class="memitem">
+    <div class="memdoc">
+
+      <p>An event hook for a note off event in the sequencer. Passes a Note object to the function which contains the key played, the velocity and the start and end point in the sequencer.</p>
+
+    </div>
+  </div>
+
+  <h2 class="memtitle"><span class="permalink"><a href="#a60bce3bcb9e241b82b4b32e349665f82">&#9670;&nbsp;</a></span>Beat Event</h2>
+
+  <div class="memitem">
+    <div class="memdoc">
+
+      <p>An event hook for a beat event in the sequencer. When the sequencer advances to the next division, a beat event will trigger and passes the index of the division.</p>
 
     </div>
   </div>

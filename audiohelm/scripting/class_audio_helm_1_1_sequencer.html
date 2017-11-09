@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_sequencer.html','
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#events">Events</a> &#124;
 <a href="class_audio_helm_1_1_sequencer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -109,6 +110,13 @@ Inheritance diagram for AudioHelm.Sequencer:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_beat_event.html">BeatEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_note_event.html">NoteEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a809446b71657b4e48e2b52c22904accc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a809446b71657b4e48e2b52c22904accc">Division</a> { <b>kEighth</b>, 
@@ -136,9 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b35539e8b39d13e67f7aa223330f483"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a5b35539e8b39d13e67f7aa223330f483">NoteOff</a> (int note)</td></tr>
 <tr class="memdesc:a5b35539e8b39d13e67f7aa223330f483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a note off event for the instrument.  <a href="#a5b35539e8b39d13e67f7aa223330f483">More...</a><br /></td></tr>
 <tr class="separator:a5b35539e8b39d13e67f7aa223330f483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d5d27e87f7e33cfb44aa68c27d6505"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a27d5d27e87f7e33cfb44aa68c27d6505">StartScheduled</a> (double dspTime)</td></tr>
-<tr class="memdesc:a27d5d27e87f7e33cfb44aa68c27d6505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the sequencer at a given time in the future. This is synced to AudioSettings.dspTime.  <a href="#a27d5d27e87f7e33cfb44aa68c27d6505">More...</a><br /></td></tr>
-<tr class="separator:a27d5d27e87f7e33cfb44aa68c27d6505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbe5d65cd2777efc1eab7a033bfb88a"><td class="memItemLeft" align="right" valign="top"><a id="acbbe5d65cd2777efc1eab7a033bfb88a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartScheduled</b> (double dspTime)</td></tr>
+<tr class="separator:acbbe5d65cd2777efc1eab7a033bfb88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a64532d956a3c912db8807936789ac8"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a5a64532d956a3c912db8807936789ac8">StartOnNextCycle</a> ()</td></tr>
 <tr class="memdesc:a5a64532d956a3c912db8807936789ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the sequencer on the start next cycle. This is useful if you have multiple synced sequencers and you want to start this one on the next go around.  <a href="#a5a64532d956a3c912db8807936789ac8">More...</a><br /></td></tr>
 <tr class="separator:a5a64532d956a3c912db8807936789ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,9 +159,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAfterDeserialize</b
 <tr class="memitem:ad05759fc8c06838c945a08e88b02459e"><td class="memItemLeft" align="right" valign="top">virtual IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ad05759fc8c06838c945a08e88b02459e">Reference</a> ()</td></tr>
 <tr class="memdesc:ad05759fc8c06838c945a08e88b02459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the native sequencer instance memory (if any).  <a href="#ad05759fc8c06838c945a08e88b02459e">More...</a><br /></td></tr>
 <tr class="separator:ad05759fc8c06838c945a08e88b02459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10f26308f774cdf822887611bbf8db9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ae10f26308f774cdf822887611bbf8db9">Reset</a> ()</td></tr>
-<tr class="memdesc:ae10f26308f774cdf822887611bbf8db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the sequencer at the beginning.  <a href="#ae10f26308f774cdf822887611bbf8db9">More...</a><br /></td></tr>
-<tr class="separator:ae10f26308f774cdf822887611bbf8db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a001a503e63104f0543fe98cc4a66a683"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a001a503e63104f0543fe98cc4a66a683">GetDivisionLength</a> ()</td></tr>
 <tr class="memdesc:a001a503e63104f0543fe98cc4a66a683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the length of the division measured in sixteenth notes.  <a href="#a001a503e63104f0543fe98cc4a66a683">More...</a><br /></td></tr>
 <tr class="separator:a001a503e63104f0543fe98cc4a66a683"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,9 +201,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAfterDeserialize</b
 <tr class="memitem:afee8a73de1be158934cdfb03d86bd8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#afee8a73de1be158934cdfb03d86bd8be">ReadMidiFile</a> (Stream midiStream)</td></tr>
 <tr class="memdesc:afee8a73de1be158934cdfb03d86bd8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a MIDI file's tracks into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected.  <a href="#afee8a73de1be158934cdfb03d86bd8be">More...</a><br /></td></tr>
 <tr class="separator:afee8a73de1be158934cdfb03d86bd8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab260233497d115c14ea59a0161e8a666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ab260233497d115c14ea59a0161e8a666">ReadMidiFile</a> (UnityEngine.Object midiFile)</td></tr>
-<tr class="memdesc:ab260233497d115c14ea59a0161e8a666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a MIDI file's tracks into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected.  <a href="#ab260233497d115c14ea59a0161e8a666">More...</a><br /></td></tr>
-<tr class="separator:ab260233497d115c14ea59a0161e8a666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0373669597e4705e1e98d0fac22f124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ad0373669597e4705e1e98d0fac22f124">ReadMidiFile</a> (<a class="el" href="class_audio_helm_1_1_midi_file.html">MidiFile</a> midiFile)</td></tr>
+<tr class="memdesc:ad0373669597e4705e1e98d0fac22f124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a MIDI file object into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected.  <a href="#ad0373669597e4705e1e98d0fac22f124">More...</a><br /></td></tr>
+<tr class="separator:ad0373669597e4705e1e98d0fac22f124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6abe110120ab9203f85dd7c928a797ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a6abe110120ab9203f85dd7c928a797ce">Clear</a> ()</td></tr>
 <tr class="memdesc:a6abe110120ab9203f85dd7c928a797ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the sequencer of all notes.  <a href="#a6abe110120ab9203f85dd7c928a797ce">More...</a><br /></td></tr>
 <tr class="separator:a6abe110120ab9203f85dd7c928a797ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,27 +216,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAfterDeserialize</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a304ca85bbed9b999146ff01f4007c776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_note_event.html">NoteEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a304ca85bbed9b999146ff01f4007c776">noteOnEvent</a></td></tr>
+<tr class="memdesc:a304ca85bbed9b999146ff01f4007c776"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnityEvent hook for a note on.  <a href="#a304ca85bbed9b999146ff01f4007c776">More...</a><br /></td></tr>
+<tr class="separator:a304ca85bbed9b999146ff01f4007c776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c17d2cb21dce8ddddcb078e9671c07e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_note_event.html">NoteEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a2c17d2cb21dce8ddddcb078e9671c07e">noteOffEvent</a></td></tr>
+<tr class="memdesc:a2c17d2cb21dce8ddddcb078e9671c07e"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnityEvent hook for a note off.  <a href="#a2c17d2cb21dce8ddddcb078e9671c07e">More...</a><br /></td></tr>
+<tr class="separator:a2c17d2cb21dce8ddddcb078e9671c07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01326dac845afda7ae57ea9ac8eb2c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_beat_event.html">BeatEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#ae01326dac845afda7ae57ea9ac8eb2c2">beatEvent</a></td></tr>
+<tr class="memdesc:ae01326dac845afda7ae57ea9ac8eb2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnityEvent hook for a beat. Depends on the division setting of the seqeuncer.  <a href="#ae01326dac845afda7ae57ea9ac8eb2c2">More...</a><br /></td></tr>
+<tr class="separator:ae01326dac845afda7ae57ea9ac8eb2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79cd7531f727f90e4ff5a4440c3b5e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#aa79cd7531f727f90e4ff5a4440c3b5e6">length</a> = 16</td></tr>
 <tr class="memdesc:aa79cd7531f727f90e4ff5a4440c3b5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the sequence measured in sixteenth notes.  <a href="#aa79cd7531f727f90e4ff5a4440c3b5e6">More...</a><br /></td></tr>
 <tr class="separator:aa79cd7531f727f90e4ff5a4440c3b5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66abd963563df05f48f3329e702f73a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a66abd963563df05f48f3329e702f73a5">currentIndex</a> = -1</td></tr>
-<tr class="memdesc:a66abd963563df05f48f3329e702f73a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current sixteenth index.  <a href="#a66abd963563df05f48f3329e702f73a5">More...</a><br /></td></tr>
+<tr class="memdesc:a66abd963563df05f48f3329e702f73a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current index position measured in the division of the sequencer.  <a href="#a66abd963563df05f48f3329e702f73a5">More...</a><br /></td></tr>
 <tr class="separator:a66abd963563df05f48f3329e702f73a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19261de8564f05745633bacc4e59a39b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a19261de8564f05745633bacc4e59a39b">syncTime</a> = 0.0</td></tr>
-<tr class="memdesc:a19261de8564f05745633bacc4e59a39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time to align loops of the sequencer to.  <a href="#a19261de8564f05745633bacc4e59a39b">More...</a><br /></td></tr>
-<tr class="separator:a19261de8564f05745633bacc4e59a39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f938c86a4e3c29bc12876806342f87f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_note_row.html">NoteRow</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a5f938c86a4e3c29bc12876806342f87f">allNotes</a> = new <a class="el" href="class_audio_helm_1_1_note_row.html">NoteRow</a>[Utils.kMidiSize]</td></tr>
 <tr class="memdesc:a5f938c86a4e3c29bc12876806342f87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">All notes in the seqeuncer.  <a href="#a5f938c86a4e3c29bc12876806342f87f">More...</a><br /></td></tr>
 <tr class="separator:a5f938c86a4e3c29bc12876806342f87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952b6c48dc1f0f824cf5e7b117054833"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a952b6c48dc1f0f824cf5e7b117054833">scrollPosition</a> = Vector2.zero</td></tr>
+<tr class="memdesc:a952b6c48dc1f0f824cf5e7b117054833"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x/y scroll position of the inspector sequencer piano roll.  <a href="#a952b6c48dc1f0f824cf5e7b117054833">More...</a><br /></td></tr>
+<tr class="separator:a952b6c48dc1f0f824cf5e7b117054833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2327071ec5be82cca06e0d458b19c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a0f2327071ec5be82cca06e0d458b19c0">autoScroll</a> = false</td></tr>
+<tr class="memdesc:a0f2327071ec5be82cca06e0d458b19c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the inspector window scroll with playback.  <a href="#a0f2327071ec5be82cca06e0d458b19c0">More...</a><br /></td></tr>
+<tr class="separator:a0f2327071ec5be82cca06e0d458b19c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03f799df1c88335e4b01ff9a2077e189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_sequencer.html#a809446b71657b4e48e2b52c22904accc">Division</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a03f799df1c88335e4b01ff9a2077e189">division</a> = Division.kSixteenth</td></tr>
-<tr class="memdesc:a03f799df1c88335e4b01ff9a2077e189"><td class="mdescLeft">&#160;</td><td class="mdescRight">The division of the graphical sequencer.  <a href="#a03f799df1c88335e4b01ff9a2077e189">More...</a><br /></td></tr>
+<tr class="memdesc:a03f799df1c88335e4b01ff9a2077e189"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often a bar or a division is placed in the sequencer inspector view.  <a href="#a03f799df1c88335e4b01ff9a2077e189">More...</a><br /></td></tr>
 <tr class="separator:a03f799df1c88335e4b01ff9a2077e189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d783996e4163537c86d227d27725366"><td class="memItemLeft" align="right" valign="top"><a id="a2d783996e4163537c86d227d27725366"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxLength</b> = 128</td></tr>
-<tr class="separator:a2d783996e4163537c86d227d27725366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b88e253ef4e741792753fe8bffddcd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a06b88e253ef4e741792753fe8bffddcd">zoom</a> = 0.3f</td></tr>
+<tr class="memdesc:a06b88e253ef4e741792753fe8bffddcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest width to draw a sequencer beat in the inspector  <a href="#a06b88e253ef4e741792753fe8bffddcd">More...</a><br /></td></tr>
+<tr class="separator:a06b88e253ef4e741792753fe8bffddcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad591004101009d6525250a7441f5397d"><td class="memItemLeft" align="right" valign="top"><a id="ad591004101009d6525250a7441f5397d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnable</b> ()</td></tr>
+<tr class="separator:ad591004101009d6525250a7441f5397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec8a8fa3e7896f216d91423bbe299a3"><td class="memItemLeft" align="right" valign="top"><a id="a6ec8a8fa3e7896f216d91423bbe299a3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisable</b> ()</td></tr>
+<tr class="separator:a6ec8a8fa3e7896f216d91423bbe299a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8386b40331b552d9dd7b3c6dba67cb0"><td class="memItemLeft" align="right" valign="top"><a id="ab8386b40331b552d9dd7b3c6dba67cb0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSortedNoteEvents</b> (<a class="el" href="class_audio_helm_1_1_note.html">Note</a> note)</td></tr>
 <tr class="separator:ab8386b40331b552d9dd7b3c6dba67cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,9 +267,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InitNoteRows</b> ()</
 <tr class="memitem:a1004c3f13c428e3a3286f3682741a101"><td class="memItemLeft" align="right" valign="top"><a id="a1004c3f13c428e3a3286f3682741a101"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSequencerTime</b> ()</td></tr>
 <tr class="separator:a1004c3f13c428e3a3286f3682741a101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07acb011477970ded3cbbffcd6591bd9"><td class="memItemLeft" align="right" valign="top"><a id="a07acb011477970ded3cbbffcd6591bd9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBeatTime</b> ()</td></tr>
+<tr class="separator:a07acb011477970ded3cbbffcd6591bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7053d6b0aedbc4d3be374f50205a7337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_sequencer.html#a7053d6b0aedbc4d3be374f50205a7337">UpdatePosition</a> ()</td></tr>
 <tr class="memdesc:a7053d6b0aedbc4d3be374f50205a7337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the position of the sequencer and fire any events that have occurred.  <a href="#a7053d6b0aedbc4d3be374f50205a7337">More...</a><br /></td></tr>
 <tr class="separator:a7053d6b0aedbc4d3be374f50205a7337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a71dc4794d9569d1ca095b60ddcad91bd"><td class="memItemLeft" align="right" valign="top"><a id="a71dc4794d9569d1ca095b60ddcad91bd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>beatTime</b> = 0.0</td></tr>
+<tr class="separator:a71dc4794d9569d1ca095b60ddcad91bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
 Events</h2></td></tr>
@@ -949,8 +981,8 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="ab260233497d115c14ea59a0161e8a666"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab260233497d115c14ea59a0161e8a666">&#9670;&nbsp;</a></span>ReadMidiFile() <span class="overload">[2/2]</span></h2>
+<a id="ad0373669597e4705e1e98d0fac22f124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0373669597e4705e1e98d0fac22f124">&#9670;&nbsp;</a></span>ReadMidiFile() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -958,14 +990,14 @@ Events</h2></td></tr>
         <tr>
           <td class="memname">void AudioHelm.Sequencer.ReadMidiFile </td>
           <td>(</td>
-          <td class="paramtype">UnityEngine.Object&#160;</td>
+          <td class="paramtype"><a class="el" href="class_audio_helm_1_1_midi_file.html">MidiFile</a>&#160;</td>
           <td class="paramname"><em>midiFile</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read a MIDI file's tracks into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected. </p>
+<p>Read a MIDI file object into this sequencer. Currently in Beta. This may not work for all MIDI files or as expected. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">midiFile</td><td>The MIDI file object.</td></tr>
@@ -1125,33 +1157,6 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="ae10f26308f774cdf822887611bbf8db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae10f26308f774cdf822887611bbf8db9">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AudioHelm.Sequencer.Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Resets the sequencer at the beginning. </p>
-
-</div>
-</div>
 <a id="a5a64532d956a3c912db8807936789ac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a64532d956a3c912db8807936789ac8">&#9670;&nbsp;</a></span>StartOnNextCycle()</h2>
 
@@ -1178,42 +1183,6 @@ Events</h2></td></tr>
 <p>Starts the sequencer on the start next cycle. This is useful if you have multiple synced sequencers and you want to start this one on the next go around. </p>
 
 <p>Implemented in <a class="el" href="class_audio_helm_1_1_helm_sequencer.html#a6c787a050d68909d1bdd858a81a9f819">AudioHelm.HelmSequencer</a>, and <a class="el" href="class_audio_helm_1_1_sample_sequencer.html#a61e3300dd2de945bc1936e6ba3951e17">AudioHelm.SampleSequencer</a>.</p>
-
-</div>
-</div>
-<a id="a27d5d27e87f7e33cfb44aa68c27d6505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27d5d27e87f7e33cfb44aa68c27d6505">&#9670;&nbsp;</a></span>StartScheduled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">abstract void AudioHelm.Sequencer.StartScheduled </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>dspTime</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Starts the sequencer at a given time in the future. This is synced to AudioSettings.dspTime. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dspTime</td><td>The time to start the sequencer, synced to AudioSettings.dspTime.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_audio_helm_1_1_helm_sequencer.html#a0b86b50d98fe6ed78ab5ff726b00e375">AudioHelm.HelmSequencer</a>, and <a class="el" href="class_audio_helm_1_1_sample_sequencer.html#abf3a9293fe94ad50b5111823ef41b906">AudioHelm.SampleSequencer</a>.</p>
 
 </div>
 </div>
@@ -1261,6 +1230,38 @@ Events</h2></td></tr>
 
 </div>
 </div>
+<a id="a0f2327071ec5be82cca06e0d458b19c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2327071ec5be82cca06e0d458b19c0">&#9670;&nbsp;</a></span>autoScroll</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioHelm.Sequencer.autoScroll = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Should the inspector window scroll with playback. </p>
+
+</div>
+</div>
+<a id="ae01326dac845afda7ae57ea9ac8eb2c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01326dac845afda7ae57ea9ac8eb2c2">&#9670;&nbsp;</a></span>beatEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_beat_event.html">BeatEvent</a> AudioHelm.Sequencer.beatEvent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UnityEvent hook for a beat. Depends on the division setting of the seqeuncer. </p>
+
+</div>
+</div>
 <a id="a66abd963563df05f48f3329e702f73a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66abd963563df05f48f3329e702f73a5">&#9670;&nbsp;</a></span>currentIndex</h2>
 
@@ -1273,7 +1274,7 @@ Events</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The current sixteenth index. </p>
+<p>The current index position measured in the division of the sequencer. </p>
 
 </div>
 </div>
@@ -1289,7 +1290,7 @@ Events</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The division of the graphical sequencer. </p>
+<p>How often a bar or a division is placed in the sequencer inspector view. </p>
 
 </div>
 </div>
@@ -1309,19 +1310,67 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="a19261de8564f05745633bacc4e59a39b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19261de8564f05745633bacc4e59a39b">&#9670;&nbsp;</a></span>syncTime</h2>
+<a id="a2c17d2cb21dce8ddddcb078e9671c07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c17d2cb21dce8ddddcb078e9671c07e">&#9670;&nbsp;</a></span>noteOffEvent</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double AudioHelm.Sequencer.syncTime = 0.0</td>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_note_event.html">NoteEvent</a> AudioHelm.Sequencer.noteOffEvent</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time to align loops of the sequencer to. </p>
+<p>UnityEvent hook for a note off. </p>
+
+</div>
+</div>
+<a id="a304ca85bbed9b999146ff01f4007c776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304ca85bbed9b999146ff01f4007c776">&#9670;&nbsp;</a></span>noteOnEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_sequencer_1_1_note_event.html">NoteEvent</a> AudioHelm.Sequencer.noteOnEvent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UnityEvent hook for a note on. </p>
+
+</div>
+</div>
+<a id="a952b6c48dc1f0f824cf5e7b117054833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952b6c48dc1f0f824cf5e7b117054833">&#9670;&nbsp;</a></span>scrollPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 AudioHelm.Sequencer.scrollPosition = Vector2.zero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The x/y scroll position of the inspector sequencer piano roll. </p>
+
+</div>
+</div>
+<a id="a06b88e253ef4e741792753fe8bffddcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b88e253ef4e741792753fe8bffddcd">&#9670;&nbsp;</a></span>zoom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.Sequencer.zoom = 0.3f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The smallest width to draw a sequencer beat in the inspector </p>
 
 </div>
 </div>

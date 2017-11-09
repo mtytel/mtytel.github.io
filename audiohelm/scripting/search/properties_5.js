@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['velocity',['velocity',['../class_audio_helm_1_1_note.html#a76c26877744d52c19538c0c12b2a344b',1,'AudioHelm::Note']]]
+  ['usenoteoff',['useNoteOff',['../class_audio_helm_1_1_sampler.html#a62a56479da0f4fac8d7d85f851962538',1,'AudioHelm::Sampler']]]
 ];

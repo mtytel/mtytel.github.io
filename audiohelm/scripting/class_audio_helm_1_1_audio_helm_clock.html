@@ -83,8 +83,10 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_audio_helm_clock.
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="class_audio_helm_1_1_audio_helm_clock-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AudioHelm.AudioHelmClock Class Reference</div>  </div>
@@ -104,23 +106,77 @@ Inheritance diagram for AudioHelm.AudioHelmClock:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae0915bd977b1e3a21ac9d7b980cbb0d6"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#ae0915bd977b1e3a21ac9d7b980cbb0d6">ResetAction</a> ()</td></tr>
+<tr class="memdesc:ae0915bd977b1e3a21ac9d7b980cbb0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reset event that is triggered when time restarts.  <a href="#ae0915bd977b1e3a21ac9d7b980cbb0d6">More...</a><br /></td></tr>
+<tr class="separator:ae0915bd977b1e3a21ac9d7b980cbb0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d7865ebebbe45dbce11d6cd4a1c9e0"><td class="memItemLeft" align="right" valign="top"><a id="a93d7865ebebbe45dbce11d6cd4a1c9e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartScheduled</b> (double timeToStart)</td></tr>
+<tr class="separator:a93d7865ebebbe45dbce11d6cd4a1c9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259237af21c714712c4e9aad73118ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#ae259237af21c714712c4e9aad73118ce">Reset</a> ()</td></tr>
+<tr class="memdesc:ae259237af21c714712c4e9aad73118ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets time and all sequencers from the beginning.  <a href="#ae259237af21c714712c4e9aad73118ce">More...</a><br /></td></tr>
+<tr class="separator:ae259237af21c714712c4e9aad73118ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6edf55045e25890ae324486991b2430e"><td class="memItemLeft" align="right" valign="top"><a id="a6edf55045e25890ae324486991b2430e"></a>
+static <a class="el" href="class_audio_helm_1_1_audio_helm_clock.html">AudioHelmClock</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+<tr class="separator:a6edf55045e25890ae324486991b2430e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae485c3246ab7864201026dcb28f0071c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#ae485c3246ab7864201026dcb28f0071c">GetGlobalBpm</a> ()</td></tr>
-<tr class="memdesc:ae485c3246ab7864201026dcb28f0071c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the beats per minute.  <a href="#ae485c3246ab7864201026dcb28f0071c">More...</a><br /></td></tr>
+<tr class="memdesc:ae485c3246ab7864201026dcb28f0071c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global beats per minute.  <a href="#ae485c3246ab7864201026dcb28f0071c">More...</a><br /></td></tr>
 <tr class="separator:ae485c3246ab7864201026dcb28f0071c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3900fba48e2ed4af09c209a9b370e4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#a1c3900fba48e2ed4af09c209a9b370e4">GetGlobalBeatTime</a> ()</td></tr>
+<tr class="memdesc:a1c3900fba48e2ed4af09c209a9b370e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global synchronize time.  <a href="#a1c3900fba48e2ed4af09c209a9b370e4">More...</a><br /></td></tr>
+<tr class="separator:a1c3900fba48e2ed4af09c209a9b370e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae679f905ebd7efb1c24d12064c2d3a6f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#ae679f905ebd7efb1c24d12064c2d3a6f">GetLastSampledTime</a> ()</td></tr>
+<tr class="memdesc:ae679f905ebd7efb1c24d12064c2d3a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last time the clock was updated.  <a href="#ae679f905ebd7efb1c24d12064c2d3a6f">More...</a><br /></td></tr>
+<tr class="separator:ae679f905ebd7efb1c24d12064c2d3a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:abe7e6c779770aa7a868ee9832f33cf49"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#abe7e6c779770aa7a868ee9832f33cf49">bpm</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abe7e6c779770aa7a868ee9832f33cf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the beats per minute. Audio Helm does not currently support changing BPM while playing.  <a href="#abe7e6c779770aa7a868ee9832f33cf49">More...</a><br /></td></tr>
+<tr class="memdesc:abe7e6c779770aa7a868ee9832f33cf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the beats per minute.  <a href="#abe7e6c779770aa7a868ee9832f33cf49">More...</a><br /></td></tr>
 <tr class="separator:abe7e6c779770aa7a868ee9832f33cf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a6d4377dad83effd1024ff98ac6a620e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#ae0915bd977b1e3a21ac9d7b980cbb0d6">ResetAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#a6d4377dad83effd1024ff98ac6a620e7">OnReset</a></td></tr>
+<tr class="memdesc:a6d4377dad83effd1024ff98ac6a620e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event hook for a reset event  <a href="#a6d4377dad83effd1024ff98ac6a620e7">More...</a><br /></td></tr>
+<tr class="separator:a6d4377dad83effd1024ff98ac6a620e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h2><a href="../manual/class_audio_helm_1_1_audio_helm_clock.html">Switch to Manual</a><br />
 </h2>
 <p>Sets the BPM (beats per minute) of all sequencers and native Helm instances. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1c3900fba48e2ed4af09c209a9b370e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3900fba48e2ed4af09c209a9b370e4">&#9670;&nbsp;</a></span>GetGlobalBeatTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double AudioHelm.AudioHelmClock.GetGlobalBeatTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the global synchronize time. </p>
+
+</div>
+</div>
 <a id="ae485c3246ab7864201026dcb28f0071c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae485c3246ab7864201026dcb28f0071c">&#9670;&nbsp;</a></span>GetGlobalBpm()</h2>
 
@@ -144,8 +200,72 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the beats per minute. </p>
-<p>The new or current bpm.</p>
+<p>Gets the global beats per minute. </p>
+
+</div>
+</div>
+<a id="ae679f905ebd7efb1c24d12064c2d3a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae679f905ebd7efb1c24d12064c2d3a6f">&#9670;&nbsp;</a></span>GetLastSampledTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double AudioHelm.AudioHelmClock.GetLastSampledTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the last time the clock was updated. </p>
+
+</div>
+</div>
+<a id="ae259237af21c714712c4e9aad73118ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae259237af21c714712c4e9aad73118ce">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.AudioHelmClock.Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets time and all sequencers from the beginning. </p>
+
+</div>
+</div>
+<a id="ae0915bd977b1e3a21ac9d7b980cbb0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0915bd977b1e3a21ac9d7b980cbb0d6">&#9670;&nbsp;</a></span>ResetAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void AudioHelm.AudioHelmClock.ResetAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A reset event that is triggered when time restarts. </p>
 
 </div>
 </div>
@@ -170,8 +290,25 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the beats per minute. Audio Helm does not currently support changing BPM while playing. </p>
+<p>Gets or sets the beats per minute. </p>
 <p>The new or current bpm.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a6d4377dad83effd1024ff98ac6a620e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4377dad83effd1024ff98ac6a620e7">&#9670;&nbsp;</a></span>OnReset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_audio_helm_clock.html#ae0915bd977b1e3a21ac9d7b980cbb0d6">ResetAction</a> AudioHelm.AudioHelmClock.OnReset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event hook for a reset event </p>
 
 </div>
 </div>

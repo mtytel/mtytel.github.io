@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length',['length',['../class_audio_helm_1_1_sequencer.html#aa79cd7531f727f90e4ff5a4440c3b5e6',1,'AudioHelm::Sequencer']]]
+  ['keyzones',['keyzones',['../class_audio_helm_1_1_sampler.html#ab4e3fe03ccb343def6a15c5466bd46ea',1,'AudioHelm::Sampler']]]
 ];

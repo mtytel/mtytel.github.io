@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['midichangetoratio',['MidiChangeToRatio',['../class_audio_helm_1_1_utils.html#a233841bd3984c823416bab0362a12201',1,'AudioHelm::Utils']]]
+  ['loadpatch',['LoadPatch',['../class_audio_helm_1_1_helm_controller.html#adfa6e5311893fde72a98cfadf9f46fdb',1,'AudioHelm::HelmController']]]
 ];

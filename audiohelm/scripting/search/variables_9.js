@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['synctime',['syncTime',['../class_audio_helm_1_1_sequencer.html#a19261de8564f05745633bacc4e59a39b',1,'AudioHelm::Sequencer']]]
+  ['rootkey',['rootKey',['../class_audio_helm_1_1_keyzone.html#a6369000764fb960d070076be8084b780',1,'AudioHelm::Keyzone']]]
 ];

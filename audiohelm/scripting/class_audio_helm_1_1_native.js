@@ -11,7 +11,13 @@ var class_audio_helm_1_1_native =
     [ "DeleteNote", "class_audio_helm_1_1_native.html#a4239370a9d919af8f57ddfbb68408474", null ],
     [ "DeleteSequencer", "class_audio_helm_1_1_native.html#a3c0fd7cf450b7159fc485ee26b2b43cd", null ],
     [ "EnableSequencer", "class_audio_helm_1_1_native.html#a41cbc7b5214f51aafedc73f81993f730", null ],
+    [ "HelmAddModulation", "class_audio_helm_1_1_native.html#a85e4ef5d57c9ffb4a821e273681de959", null ],
     [ "HelmAllNotesOff", "class_audio_helm_1_1_native.html#a39911b029736ddcecdabef26bda687a7", null ],
+    [ "HelmClearModulations", "class_audio_helm_1_1_native.html#a89ae9880bc991114d150d67f1a7df83f", null ],
+    [ "HelmGetParameterMaximum", "class_audio_helm_1_1_native.html#aed01532fddfcdda4279035eadc9b1f0f", null ],
+    [ "HelmGetParameterMinimum", "class_audio_helm_1_1_native.html#a530ad0231bcbac4194e8ce5f8c0363fa", null ],
+    [ "HelmGetParameterPercent", "class_audio_helm_1_1_native.html#a4beecdf4d66840f2b1fbbbebaf7bbd1a", null ],
+    [ "HelmGetParameterValue", "class_audio_helm_1_1_native.html#a35c7ea29ae4033102ac0199ad78c43f9", null ],
     [ "HelmNoteOff", "class_audio_helm_1_1_native.html#a5f6b930edb856bce47044d4ff0b5e13e", null ],
     [ "HelmNoteOn", "class_audio_helm_1_1_native.html#a2dfb745277ce370441500d2d0abab42f", null ],
     [ "HelmSetAftertouch", "class_audio_helm_1_1_native.html#aea52c5e9e8ba6df863f89ab7c3f23a66", null ],
@@ -19,7 +25,7 @@ var class_audio_helm_1_1_native =
     [ "HelmSetParameterPercent", "class_audio_helm_1_1_native.html#a8de111952ba0990219882c40333b92c9", null ],
     [ "HelmSetParameterValue", "class_audio_helm_1_1_native.html#a0a5ff2b841facc8cfb128f289b51b13f", null ],
     [ "HelmSetPitchWheel", "class_audio_helm_1_1_native.html#a9e0a3c7d14456bfa04c1bfd4ac9fd43b", null ],
+    [ "SetBeatTime", "class_audio_helm_1_1_native.html#a78749420fe394da4cd6362f9f5e528a6", null ],
     [ "SetBpm", "class_audio_helm_1_1_native.html#a2c63f0c8a1ddae63b4b80fc1f5ee8c48", null ],
-    [ "ShiftSequencerStart", "class_audio_helm_1_1_native.html#a68703ebc15db89641c0bb6ea7c86086b", null ],
-    [ "SyncSequencerStart", "class_audio_helm_1_1_native.html#a03132fa39cad5def4d75057f623ce56a", null ]
+    [ "SetSequencerStart", "class_audio_helm_1_1_native.html#ad533d4c5c6a13b9fd95ec00beb16752b", null ]
 ];

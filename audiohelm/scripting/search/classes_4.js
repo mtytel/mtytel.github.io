@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sampler',['Sampler',['../class_audio_helm_1_1_sampler.html',1,'AudioHelm']]],
-  ['samplesequencer',['SampleSequencer',['../class_audio_helm_1_1_sample_sequencer.html',1,'AudioHelm']]],
-  ['sequencer',['Sequencer',['../class_audio_helm_1_1_sequencer.html',1,'AudioHelm']]]
+  ['mididata',['MidiData',['../class_audio_helm_1_1_midi_file_1_1_midi_data.html',1,'AudioHelm::MidiFile']]],
+  ['midifile',['MidiFile',['../class_audio_helm_1_1_midi_file.html',1,'AudioHelm']]]
 ];

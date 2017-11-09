@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_audio_helm_1_1_helm_controller.h
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_audio_helm_1_1_helm_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AudioHelm.HelmController Class Reference</div>  </div>
@@ -107,18 +108,57 @@ Inheritance diagram for AudioHelm.HelmController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:adfa6e5311893fde72a98cfadf9f46fdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#adfa6e5311893fde72a98cfadf9f46fdb">LoadPatch</a> (<a class="el" href="class_audio_helm_1_1_helm_patch.html">HelmPatch</a> patch)</td></tr>
+<tr class="memdesc:adfa6e5311893fde72a98cfadf9f46fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a synthesizer patch at runtime.  <a href="#adfa6e5311893fde72a98cfadf9f46fdb">More...</a><br /></td></tr>
+<tr class="separator:adfa6e5311893fde72a98cfadf9f46fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29a572d8902f585126ccad7bf717ddb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#af29a572d8902f585126ccad7bf717ddb">GetParameterAtIndex</a> (int index)</td></tr>
+<tr class="memdesc:af29a572d8902f585126ccad7bf717ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parameter value at index in the parameter list.  <a href="#af29a572d8902f585126ccad7bf717ddb">More...</a><br /></td></tr>
+<tr class="separator:af29a572d8902f585126ccad7bf717ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3884bca6b0e35d0b08445a463e50159b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a3884bca6b0e35d0b08445a463e50159b">SetParameterAtIndex</a> (int index, float newValue)</td></tr>
+<tr class="memdesc:a3884bca6b0e35d0b08445a463e50159b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parameter at index in the parameter list to the given value.  <a href="#a3884bca6b0e35d0b08445a463e50159b">More...</a><br /></td></tr>
+<tr class="separator:a3884bca6b0e35d0b08445a463e50159b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f37d141cc69d2868b24b52794044c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a3f37d141cc69d2868b24b52794044c86">UpdateAllParameters</a> ()</td></tr>
+<tr class="memdesc:a3f37d141cc69d2868b24b52794044c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes along all parameter values to native code.  <a href="#a3f37d141cc69d2868b24b52794044c86">More...</a><br /></td></tr>
+<tr class="separator:a3f37d141cc69d2868b24b52794044c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e64611af5313bd2e29f5ecf972668b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a28e64611af5313bd2e29f5ecf972668b">UpdateParameter</a> (int index)</td></tr>
+<tr class="memdesc:a28e64611af5313bd2e29f5ecf972668b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes along parameter value to native code.  <a href="#a28e64611af5313bd2e29f5ecf972668b">More...</a><br /></td></tr>
+<tr class="separator:a28e64611af5313bd2e29f5ecf972668b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f2e1b9ece4e69099da0a1691dbd11c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a71f2e1b9ece4e69099da0a1691dbd11c">AddEmptyParameter</a> ()</td></tr>
+<tr class="memdesc:a71f2e1b9ece4e69099da0a1691dbd11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an empty parameter placement.  <a href="#a71f2e1b9ece4e69099da0a1691dbd11c">More...</a><br /></td></tr>
+<tr class="separator:a71f2e1b9ece4e69099da0a1691dbd11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edeb6b49f9e2e2baf2fa39abf9fcfbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a9edeb6b49f9e2e2baf2fa39abf9fcfbf">AddParameter</a> (<a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a> parameter)</td></tr>
+<tr class="memdesc:a9edeb6b49f9e2e2baf2fa39abf9fcfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new parameter to this controller.  <a href="#a9edeb6b49f9e2e2baf2fa39abf9fcfbf">More...</a><br /></td></tr>
+<tr class="separator:a9edeb6b49f9e2e2baf2fa39abf9fcfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41795154b2835d6ac87d57d7a2507f75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a41795154b2835d6ac87d57d7a2507f75">RemoveParameter</a> (<a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a> parameter)</td></tr>
+<tr class="memdesc:a41795154b2835d6ac87d57d7a2507f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given parameter from the parameter control list.  <a href="#a41795154b2835d6ac87d57d7a2507f75">More...</a><br /></td></tr>
+<tr class="separator:a41795154b2835d6ac87d57d7a2507f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f86e2efdb75a59cbfdfc21bab56c6f4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a0f86e2efdb75a59cbfdfc21bab56c6f4">GetParameterValue</a> (<a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a> parameter)</td></tr>
+<tr class="memdesc:a0f86e2efdb75a59cbfdfc21bab56c6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a Helm synthesizer parameter's percent value of the valid range. e.g. When getting a transpose value, getting the value returns the number of semitones.  <a href="#a0f86e2efdb75a59cbfdfc21bab56c6f4">More...</a><br /></td></tr>
+<tr class="separator:a0f86e2efdb75a59cbfdfc21bab56c6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c6f02ce6e3d6ee10d246e49370499e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#ad9c6f02ce6e3d6ee10d246e49370499e">SetParameterValue</a> (<a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a> parameter, float newValue)</td></tr>
 <tr class="memdesc:ad9c6f02ce6e3d6ee10d246e49370499e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a Helm synthesizer parameter value. e.g. Lower the pitch of the oscillator by setting the transpose to -12 semitones.  <a href="#ad9c6f02ce6e3d6ee10d246e49370499e">More...</a><br /></td></tr>
 <tr class="separator:ad9c6f02ce6e3d6ee10d246e49370499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6e7d40c6a6aa6620e00b78d1cbefd7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#acb6e7d40c6a6aa6620e00b78d1cbefd7">GetParameterValue</a> (<a class="el" href="namespace_audio_helm.html#aebf08a7e7222b3b169f4ba545274b7e9">CommonParam</a> parameter)</td></tr>
+<tr class="memdesc:acb6e7d40c6a6aa6620e00b78d1cbefd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a Helm synthesizer parameter's percent value of the valid range. e.g. When getting a transpose value, getting the value returns the number of semitones.  <a href="#acb6e7d40c6a6aa6620e00b78d1cbefd7">More...</a><br /></td></tr>
+<tr class="separator:acb6e7d40c6a6aa6620e00b78d1cbefd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ab9b744fd26d7e0aa2d627feaea81c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#ab1ab9b744fd26d7e0aa2d627feaea81c">SetParameterValue</a> (<a class="el" href="namespace_audio_helm.html#aebf08a7e7222b3b169f4ba545274b7e9">CommonParam</a> parameter, float newValue)</td></tr>
 <tr class="memdesc:ab1ab9b744fd26d7e0aa2d627feaea81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a Helm synthesizer parameter value. e.g. Lower the pitch of the oscillator by setting the transpose to -12 semitones.  <a href="#ab1ab9b744fd26d7e0aa2d627feaea81c">More...</a><br /></td></tr>
 <tr class="separator:ab1ab9b744fd26d7e0aa2d627feaea81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3bc54aa3d2299d03e1f5135af7e0a7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a6e3bc54aa3d2299d03e1f5135af7e0a7">GetParameterPercent</a> (<a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a> parameter)</td></tr>
+<tr class="memdesc:a6e3bc54aa3d2299d03e1f5135af7e0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a Helm synthesizer parameter's percent value of the valid range. e.g. If the percent of a parameter is set to 1.0, it's at its max setting.  <a href="#a6e3bc54aa3d2299d03e1f5135af7e0a7">More...</a><br /></td></tr>
+<tr class="separator:a6e3bc54aa3d2299d03e1f5135af7e0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1576badc73b894dcb1116159a9888382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a1576badc73b894dcb1116159a9888382">SetParameterPercent</a> (<a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a> parameter, float newPercent)</td></tr>
 <tr class="memdesc:a1576badc73b894dcb1116159a9888382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a Helm synthesizer parameter by percent of the valid range. e.g. Set the volume to the highest setting by setting the Volume to 1.0.  <a href="#a1576badc73b894dcb1116159a9888382">More...</a><br /></td></tr>
 <tr class="separator:a1576badc73b894dcb1116159a9888382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f234041f408f94acc9a7cec1f90dfe2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a0f234041f408f94acc9a7cec1f90dfe2">GetParameterPercent</a> (<a class="el" href="namespace_audio_helm.html#aebf08a7e7222b3b169f4ba545274b7e9">CommonParam</a> parameter)</td></tr>
+<tr class="memdesc:a0f234041f408f94acc9a7cec1f90dfe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a Helm synthesizer parameter's percent value of the valid range. e.g. If the percent of a parameter is set to 1.0, it's at its max setting.  <a href="#a0f234041f408f94acc9a7cec1f90dfe2">More...</a><br /></td></tr>
+<tr class="separator:a0f234041f408f94acc9a7cec1f90dfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d589a38bc7431ae2c217cf8f71d7f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a8d589a38bc7431ae2c217cf8f71d7f27">SetParameterPercent</a> (<a class="el" href="namespace_audio_helm.html#aebf08a7e7222b3b169f4ba545274b7e9">CommonParam</a> parameter, float newPercent)</td></tr>
-<tr class="memdesc:a8d589a38bc7431ae2c217cf8f71d7f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a Helm synthesizer parameter by percent of the valid range. e.g. Set the volume to the highest setting by setting the Volume to 1.0.  <a href="#a8d589a38bc7431ae2c217cf8f71d7f27">More...</a><br /></td></tr>
+<tr class="memdesc:a8d589a38bc7431ae2c217cf8f71d7f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a Helm synthesizer parameter by percent of the valid range. e.g. Set any parameter to the highest setting by setting the percent to 1.0.  <a href="#a8d589a38bc7431ae2c217cf8f71d7f27">More...</a><br /></td></tr>
 <tr class="separator:a8d589a38bc7431ae2c217cf8f71d7f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab79399cc978298b99b08f98b0e26a5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#aab79399cc978298b99b08f98b0e26a5a">SetPolyphony</a> (int numVoices)</td></tr>
+<tr class="memdesc:aab79399cc978298b99b08f98b0e26a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the polyphony (number of voices) of the synthesizer. Lower the polyphony to keep the DSP usage down.  <a href="#aab79399cc978298b99b08f98b0e26a5a">More...</a><br /></td></tr>
+<tr class="separator:aab79399cc978298b99b08f98b0e26a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45eaaedd2d12b5ff71f24b7ca5031090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a45eaaedd2d12b5ff71f24b7ca5031090">AllNotesOff</a> ()</td></tr>
 <tr class="memdesc:a45eaaedd2d12b5ff71f24b7ca5031090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers note off events for all notes currently on in the referenced Helm instance(s).  <a href="#a45eaaedd2d12b5ff71f24b7ca5031090">More...</a><br /></td></tr>
 <tr class="separator:a45eaaedd2d12b5ff71f24b7ca5031090"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,15 +189,71 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a5d8b3cd971a19c6466b2c686ba809076"><td class="memItemLeft" align="right" valign="top"><a id="a5d8b3cd971a19c6466b2c686ba809076"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>UPDATE_WAIT</b> = 0.04f</td></tr>
+<tr class="separator:a5d8b3cd971a19c6466b2c686ba809076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7255eb63403f9608c530e7b933724c5"><td class="memItemLeft" align="right" valign="top"><a id="af7255eb63403f9608c530e7b933724c5"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PARAMETERS</b> = 16</td></tr>
+<tr class="separator:af7255eb63403f9608c530e7b933724c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51102719770815ca5ef1a2b92a96102d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a51102719770815ca5ef1a2b92a96102d">channel</a> = 0</td></tr>
 <tr class="memdesc:a51102719770815ca5ef1a2b92a96102d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which Helm instance(s) to control. Every Helm instance in any AudioMixerGroup matching this channel number is controlled by this class.  <a href="#a51102719770815ca5ef1a2b92a96102d">More...</a><br /></td></tr>
 <tr class="separator:a51102719770815ca5ef1a2b92a96102d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb2c83aeb65c0a119462251e328dd18"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_helm_1_1_helm_controller.html#a8eb2c83aeb65c0a119462251e328dd18">synthParameters</a> = new List&lt;<a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a>&gt;()</td></tr>
+<tr class="memdesc:a8eb2c83aeb65c0a119462251e328dd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of current parameters you can view, change and animate in the Inspector view.  <a href="#a8eb2c83aeb65c0a119462251e328dd18">More...</a><br /></td></tr>
+<tr class="separator:a8eb2c83aeb65c0a119462251e328dd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a291fea0697952deffe83d5307f9dc2be"><td class="memItemLeft" align="right" valign="top"><a id="a291fea0697952deffe83d5307f9dc2be"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>synthParamValue0</b> = 0.0f</td></tr>
+<tr class="separator:a291fea0697952deffe83d5307f9dc2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h2><a href="../manual/class_audio_helm_1_1_helm_controller.html">Switch to Manual</a><br />
 </h2>
 <p>An interface to a Helm native synthesizer instance(s). All native synth settings can be changed through this class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a71f2e1b9ece4e69099da0a1691dbd11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f2e1b9ece4e69099da0a1691dbd11c">&#9670;&nbsp;</a></span>AddEmptyParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a> AudioHelm.HelmController.AddEmptyParameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an empty parameter placement. </p>
+<dl class="section return"><dt>Returns</dt><dd>The create synth parameter object.</dd></dl>
+
+</div>
+</div>
+<a id="a9edeb6b49f9e2e2baf2fa39abf9fcfbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edeb6b49f9e2e2baf2fa39abf9fcfbf">&#9670;&nbsp;</a></span>AddParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a> AudioHelm.HelmController.AddParameter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a>&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new parameter to this controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>The create synth parameter object.</dd></dl>
+
+</div>
+</div>
 <a id="a45eaaedd2d12b5ff71f24b7ca5031090"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45eaaedd2d12b5ff71f24b7ca5031090">&#9670;&nbsp;</a></span>AllNotesOff()</h2>
 
@@ -176,6 +272,141 @@ Public Attributes</h2></td></tr>
 <p>Triggers note off events for all notes currently on in the referenced Helm instance(s). </p>
 
 <p>Implements <a class="el" href="interface_audio_helm_1_1_note_handler.html">AudioHelm.NoteHandler</a>.</p>
+
+</div>
+</div>
+<a id="af29a572d8902f585126ccad7bf717ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29a572d8902f585126ccad7bf717ddb">&#9670;&nbsp;</a></span>GetParameterAtIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.HelmController.GetParameterAtIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the parameter value at index in the parameter list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the parameter to get.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the parameter.</dd></dl>
+
+</div>
+</div>
+<a id="a6e3bc54aa3d2299d03e1f5135af7e0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3bc54aa3d2299d03e1f5135af7e0a7">&#9670;&nbsp;</a></span>GetParameterPercent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.HelmController.GetParameterPercent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a>&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a Helm synthesizer parameter's percent value of the valid range. e.g. If the percent of a parameter is set to 1.0, it's at its max setting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter</td><td>The parameter to get the value percent of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current percent value of the parameter passed in.</dd></dl>
+
+</div>
+</div>
+<a id="a0f234041f408f94acc9a7cec1f90dfe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f234041f408f94acc9a7cec1f90dfe2">&#9670;&nbsp;</a></span>GetParameterPercent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.HelmController.GetParameterPercent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_audio_helm.html#aebf08a7e7222b3b169f4ba545274b7e9">CommonParam</a>&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a Helm synthesizer parameter's percent value of the valid range. e.g. If the percent of a parameter is set to 1.0, it's at its max setting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter</td><td>The parameter to get the value percent of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current percent value of the parameter passed in.</dd></dl>
+
+</div>
+</div>
+<a id="a0f86e2efdb75a59cbfdfc21bab56c6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f86e2efdb75a59cbfdfc21bab56c6f4">&#9670;&nbsp;</a></span>GetParameterValue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.HelmController.GetParameterValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_audio_helm.html#a66d4b4a5a86276e40076d39ddcb37177">Param</a>&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a Helm synthesizer parameter's percent value of the valid range. e.g. When getting a transpose value, getting the value returns the number of semitones. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter</td><td>The parameter to get the value of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current value of the parameter passed in.</dd></dl>
+
+</div>
+</div>
+<a id="acb6e7d40c6a6aa6620e00b78d1cbefd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6e7d40c6a6aa6620e00b78d1cbefd7">&#9670;&nbsp;</a></span>GetParameterValue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioHelm.HelmController.GetParameterValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_audio_helm.html#aebf08a7e7222b3b169f4ba545274b7e9">CommonParam</a>&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a Helm synthesizer parameter's percent value of the valid range. e.g. When getting a transpose value, getting the value returns the number of semitones. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter</td><td>The parameter to get the value of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current value of the parameter passed in.</dd></dl>
 
 </div>
 </div>
@@ -220,6 +451,32 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">note</td><td><a class="el" href="class_audio_helm_1_1_note.html" title="Representation of a note in a sequencer. Changing the values in this object will change them in the s...">Note</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfa6e5311893fde72a98cfadf9f46fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa6e5311893fde72a98cfadf9f46fdb">&#9670;&nbsp;</a></span>LoadPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.HelmController.LoadPatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_audio_helm_1_1_helm_patch.html">HelmPatch</a>&#160;</td>
+          <td class="paramname"><em>patch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a synthesizer patch at runtime. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patch</td><td>Reference to the patch object.</td></tr>
   </table>
   </dd>
 </dl>
@@ -337,6 +594,27 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a41795154b2835d6ac87d57d7a2507f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41795154b2835d6ac87d57d7a2507f75">&#9670;&nbsp;</a></span>RemoveParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AudioHelm.HelmController.RemoveParameter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a>&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the given parameter from the parameter control list. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index where the parameter was.</dd></dl>
+
+</div>
+</div>
 <a id="a99aa7d2d04182d6ff71d4725dece4e01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99aa7d2d04182d6ff71d4725dece4e01">&#9670;&nbsp;</a></span>SetAftertouch()</h2>
 
@@ -394,6 +672,43 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wheelValue</td><td>The new wheel value. [0.0, 1.0]</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3884bca6b0e35d0b08445a463e50159b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3884bca6b0e35d0b08445a463e50159b">&#9670;&nbsp;</a></span>SetParameterAtIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.HelmController.SetParameterAtIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the parameter at index in the parameter list to the given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the parameter to change.</td></tr>
+    <tr><td class="paramname">newValue</td><td>The value to change the parameter to.</td></tr>
   </table>
   </dd>
 </dl>
@@ -463,7 +778,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes a Helm synthesizer parameter by percent of the valid range. e.g. Set the volume to the highest setting by setting the Volume to 1.0. </p>
+<p>Changes a Helm synthesizer parameter by percent of the valid range. e.g. Set any parameter to the highest setting by setting the percent to 1.0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parameter</td><td>The parameter to be changed.</td></tr>
@@ -574,6 +889,77 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aab79399cc978298b99b08f98b0e26a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab79399cc978298b99b08f98b0e26a5a">&#9670;&nbsp;</a></span>SetPolyphony()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.HelmController.SetPolyphony </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numVoices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the polyphony (number of voices) of the synthesizer. Lower the polyphony to keep the DSP usage down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numVoices</td><td>The </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f37d141cc69d2868b24b52794044c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f37d141cc69d2868b24b52794044c86">&#9670;&nbsp;</a></span>UpdateAllParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.HelmController.UpdateAllParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Passes along all parameter values to native code. </p>
+
+</div>
+</div>
+<a id="a28e64611af5313bd2e29f5ecf972668b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e64611af5313bd2e29f5ecf972668b">&#9670;&nbsp;</a></span>UpdateParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioHelm.HelmController.UpdateParameter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Passes along parameter value to native code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the parameter to update.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a51102719770815ca5ef1a2b92a96102d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51102719770815ca5ef1a2b92a96102d">&#9670;&nbsp;</a></span>channel</h2>
@@ -588,6 +974,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies which Helm instance(s) to control. Every Helm instance in any AudioMixerGroup matching this channel number is controlled by this class. </p>
+
+</div>
+</div>
+<a id="a8eb2c83aeb65c0a119462251e328dd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb2c83aeb65c0a119462251e328dd18">&#9670;&nbsp;</a></span>synthParameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a>&gt; AudioHelm.HelmController.synthParameters = new List&lt;<a class="el" href="class_audio_helm_1_1_helm_parameter.html">HelmParameter</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of current parameters you can view, change and animate in the Inspector view. </p>
 
 </div>
 </div>

@@ -12,5 +12,7 @@ var class_audio_helm_1_1_utils =
     [ "kMiddleC", "class_audio_helm_1_1_utils.html#afbdd927f1619e54ffca431aec31654c3", null ],
     [ "kMidiSize", "class_audio_helm_1_1_utils.html#a72cfdae3b8c87cb81b51c49c36963345", null ],
     [ "kMinOctave", "class_audio_helm_1_1_utils.html#ae017e4dbc4caaaa223baa83ba5122621", null ],
-    [ "kNotesPerOctave", "class_audio_helm_1_1_utils.html#a2849fc2c379f04412aa8abfaff792109", null ]
+    [ "kNotesPerOctave", "class_audio_helm_1_1_utils.html#a2849fc2c379f04412aa8abfaff792109", null ],
+    [ "kSecondsPerMinute", "class_audio_helm_1_1_utils.html#a2510be6de14f10cf614db7c3111a91d1", null ],
+    [ "kSixteenthsPerBeat", "class_audio_helm_1_1_utils.html#aa1702f35d53b3fce603dc4c387fb3439", null ]
 ];

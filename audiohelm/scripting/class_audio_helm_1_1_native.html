@@ -113,9 +113,27 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>HelmSetModWhee
 <tr class="memitem:aea52c5e9e8ba6df863f89ab7c3f23a66"><td class="memItemLeft" align="right" valign="top"><a id="aea52c5e9e8ba6df863f89ab7c3f23a66"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>HelmSetAftertouch</b> (int channel, int note, float value)</td></tr>
 <tr class="separator:aea52c5e9e8ba6df863f89ab7c3f23a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ae9880bc991114d150d67f1a7df83f"><td class="memItemLeft" align="right" valign="top"><a id="a89ae9880bc991114d150d67f1a7df83f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>HelmClearModulations</b> (int channel)</td></tr>
+<tr class="separator:a89ae9880bc991114d150d67f1a7df83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e4ef5d57c9ffb4a821e273681de959"><td class="memItemLeft" align="right" valign="top"><a id="a85e4ef5d57c9ffb4a821e273681de959"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>HelmAddModulation</b> (int channel, int index, string source, string dest, float amount)</td></tr>
+<tr class="separator:a85e4ef5d57c9ffb4a821e273681de959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530ad0231bcbac4194e8ce5f8c0363fa"><td class="memItemLeft" align="right" valign="top"><a id="a530ad0231bcbac4194e8ce5f8c0363fa"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>HelmGetParameterMinimum</b> (int index)</td></tr>
+<tr class="separator:a530ad0231bcbac4194e8ce5f8c0363fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed01532fddfcdda4279035eadc9b1f0f"><td class="memItemLeft" align="right" valign="top"><a id="aed01532fddfcdda4279035eadc9b1f0f"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>HelmGetParameterMaximum</b> (int index)</td></tr>
+<tr class="separator:aed01532fddfcdda4279035eadc9b1f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c7ea29ae4033102ac0199ad78c43f9"><td class="memItemLeft" align="right" valign="top"><a id="a35c7ea29ae4033102ac0199ad78c43f9"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>HelmGetParameterValue</b> (int channel, int paramIndex)</td></tr>
+<tr class="separator:a35c7ea29ae4033102ac0199ad78c43f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a5ff2b841facc8cfb128f289b51b13f"><td class="memItemLeft" align="right" valign="top"><a id="a0a5ff2b841facc8cfb128f289b51b13f"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HelmSetParameterValue</b> (int channel, int paramIndex, float newValue)</td></tr>
 <tr class="separator:a0a5ff2b841facc8cfb128f289b51b13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4beecdf4d66840f2b1fbbbebaf7bbd1a"><td class="memItemLeft" align="right" valign="top"><a id="a4beecdf4d66840f2b1fbbbebaf7bbd1a"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>HelmGetParameterPercent</b> (int channel, int paramIndex)</td></tr>
+<tr class="separator:a4beecdf4d66840f2b1fbbbebaf7bbd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de111952ba0990219882c40333b92c9"><td class="memItemLeft" align="right" valign="top"><a id="a8de111952ba0990219882c40333b92c9"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HelmSetParameterPercent</b> (int channel, int paramIndex, float newPercent)</td></tr>
 <tr class="separator:a8de111952ba0990219882c40333b92c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,15 +152,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableSequence
 <tr class="memitem:aa0d2a1504523d054ce50d0e3c3e1a188"><td class="memItemLeft" align="right" valign="top"><a id="aa0d2a1504523d054ce50d0e3c3e1a188"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeSequencerLength</b> (IntPtr sequencer, float length)</td></tr>
 <tr class="separator:aa0d2a1504523d054ce50d0e3c3e1a188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68703ebc15db89641c0bb6ea7c86086b"><td class="memItemLeft" align="right" valign="top"><a id="a68703ebc15db89641c0bb6ea7c86086b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShiftSequencerStart</b> (IntPtr sequencer, double time)</td></tr>
-<tr class="separator:a68703ebc15db89641c0bb6ea7c86086b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8fe89f43e7054b60a8282e60e548cd"><td class="memItemLeft" align="right" valign="top"><a id="a8f8fe89f43e7054b60a8282e60e548cd"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeSequencerChannel</b> (IntPtr sequencer, int channel)</td></tr>
 <tr class="separator:a8f8fe89f43e7054b60a8282e60e548cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03132fa39cad5def4d75057f623ce56a"><td class="memItemLeft" align="right" valign="top"><a id="a03132fa39cad5def4d75057f623ce56a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SyncSequencerStart</b> (IntPtr sequencer, double waitTime)</td></tr>
-<tr class="separator:a03132fa39cad5def4d75057f623ce56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad533d4c5c6a13b9fd95ec00beb16752b"><td class="memItemLeft" align="right" valign="top"><a id="ad533d4c5c6a13b9fd95ec00beb16752b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSequencerStart</b> (IntPtr sequencer, double startBeat)</td></tr>
+<tr class="separator:ad533d4c5c6a13b9fd95ec00beb16752b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd0b8cd72abedf1f6e73b619701300a"><td class="memItemLeft" align="right" valign="top"><a id="a1fd0b8cd72abedf1f6e73b619701300a"></a>
 static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNote</b> (IntPtr sequencer, int note, float velocity, float start, float end)</td></tr>
 <tr class="separator:a1fd0b8cd72abedf1f6e73b619701300a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +176,9 @@ static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeNoteKe
 <tr class="memitem:a747ab508aec9451512cea27f92f7cfa1"><td class="memItemLeft" align="right" valign="top"><a id="a747ab508aec9451512cea27f92f7cfa1"></a>
 static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeNoteVelocity</b> (IntPtr note, float velocity)</td></tr>
 <tr class="separator:a747ab508aec9451512cea27f92f7cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78749420fe394da4cd6362f9f5e528a6"><td class="memItemLeft" align="right" valign="top"><a id="a78749420fe394da4cd6362f9f5e528a6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBeatTime</b> (double time)</td></tr>
+<tr class="separator:a78749420fe394da4cd6362f9f5e528a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The native plugin interface to synthesizer and sequencer settings. If you want to control a synthesizer, a better was is through the <a class="el" href="class_audio_helm_1_1_helm_controller.html" title="Switch to Manual An interface to a Helm native synthesizer instance(s). All native synth settings can...">HelmController</a> class. If you want to modify or setup a sequencer, take a look at <a class="el" href="class_audio_helm_1_1_helm_sequencer.html" title="Switch to Manual A sequencer of notes over time that will send its note on/off events to instances of...">HelmSequencer</a> and <a class="el" href="class_audio_helm_1_1_sample_sequencer.html" title="Switch to Manual A sequencer of notes over time that will send its note on/off events to a Sampler in...">SampleSequencer</a>. </p>
