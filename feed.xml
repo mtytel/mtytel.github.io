@@ -6,14 +6,14 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Nov 2017 17:54:42 -0800</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2017 17:54:42 -0800</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Tue, 14 Nov 2017 08:46:33 -0800</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2017 08:46:33 -0800</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Stickers!</title>
         <description>&lt;p&gt;I got some stickers printed of the new logo! If you PayPal me $5 at
-&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#109;&amp;#097;&amp;#116;&amp;#116;&amp;#104;&amp;#101;&amp;#119;&amp;#116;&amp;#121;&amp;#116;&amp;#101;&amp;#108;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#109;&amp;#097;&amp;#116;&amp;#116;&amp;#104;&amp;#101;&amp;#119;&amp;#116;&amp;#121;&amp;#116;&amp;#101;&amp;#108;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; and mention the
+&lt;a href=&quot;mailto:matthewtytel@gmail.com&quot;&gt;matthewtytel@gmail.com&lt;/a&gt; and mention the
 stickers and include your address I’ll send you one :D&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/static/images/blog/stickers.jpg&quot; alt=&quot;Helm Stickers&quot; /&gt;&lt;/p&gt;
@@ -158,7 +158,7 @@ hit.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2048&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase_diff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Usually we don&#39;t know what value this is.
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase_diff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Usually we don't know what value this is.
 &lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;phase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase_diff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -194,7 +194,7 @@ another (albeit small) performance improvement.&lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table_bits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shift&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table_bits&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase_diff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Usually we don&#39;t know what value this is.
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phase_diff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Usually we don't know what value this is.
 &lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// Automatially wraps :D
@@ -419,17 +419,17 @@ significant 25% speed boost because of it.&lt;/p&gt;
 and pendulums swinging up and down,&lt;br /&gt;
 through granada’s royal town.&lt;br /&gt;
 We softly, slowly dance,&lt;br /&gt;
-listening for murmured murmurs.  &lt;/p&gt;
+listening for murmured murmurs.&lt;/p&gt;
 
 &lt;p&gt;Our vanity endows us&lt;br /&gt;
 though neither foe nor friend allow us,&lt;br /&gt;
 to hear the force of that murderous deed,&lt;br /&gt;
-that made love bleed.  &lt;/p&gt;
+that made love bleed.&lt;/p&gt;
 
 &lt;p&gt;To know sometimes we run to madness,&lt;br /&gt;
 in thoughtless throngs and empty noise.&lt;br /&gt;
 Shall truth with fiction, our world of bloom&lt;br /&gt;
-preserve what it first creates?  &lt;/p&gt;
+preserve what it first creates?&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Jan 2013 00:00:00 -0800</pubDate>
         <link>http://tytel.org/poetry/stray-bolts/</link>
@@ -445,13 +445,13 @@ preserve what it first creates?  &lt;/p&gt;
         <description>&lt;p&gt;From earth’s own elements the race at first rose into life.&lt;br /&gt;
 The mother of a hundred pins of light,&lt;br /&gt;
 holds the rending sound and tints the sky to her lullaby.&lt;br /&gt;
-The breath of her lover, still in the hush of worlds.  &lt;/p&gt;
+The breath of her lover, still in the hush of worlds.&lt;/p&gt;
 
 &lt;p&gt;And when the flowers are gone, we are the seeds,&lt;br /&gt;
 drowned in dew, weary of the game.&lt;br /&gt;
 For us alone are wrapt and mystic,&lt;br /&gt;
 daughters to a noble mind, resonance of harmonious sound&lt;br /&gt;
-wandering upon the earth.  &lt;/p&gt;
+wandering upon the earth.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 05 Jan 2013 00:00:00 -0800</pubDate>
