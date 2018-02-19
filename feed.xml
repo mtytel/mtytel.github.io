@@ -6,9 +6,34 @@
 </description>
     <link>http://tytel.org/</link>
     <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Dec 2017 13:30:12 -0800</pubDate>
-    <lastBuildDate>Fri, 01 Dec 2017 13:30:12 -0800</lastBuildDate>
+    <pubDate>Mon, 19 Feb 2018 12:10:45 -0800</pubDate>
+    <lastBuildDate>Mon, 19 Feb 2018 12:10:45 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>New Synth in the Works</title>
+        <description>&lt;p&gt;I’m working on a new synth! The goal: create the most popular synthesizer in the world..
+Not sure if that’s achievable, let alone measureable, but if I hit a million downloads I think
+I’ll call it a success.&lt;/p&gt;
+
+&lt;p&gt;So you want to hear about features. You’ll have to stay tuned for more blog posts then! I can tell
+you now that there are some analog modelled filters (ZDF, WTF? BBQ), interesting modulation
+capabilities and a very visual and animated UI (with low CPU usage).&lt;/p&gt;
+
+&lt;p&gt;And for those wondering, this new synth will be open-source and pay-what-you-want like just like
+&lt;a href=&quot;http://tytel.org/helm&quot;&gt;Helm&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 19 Feb 2018 04:30:00 -0800</pubDate>
+        <link>http://tytel.org/blog/2018/02/19/new-synth/</link>
+        <guid isPermaLink="true">http://tytel.org/blog/2018/02/19/new-synth/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>devblog</category>
+        
+      </item>
     
       <item>
         <title>Stickers!</title>
@@ -434,29 +459,6 @@ preserve what it first creates?&lt;/p&gt;
         <pubDate>Sun, 06 Jan 2013 00:00:00 -0800</pubDate>
         <link>http://tytel.org/poetry/stray-bolts/</link>
         <guid isPermaLink="true">http://tytel.org/poetry/stray-bolts/</guid>
-        
-        
-        <category>poems</category>
-        
-      </item>
-    
-      <item>
-        <title>Set Fire to the Mind</title>
-        <description>&lt;p&gt;From earth’s own elements the race at first rose into life.&lt;br /&gt;
-The mother of a hundred pins of light,&lt;br /&gt;
-holds the rending sound and tints the sky to her lullaby.&lt;br /&gt;
-The breath of her lover, still in the hush of worlds.&lt;/p&gt;
-
-&lt;p&gt;And when the flowers are gone, we are the seeds,&lt;br /&gt;
-drowned in dew, weary of the game.&lt;br /&gt;
-For us alone are wrapt and mystic,&lt;br /&gt;
-daughters to a noble mind, resonance of harmonious sound&lt;br /&gt;
-wandering upon the earth.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 05 Jan 2013 00:00:00 -0800</pubDate>
-        <link>http://tytel.org/poetry/set-fire/</link>
-        <guid isPermaLink="true">http://tytel.org/poetry/set-fire/</guid>
         
         
         <category>poems</category>
