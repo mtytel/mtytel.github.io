@@ -4,10 +4,10 @@
     <title>Matt Tytel</title>
     <description>Matt Tytel - personal website
 </description>
-    <link>http://tytel.org/</link>
-    <atom:link href="http://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Jul 2018 16:33:02 -0700</pubDate>
-    <lastBuildDate>Mon, 02 Jul 2018 16:33:02 -0700</lastBuildDate>
+    <link>https://tytel.org/</link>
+    <atom:link href="https://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 07 Jul 2018 14:59:27 -0700</pubDate>
+    <lastBuildDate>Sat, 07 Jul 2018 14:59:27 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -21,12 +21,12 @@ you now that there are some analog modelled filters (ZDF, WTF? BBQ), interesting
 capabilities and a very visual and animated UI (with low CPU usage).&lt;/p&gt;
 
 &lt;p&gt;And for those wondering, this new synth will be open-source and pay-what-you-want like just like
-&lt;a href=&quot;http://tytel.org/helm&quot;&gt;Helm&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;https://tytel.org/helm&quot;&gt;Helm&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 19 Feb 2018 04:30:00 -0800</pubDate>
-        <link>http://tytel.org/blog/2018/02/19/new-synth/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2018/02/19/new-synth/</guid>
+        <link>https://tytel.org/blog/2018/02/19/new-synth/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2018/02/19/new-synth/</guid>
         
         
         <category>blog</category>
@@ -53,8 +53,8 @@ the dishwasher.&lt;/p&gt;
 &lt;p&gt;Dimensions are about 3in x 3in.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jun 2015 05:30:00 -0700</pubDate>
-        <link>http://tytel.org/blog/2015/06/01/stickers/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/06/01/stickers/</guid>
+        <link>https://tytel.org/blog/2015/06/01/stickers/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/06/01/stickers/</guid>
         
         
         <category>blog</category>
@@ -68,7 +68,7 @@ the dishwasher.&lt;/p&gt;
       <item>
         <title>Experiments with Material Design</title>
         <description>&lt;p&gt;I’ve done a lot of UI changes with &lt;a href=&quot;https://github.com/mtytel/helm&quot;&gt;Helm&lt;/a&gt; lately based off this
-new design idea called &lt;a href=&quot;http://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt;. You should go check
+new design idea called &lt;a href=&quot;https://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt;. You should go check
 it out yourself, but the basic idea is you take flat UI design and organize
 it in layers like pieces of paper. The result is a combination of bold colors
 and skeuomorphic shadows.&lt;/p&gt;
@@ -90,7 +90,7 @@ images. Instead they say, render the shadows with a 3d graphics engine. I
 look right, but I don’t know many people who can hire a team of developers
 to develop a rendering engine just so the shadows look accurate!&lt;/p&gt;
 
-&lt;p&gt;After the shadows, the &lt;a href=&quot;http://www.google.com/design/spec/style/color.html&quot;&gt;color&lt;/a&gt; section has been the most
+&lt;p&gt;After the shadows, the &lt;a href=&quot;https://www.google.com/design/spec/style/color.html&quot;&gt;color&lt;/a&gt; section has been the most
 help in designing Helm. If you get overwhelmed with all the combinations of
 possible color palettes like I do, then using Google’s method for picking
 colors is a good place to start. They hit a good balance of restricting the
@@ -99,14 +99,14 @@ having enough colors and shades so not every app using this method will look
 the same.&lt;/p&gt;
 
 &lt;p&gt;If you care about design and want some guidelines to follow I highly recommend
-giving the whole &lt;a href=&quot;http://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt; doc a read. They hit on a
+giving the whole &lt;a href=&quot;https://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt; doc a read. They hit on a
 lot of other topics like animation, layout and widgits that all have decent
 insight on what looks good and what doesn’t.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 17 May 2015 05:30:00 -0700</pubDate>
-        <link>http://tytel.org/blog/2015/05/17/material-design/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/05/17/material-design/</guid>
+        <link>https://tytel.org/blog/2015/05/17/material-design/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/05/17/material-design/</guid>
         
         
         <category>blog</category>
@@ -154,8 +154,8 @@ I’m happy with. Here’s the development in reverse chronological order.&lt;/p
 
 </description>
         <pubDate>Fri, 08 May 2015 05:30:00 -0700</pubDate>
-        <link>http://tytel.org/blog/2015/05/08/rebranding-to-helm/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/05/08/rebranding-to-helm/</guid>
+        <link>https://tytel.org/blog/2015/05/08/rebranding-to-helm/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/05/08/rebranding-to-helm/</guid>
         
         
         <category>blog</category>
@@ -238,8 +238,8 @@ not CPU friendly.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 01 May 2015 05:30:00 -0700</pubDate>
-        <link>http://tytel.org/blog/2015/05/01/unexpected-optimization-02/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/05/01/unexpected-optimization-02/</guid>
+        <link>https://tytel.org/blog/2015/05/01/unexpected-optimization-02/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/05/01/unexpected-optimization-02/</guid>
         
         
         <category>blog</category>
@@ -267,7 +267,7 @@ about how it works in a different post.&lt;/p&gt;
 
 &lt;p&gt;I’ve made a bunch of changes to the UI and there’s a lot more coming! I find
 going back through the iterations entertaining so I’m posting them all here.
-The most recent changes are inspired by &lt;a href=&quot;http://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt;
+The most recent changes are inspired by &lt;a href=&quot;https://www.google.com/design/spec/material-design/&quot;&gt;Material Design&lt;/a&gt;
 which has heavy shadow usage. I used to think drop shadows were pretty
 outdated, but when combined with a flat UI, it looks really fresh.&lt;/p&gt;
 
@@ -290,8 +290,8 @@ outdated, but when combined with a flat UI, it looks really fresh.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 23 Apr 2015 05:30:00 -0700</pubDate>
-        <link>http://tytel.org/blog/2015/04/23/long-update/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/04/23/long-update/</guid>
+        <link>https://tytel.org/blog/2015/04/23/long-update/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/04/23/long-update/</guid>
         
         
         <category>blog</category>
@@ -312,7 +312,7 @@ this was a mystery, but I was recently reading &lt;a href=&quot;https://github.c
 project&lt;/a&gt; that added a very small alternating current to the input
 of the filter. In the comment it said “Hack to prevent denormals”.&lt;/p&gt;
 
-&lt;p&gt;A &lt;a href=&quot;http://en.wikipedia.org/wiki/Denormal_number&quot;&gt;denormal&lt;/a&gt; is a type of really small floating point number.
+&lt;p&gt;A &lt;a href=&quot;https://en.wikipedia.org/wiki/Denormal_number&quot;&gt;denormal&lt;/a&gt; is a type of really small floating point number.
 Wikipedia give a better explanation, but in short the structure of floating
 point numbers cause the gap from 0 to the smallest positive number to be much
 larger than the gap between the two smallest positive numbers. Architectures
@@ -334,8 +334,8 @@ to go! (on some machines)&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 10 Feb 2015 04:30:00 -0800</pubDate>
-        <link>http://tytel.org/blog/2015/02/10/unexpected-optimization-01/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/02/10/unexpected-optimization-01/</guid>
+        <link>https://tytel.org/blog/2015/02/10/unexpected-optimization-01/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/02/10/unexpected-optimization-01/</guid>
         
         
         <category>blog</category>
@@ -395,8 +395,8 @@ significant 25% speed boost because of it.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 19 Jan 2015 04:30:00 -0800</pubDate>
-        <link>http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/01/19/unexpected-optimization-00/</guid>
+        <link>https://tytel.org/blog/2015/01/19/unexpected-optimization-00/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/01/19/unexpected-optimization-00/</guid>
         
         
         <category>blog</category>
@@ -416,18 +416,18 @@ significant 25% speed boost because of it.&lt;/p&gt;
 &lt;p&gt;The goal of Twytch is a mix of granular and subtractive synthesis that focuses on glitching live and sampled audio input. It currently runs as a VST and Audio Unit and hopefully will run as a stand-alone synthesizer in the future. Some of the technologies I’m using are:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.juce.com/&quot;&gt;JUCE&lt;/a&gt;: for cross platform UI development and VST/AU input and output handling&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.juce.com/&quot;&gt;JUCE&lt;/a&gt;: for cross platform UI development and VST/AU input and output handling&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/mtytel/mopo&quot;&gt;mopo&lt;/a&gt;: a modular and polyphonic synthesizer engine I’m working on&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I started with the code from a past synthesizer I made called &lt;a href=&quot;http://www.gnu.org/software/cursynth/&quot;&gt;cursynth&lt;/a&gt;. It’s this goofy stand-alone ascii synth that runs inside of a terminal with ascii sliders and graphics. From the past weeks of work I have a functioning Audio Unit synthesizer and the beginnings of many of the UI elements. There’s also very cumbersome patch saving and loading, but it works. I’m now at that point in development where you just throw all the controls on the screen and make an ugly UI soup. Have a look:&lt;/p&gt;
+&lt;p&gt;I started with the code from a past synthesizer I made called &lt;a href=&quot;https://www.gnu.org/software/cursynth/&quot;&gt;cursynth&lt;/a&gt;. It’s this goofy stand-alone ascii synth that runs inside of a terminal with ascii sliders and graphics. From the past weeks of work I have a functioning Audio Unit synthesizer and the beginnings of many of the UI elements. There’s also very cumbersome patch saving and loading, but it works. I’m now at that point in development where you just throw all the controls on the screen and make an ugly UI soup. Have a look:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/static/images/blog/2015-01-18-screenshot.png&quot; alt=&quot;Twytch Screenshot&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 17 Jan 2015 20:59:06 -0800</pubDate>
-        <link>http://tytel.org/blog/2015/01/17/twytch-intro/</link>
-        <guid isPermaLink="true">http://tytel.org/blog/2015/01/17/twytch-intro/</guid>
+        <link>https://tytel.org/blog/2015/01/17/twytch-intro/</link>
+        <guid isPermaLink="true">https://tytel.org/blog/2015/01/17/twytch-intro/</guid>
         
         
         <category>blog</category>
@@ -457,8 +457,8 @@ Shall truth with fiction, our world of bloom&lt;br /&gt;
 preserve what it first creates?&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Jan 2013 00:00:00 -0800</pubDate>
-        <link>http://tytel.org/poetry/stray-bolts/</link>
-        <guid isPermaLink="true">http://tytel.org/poetry/stray-bolts/</guid>
+        <link>https://tytel.org/poetry/stray-bolts/</link>
+        <guid isPermaLink="true">https://tytel.org/poetry/stray-bolts/</guid>
         
         
         <category>poems</category>
