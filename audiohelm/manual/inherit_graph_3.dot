@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="Helm.Keyzone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_helm_1_1_keyzone.html",tooltip="A single keyzone in a Sampler. A keyzone has a single AudioClip that it should play if a key between ..."];
-}

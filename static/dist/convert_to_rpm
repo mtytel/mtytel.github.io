@@ -1,3 +1,0 @@
-#!/bin/bash
-FILENAME="${1//deb/rpm}"
-fpm -s deb -t rpm --no-auto-depends --depends 'libasound2 >= 1.0.16' --depends 'libc6 >= 2.16' --depends 'libfreetype6 >= 2.2.1' --depends 'libgcc1 >= 1:4.1.1' --depends "libgl1-mesa-glx or libgl1" --depends 'libstdc++6 >= 4.6' --depends 'libx11-6' --depends 'libxext6' --package $FILENAME $1
