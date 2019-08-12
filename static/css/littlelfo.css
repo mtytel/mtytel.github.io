@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    font-size: 100%;
+}
+@font-face {
+    font-family: 'myriad-pro-light';
+    src: url(../fnt/MyriadPro-Light.otf);
+}
+@font-face {
+    font-family: 'myriad-pro-regular';
+    src: url(../fnt/MyriadPro-Regular.otf);
+}
+@font-face {
+    font-family: 'myriad-pro-bold';
+    src: url(../fnt/MyriadPro-Bold.otf);
+}
+
+#soundmanager-debug {
+ /* SM2 debug container (optional, makes debug more useable) */
+ position:absolute;position:fixed;*position:absolute;bottom:10px;right:10px;width:50em;height:18em;overflow:auto;background:#fff;margin:1em;padding:1em;border:1px solid #999;font-family:"lucida console",verdana,tahoma,"sans serif";font-size:x-small;line-height:1.5em;opacity:0.9;filter:alpha(opacity=90);z-index:99;
+}
+
+body {
+    margin: 0;
+    font-family: 'myriad-pro-light', trebuchet ms, helvetica, sans;
+    background: rgb(35, 35, 35);
+    color: rgb(155, 155, 155);
+    background-image: -webkit-gradient(radial, center top, 0, center top, 1000, color-stop(0, #1c1c1c), color-stop(1, #050505));
+    background-attachment: fixed;
+}
+a,
+a:hover {
+    color: #fff;
+}
+ul.list {
+    margin-top: .3em;
+    margin-bottom: 20px;
+    list-style-type: binary;
+    font-size: 65%;
+    font-family: 'Courier New';
+    color: rgb(135, 135, 135);
+}
+ul.list span.item {
+    font-size: 153%;
+    font-weight: normal;
+    font-family: 'myriad-pro-light', trebuchet ms, helvetica, sans;
+    color: rgb(155, 155, 155);
+}
+
+.toplinks {
+    margin-top:12px;
+    text-align:center;
+}
+
+.toplinks a {
+    color: rgb(155, 155, 155);
+}
+
+#my-container {
+    margin: auto;
+    max-width: 760px;
+}
+#desc {
+    margin-top: 19px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'myriad-pro-light', trebuchet ms, helvetica, sans;
+    color: rgb(220, 210, 200);
+}
+.logo {
+    padding-right:14.5px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1 {
+    text-align: center;
+    font-size: 44px;
+    line-height: 1em;
+    color: rgb(220, 210, 190);
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px rgb(100, 100, 100);
+}
+.plugin {
+    margin-bottom: 40px;
+    box-shadow: 0 0 200px rgba(255, 255, 255, .1);
+}
+.player {
+    margin-bottom: 20px;
+}
+.tagline {
+    text-align: center;
+}
+#header {
+    padding: 20px 0 10px;;
+    position: relative;
+}
+#footer {
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+jekyll build
+rm -rf ../mtytel.github.io/*
+cp -r _site/* ../mtytel.github.io/
+git --git-dir=../mtytel.github.io/.git --work-tree=../mtytel.github.io/ add . --all
+git --git-dir=../mtytel.github.io/.git --work-tree=../mtytel.github.io/ commit -a -m "Publishing from jekyll..."
+git --git-dir=../mtytel.github.io/.git --work-tree=../mtytel.github.io/ push
