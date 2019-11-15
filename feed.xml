@@ -6,22 +6,13 @@
 </description>
     <link>https://tytel.org/</link>
     <atom:link href="https://tytel.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Aug 2019 10:33:30 -0700</pubDate>
-    <lastBuildDate>Mon, 12 Aug 2019 10:33:30 -0700</lastBuildDate>
+    <pubDate>Fri, 15 Nov 2019 08:49:55 -0800</pubDate>
+    <lastBuildDate>Fri, 15 Nov 2019 08:49:55 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>New Synth in the Works</title>
-        <description>&lt;p&gt;I’m working on a new synth! The goal: create the most popular synthesizer in the world..
-Not sure if that’s achievable, let alone measureable, but if I hit a million downloads I think
-I’ll call it a success.&lt;/p&gt;
-
-&lt;p&gt;So you want to hear about features. You’ll have to stay tuned for more blog posts then! I can tell
-you now that there are some analog modelled filters (ZDF, WTF? BBQ), interesting modulation
-capabilities and a very visual and animated UI (with low CPU usage).&lt;/p&gt;
-
-&lt;p&gt;And for those wondering, this new synth will be open-source and pay-what-you-want like just like
-&lt;a href=&quot;https://tytel.org/helm&quot;&gt;Helm&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://vital.audio&quot;&gt;I’m working on a new synth!&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 19 Feb 2018 04:30:00 -0800</pubDate>
