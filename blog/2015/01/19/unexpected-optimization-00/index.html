@@ -41,6 +41,60 @@
           
         
           
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -54,62 +108,6 @@
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/blog/">Blog</a>
           
         
           
@@ -142,9 +140,9 @@ posting many of the optimizations I make, especially nonobvious ones. These
 could range from simple things like using one-multiply instead of
 two-multiply interpolation:</p>
 
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.
-</span><span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds
-</span><span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="o">//</span> <span class="mi">2</span> <span class="n">multiplies</span> <span class="n">and</span> <span class="mi">2</span> <span class="n">adds</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.</span>
+<span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds</span>
+<span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="c1">// 2 multiplies and 2 adds</span></code></pre></figure>
 
 <p>Or could be uglier solutions like embedding assembly instructions in C++.
 I’m not a C++ optimization expert yet, so some of these things may be more
@@ -172,9 +170,9 @@ dereferencing first so I first chose the slower but prettier method.</p>
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">pvect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">();</span>
 <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
 
-<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.
-</span><span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1
-</span><span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="o">//</span> <span class="n">fast</span> <span class="n">ugly</span> <span class="n">access</span> <span class="mi">2</span></code></pre></figure>
+<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.</span>
+<span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1</span>
+<span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="c1">// fast ugly access 2</span></code></pre></figure>
 
 <p>Fortunately switching from at() to operator[] an easy thing to fix, and I got a
 significant 25% speed boost because of it.</p>

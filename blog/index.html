@@ -42,6 +42,60 @@
           
         
           
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -55,62 +109,6 @@
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/blog/">Blog</a>
           
         
           
@@ -157,7 +155,7 @@
             <a class="post-link" href="/blog/2015/06/01/stickers/">Stickers!</a>
           </h2>
           <p>I got some stickers printed of the new logo! If you PayPal me $5 at
-<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#116;&#121;&#116;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#116;&#104;&#101;&#119;&#116;&#121;&#116;&#101;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a> and mention the
+<a href="mailto:matthewtytel@gmail.com">matthewtytel@gmail.com</a> and mention the
 stickers and include your address I’ll send you one :D</p>
 
 <p><img src="/static/images/blog/stickers.jpg" alt="Helm Stickers" /></p>
@@ -285,25 +283,25 @@ hit.</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">table_size</span> <span class="o">=</span> <span class="mi">2048</span><span class="p">;</span>
 <span class="kt">double</span> <span class="n">phase</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
-<span class="kt">double</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.
-</span>
+<span class="kt">double</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.</span>
+
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">phase</span> <span class="o">&gt;=</span> <span class="mf">1.0</span><span class="p">)</span>
     <span class="n">phase</span> <span class="o">-=</span> <span class="mf">1.0</span><span class="p">;</span>
 
-  <span class="c1">// Lookup value with phase. No interpolation for this example.
-</span>  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
+  <span class="c1">// Lookup value with phase. No interpolation for this example.</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
   <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span>
 
-<span class="c1">// Alternatively with modf which is slightly more efficient.
-</span><span class="kt">double</span> <span class="n">integral_part</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="c1">// Alternatively with modf which is slightly more efficient.</span>
+<span class="kt">double</span> <span class="n">integral_part</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">phase</span> <span class="o">=</span> <span class="n">modf</span><span class="p">(</span><span class="n">phase</span> <span class="o">+</span> <span class="n">phase_diff</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">integral_part</span><span class="p">);</span>
 
-  <span class="c1">// Lookup value with phase. No interpolation for this example.
-</span>  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
+  <span class="c1">// Lookup value with phase. No interpolation for this example.</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
   <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -321,14 +319,14 @@ another (albeit small) performance improvement.</p>
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">table_bits</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">shift</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="o">-</span> <span class="n">table_bits</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">phase</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.
-</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Automatially wraps :D
-</span>  <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.</span>
 
-  <span class="c1">// One bit shift is more efficient than a multiply and cast I believe.
-</span>  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">&gt;&gt;</span> <span class="n">shift</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Automatially wraps :D</span>
+  <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
+
+  <span class="c1">// One bit shift is more efficient than a multiply and cast I believe.</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">&gt;&gt;</span> <span class="n">shift</span><span class="p">;</span>
   <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -419,8 +417,8 @@ All we have to do is slap an environment variable setting and we should be good
 to go! (on some machines)</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;fenv.h&gt;
-</span><span class="c1">// ...
-</span><span class="n">fesetenv</span><span class="p">(</span><span class="n">FE_DFL_DISABLE_SSE_DENORMS_ENV</span><span class="p">);</span></code></pre></figure>
+</span><span class="c1">// ...</span>
+<span class="n">fesetenv</span><span class="p">(</span><span class="n">FE_DFL_DISABLE_SSE_DENORMS_ENV</span><span class="p">);</span></code></pre></figure>
 
 
         </li>
@@ -439,9 +437,9 @@ posting many of the optimizations I make, especially nonobvious ones. These
 could range from simple things like using one-multiply instead of
 two-multiply interpolation:</p>
 
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.
-</span><span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds
-</span><span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="o">//</span> <span class="mi">2</span> <span class="n">multiplies</span> <span class="n">and</span> <span class="mi">2</span> <span class="n">adds</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// These lines compute the same value.</span>
+<span class="kt">double</span> <span class="n">one_multiply</span> <span class="o">=</span> <span class="n">from</span> <span class="o">+</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="n">to</span> <span class="o">-</span> <span class="n">from</span><span class="p">);</span>  <span class="c1">// 1 multiply and 2 adds</span>
+<span class="kt">double</span> <span class="n">two_multiply</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">to</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">from</span><span class="p">;</span> <span class="c1">// 2 multiplies and 2 adds</span></code></pre></figure>
 
 <p>Or could be uglier solutions like embedding assembly instructions in C++.
 I’m not a C++ optimization expert yet, so some of these things may be more
@@ -469,9 +467,9 @@ dereferencing first so I first chose the slower but prettier method.</p>
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;*</span> <span class="n">pvect</span> <span class="o">=</span> <span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">();</span>
 <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
 
-<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.
-</span><span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1
-</span><span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="o">//</span> <span class="n">fast</span> <span class="n">ugly</span> <span class="n">access</span> <span class="mi">2</span></code></pre></figure>
+<span class="kt">double</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>          <span class="c1">// easy to read but slow.</span>
+<span class="kt">double</span> <span class="n">fast1</span> <span class="o">=</span> <span class="n">pvect</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">[](</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// fast ugly access 1</span>
+<span class="kt">double</span> <span class="n">fast2</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">pvect</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>          <span class="c1">// fast ugly access 2</span></code></pre></figure>
 
 <p>Fortunately switching from at() to operator[] an easy thing to fix, and I got a
 significant 25% speed boost because of it.</p>
@@ -482,10 +480,10 @@ significant 25% speed boost because of it.</p>
     
       
         <li>
-          <span class="post-meta">Jan 17, 2015</span>
+          <span class="post-meta">Jan 18, 2015</span>
 
           <h2>
-            <a class="post-link" href="/blog/2015/01/17/twytch-intro/">Starting Development on Twytch, an open source synthesizer</a>
+            <a class="post-link" href="/blog/2015/01/18/twytch-intro/">Starting Development on Twytch, an open source synthesizer</a>
           </h2>
           <p>On the 1st day of 2015, I started development on an open source software synth, <a href="https://github.com/mtytel/twytch">Twytch</a>. I’ve decided to keep a devblog after seeing some of the devblog successes in the indie game development world such as <a href="http://willychyr.com/blog/">Willy Chyr’s Relativity</a> and <a href="http://fractgame.com/news">Phosfiend Systems’ Fract OSC</a>.</p>
 

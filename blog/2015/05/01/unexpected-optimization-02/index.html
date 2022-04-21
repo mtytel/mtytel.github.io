@@ -41,6 +41,60 @@
           
         
           
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -54,62 +108,6 @@
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/blog/">Blog</a>
           
         
           
@@ -151,25 +149,25 @@ hit.</p>
 
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">table_size</span> <span class="o">=</span> <span class="mi">2048</span><span class="p">;</span>
 <span class="kt">double</span> <span class="n">phase</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
-<span class="kt">double</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.
-</span>
+<span class="kt">double</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.</span>
+
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">phase</span> <span class="o">&gt;=</span> <span class="mf">1.0</span><span class="p">)</span>
     <span class="n">phase</span> <span class="o">-=</span> <span class="mf">1.0</span><span class="p">;</span>
 
-  <span class="c1">// Lookup value with phase. No interpolation for this example.
-</span>  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
+  <span class="c1">// Lookup value with phase. No interpolation for this example.</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
   <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span>
 
-<span class="c1">// Alternatively with modf which is slightly more efficient.
-</span><span class="kt">double</span> <span class="n">integral_part</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="c1">// Alternatively with modf which is slightly more efficient.</span>
+<span class="kt">double</span> <span class="n">integral_part</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">phase</span> <span class="o">=</span> <span class="n">modf</span><span class="p">(</span><span class="n">phase</span> <span class="o">+</span> <span class="n">phase_diff</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">integral_part</span><span class="p">);</span>
 
-  <span class="c1">// Lookup value with phase. No interpolation for this example.
-</span>  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
+  <span class="c1">// Lookup value with phase. No interpolation for this example.</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">*</span> <span class="n">table_size</span><span class="p">;</span>
   <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -187,14 +185,14 @@ another (albeit small) performance improvement.</p>
 <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">table_bits</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">shift</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="o">-</span> <span class="n">table_bits</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">phase</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.
-</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Automatially wraps :D
-</span>  <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">phase_diff</span> <span class="o">=</span> <span class="p">...;</span> <span class="c1">// Usually we don't know what value this is.</span>
 
-  <span class="c1">// One bit shift is more efficient than a multiply and cast I believe.
-</span>  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">&gt;&gt;</span> <span class="n">shift</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Automatially wraps :D</span>
+  <span class="n">phase</span> <span class="o">+=</span> <span class="n">phase_diff</span><span class="p">;</span>
+
+  <span class="c1">// One bit shift is more efficient than a multiply and cast I believe.</span>
+  <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">phase</span> <span class="o">&gt;&gt;</span> <span class="n">shift</span><span class="p">;</span>
   <span class="n">output_buffer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
 <span class="p">}</span></code></pre></figure>
 
